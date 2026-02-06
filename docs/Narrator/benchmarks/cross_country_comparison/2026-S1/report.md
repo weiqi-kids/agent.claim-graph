@@ -1,8 +1,7 @@
 ---
 layout: default
 title: 跨國對照報告
-parent: 考試門檻
-nav_order: 1
+nav_exclude: true
 ---
 
 # 各國考試認知層次對照報告

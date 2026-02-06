@@ -1,8 +1,7 @@
 ---
 layout: default
 title: 考試題型分析
-nav_order: 3
-has_children: true
+nav_exclude: true
 ---
 
 # 考試題型分析

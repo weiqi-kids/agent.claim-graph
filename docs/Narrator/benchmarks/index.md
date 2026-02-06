@@ -1,8 +1,7 @@
 ---
 layout: default
 title: 考試門檻
-nav_order: 4
-has_children: true
+nav_exclude: true
 ---
 
 # 考試門檻

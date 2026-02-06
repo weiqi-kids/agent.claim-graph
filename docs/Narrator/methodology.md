@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 方法論說明
-nav_exclude: true
+nav_order: 4
 ---
 
 # 認知層次基準線分類方法
