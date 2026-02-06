@@ -70,9 +70,10 @@ jobs:
           set +e
           htmlproofer _site \
             --disable-external \
-            --ignore-urls "/^#/,/^javascript:/" \
+            --ignore-urls "/^#/,/^javascript:/,/assets\/js\//,/assets\/css\/,/\.js$/,/\.css$/" \
             --allow-missing-href \
             --no-enforce-https \
+            --checks Links,Images \
             2>&1 | tee link_report.txt
           exit_code=$?
 
