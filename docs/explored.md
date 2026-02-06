@@ -6,6 +6,28 @@ nav_exclude: true
 
 # 資料源探索紀錄
 
+## 2026-02-07 探索紀錄
+
+### 已驗證可用
+
+| 資料源 | URL | 格式 | 用途 |
+|--------|-----|------|------|
+| College Board SAT Percentiles | https://research.collegeboard.org/reports/sat-suite/understanding-scores/sat | HTML | SAT 2025 百分位分數 |
+| College Board 2025 Annual Report | https://reports.collegeboard.org/media/pdf/2025-total-group-sat-suite-of-assessments-annual-report.pdf | PDF | SAT 年度統計報告 |
+| MAA AMC/AIME Thresholds | https://maa.org/news/2025-26-aime-thresholds-are-now-available/ | HTML | AIME 資格分數線 |
+| OECD PISA 2022 Results | https://www.oecd.org/en/publications/pisa-2022-results-volume-i_53f23881-en.html | HTML | 國際數學成績比較 |
+| IMO Official Results | https://www.imo-official.org/results.aspx | HTML | 國際數學奧林匹亞成績 |
+| UKMT Awards Info | https://ukmt.org.uk/senior-challenges/senior-mathematical-challenge-awards | HTML | 英國數學競賽獎項門檻 |
+
+### 已確認不可用
+
+| 資料源 | 原因 |
+|--------|------|
+| Common Standards Project API | 頁面僅有 JavaScript，無實際 API 端點可用 |
+| 國家教育研究院課綱頁面 | 僅為導航頁，實際課綱在 PDF 檔案中 |
+
+---
+
 ## 已採用（Phase 1 考試題庫）
 
 | 資料源 | 類型 | 對應 Layer | 採用日期 | 檔案大小 | 備註 |
