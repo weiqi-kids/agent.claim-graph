@@ -1,0 +1,180 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths: ['docs/**']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+  issues: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+          working-directory: docs
+
+      - name: Build Jekyll
+        run: cd docs && bundle exec jekyll build
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs/_site
+
+  validate-links:
+    needs: build
+    runs-on: ubuntu-latest
+    outputs:
+      has_errors: ${{ steps.check.outputs.has_errors }}
+      error_report: ${{ steps.check.outputs.error_report }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: github-pages
+          path: _site
+
+      - name: Extract artifact
+        run: |
+          cd _site
+          tar -xf artifact.tar
+          rm artifact.tar
+
+      - name: Install html-proofer
+        run: gem install html-proofer
+
+      - name: Check internal links
+        id: check
+        run: |
+          set +e
+          htmlproofer _site \
+            --disable-external \
+            --ignore-urls "/^#/,/^javascript:/" \
+            --allow-missing-href \
+            --no-enforce-https \
+            2>&1 | tee link_report.txt
+          exit_code=$?
+
+          if [ $exit_code -ne 0 ]; then
+            echo "has_errors=true" >> $GITHUB_OUTPUT
+            # Escape multiline output
+            error_report=$(cat link_report.txt | head -100)
+            echo "error_report<<EOF" >> $GITHUB_OUTPUT
+            echo "$error_report" >> $GITHUB_OUTPUT
+            echo "EOF" >> $GITHUB_OUTPUT
+          else
+            echo "has_errors=false" >> $GITHUB_OUTPUT
+          fi
+
+  auto-fix:
+    needs: validate-links
+    if: needs.validate-links.outputs.has_errors == 'true'
+    runs-on: ubuntu-latest
+    outputs:
+      fixed: ${{ steps.fix.outputs.fixed }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Auto-fix missing index pages
+        id: fix
+        run: |
+          fixed=false
+
+          # Create missing index.md for directories under docs/Narrator
+          for dir in docs/Narrator/*/; do
+            if [ -d "$dir" ]; then
+              dirname=$(basename "$dir")
+              if [ ! -f "${dir}index.md" ] && [ ! -f "${dir}README.md" ]; then
+                echo "Creating index for $dirname"
+                cat > "${dir}index.md" << INDEXEOF
+---
+layout: default
+title: ${dirname}
+has_children: true
+---
+
+# ${dirname}
+INDEXEOF
+                fixed=true
+              fi
+            fi
+          done
+
+          if [ "$fixed" = true ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add .
+            git commit -m "fix: auto-create missing index pages"
+            git push
+            echo "fixed=true" >> $GITHUB_OUTPUT
+          else
+            echo "fixed=false" >> $GITHUB_OUTPUT
+          fi
+
+  create-issue:
+    needs: [validate-links, auto-fix]
+    if: needs.validate-links.outputs.has_errors == 'true' && needs.auto-fix.outputs.fixed != 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            const errorReport = `${{ needs.validate-links.outputs.error_report }}`;
+
+            // Check for existing open issue
+            const issues = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'link-check'
+            });
+
+            if (issues.data.length > 0) {
+              // Update existing issue
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issues.data[0].number,
+                body: `## 新的連結檢查報告\n\n連結驗證於 ${new Date().toISOString()} 再次失敗：\n\n\`\`\`\n${errorReport}\n\`\`\``
+              });
+            } else {
+              // Create new issue
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: '連結驗證失敗 - 需人工處理',
+                body: `## 連結檢查報告\n\n自動修復無法解決以下問題：\n\n\`\`\`\n${errorReport}\n\`\`\`\n\n請檢查上述連結並修正。`,
+                labels: ['bug', 'link-check']
+              });
+            }
+
+  deploy:
+    needs: [build, validate-links]
+    if: needs.validate-links.outputs.has_errors != 'true'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
