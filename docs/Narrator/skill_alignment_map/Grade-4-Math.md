@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Grade 4 Math
-parent: 技能對照地圖
+title: 國小四年級數學
+parent: 年級技能標準
 nav_order: 1
 mode: skill_alignment_map
 verifiability: Factual
@@ -13,7 +13,9 @@ source_layers:
   - standards_frameworks
 ---
 
-# Grade 4 Math 技能對照地圖
+# 國小四年級數學技能標準
+
+> 對應美國 Common Core Grade 4 Math
 
 ## 資料來源
 

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 方法論說明
-parent: 基準資料
+parent: 考試門檻
 nav_order: 2
 ---
 

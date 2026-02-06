@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Grade 8 Math
-parent: 技能對照地圖
+title: 國中二年級數學
+parent: 年級技能標準
 nav_order: 2
 mode: skill_alignment_map
 verifiability: Factual
@@ -13,7 +13,9 @@ source_layers:
   - standards_frameworks
 ---
 
-# Grade 8 Math 技能對照地圖
+# 國中二年級數學技能標準
+
+> 對應美國 Common Core Grade 8 Math
 
 ## 資料來源
 

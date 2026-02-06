@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 設計教訓
-nav_order: 6
+nav_exclude: true
 ---
 
 # 學生學習地圖系統 — 探索階段教訓紀錄

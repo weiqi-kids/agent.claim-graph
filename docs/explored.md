@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 資料源紀錄
-nav_order: 5
+nav_exclude: true
 ---
 
 # 資料源探索紀錄
