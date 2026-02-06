@@ -180,6 +180,35 @@
 2. 讀取 CLAUDE.md 中宣告的來源 Layer 資料
 3. 依照輸出框架產出報告到 `docs/Narrator/{mode_name}/`
 
+### 步驟五：Git 提交與部署
+
+執行完整流程的最後步驟：
+
+1. **檢查變更**
+   ```bash
+   git status
+   git diff --stat docs/Narrator/
+   ```
+   - 顯示新增/修改的報告檔案
+   - 確認無敏感資料（.env、credentials 等）
+
+2. **Git 操作**
+   ```bash
+   git add docs/Narrator/
+   git commit -m "chore: update reports ($(date +%Y-%m-%d))"
+   git push origin main
+   ```
+
+3. **自動驗證（GitHub Actions）**
+   - 自動建置 Jekyll 網站
+   - 檢查所有內部連結（html-proofer）
+   - 連結異常時嘗試自動修復（建立缺少的 index.md）
+   - 無法自動修復則建立 GitHub Issue
+
+4. **部署**
+   - 驗證通過後自動部署到 GitHub Pages
+   - 網站 URL：https://weiqi-kids.github.io/agent.claim-graph/
+
 ### 指定執行
 
 使用者也可以指定執行特定 Layer 或 Mode：
