@@ -1,0 +1,120 @@
+# 各國考試認知層次對照報告
+
+> 分析期間：{{ meta.period }}
+> 產生時間：{{ meta.generated_at }}
+
+---
+
+## 一、各國考試門檻對照表
+
+以「百分位」作為共同基準，對照各國考試的分數門檻：
+
+| 百分位 | 🇹🇼 學測 | 🇺🇸 SAT | 🇨🇳 高考 | 🇬🇧 UKMT | 🌍 AMC/AIME |
+|--------|----------|---------|----------|----------|-------------|
+{% for row in score_thresholds %}
+| 前 {{ row.percentile }}% | {{ row.taiwan or '-' }} | {{ row.usa or '-' }} | {{ row.china or '-' }} | {{ row.uk or '-' }} | {{ row.intl or '-' }} |
+{% endfor %}
+
+---
+
+## 二、各國考試認知層次題目佔比
+
+| 認知層次 | 🇹🇼 學測 | 🇺🇸 SAT | 🇨🇳 高考 | 🇬🇧 UKMT | 🌍 競賽 |
+|----------|:--------:|:-------:|:--------:|:--------:|:-------:|
+| 記憶     | {{ cognitive.taiwan.remember }}% | {{ cognitive.usa.remember }}% | {{ cognitive.china.remember }}% | {{ cognitive.uk.remember }}% | {{ cognitive.intl.remember }}% |
+| 理解     | {{ cognitive.taiwan.understand }}% | {{ cognitive.usa.understand }}% | {{ cognitive.china.understand }}% | {{ cognitive.uk.understand }}% | {{ cognitive.intl.understand }}% |
+| 應用     | {{ cognitive.taiwan.apply }}% | {{ cognitive.usa.apply }}% | {{ cognitive.china.apply }}% | {{ cognitive.uk.apply }}% | {{ cognitive.intl.apply }}% |
+| 分析     | {{ cognitive.taiwan.analyze }}% | {{ cognitive.usa.analyze }}% | {{ cognitive.china.analyze }}% | {{ cognitive.uk.analyze }}% | {{ cognitive.intl.analyze }}% |
+| 評鑑     | {{ cognitive.taiwan.evaluate }}% | {{ cognitive.usa.evaluate }}% | {{ cognitive.china.evaluate }}% | {{ cognitive.uk.evaluate }}% | {{ cognitive.intl.evaluate }}% |
+| 創造     | {{ cognitive.taiwan.create }}% | {{ cognitive.usa.create }}% | {{ cognitive.china.create }}% | {{ cognitive.uk.create }}% | {{ cognitive.intl.create }}% |
+
+---
+
+## 三、認知層次說明與題目範例
+
+### 記憶（Remember）
+
+回憶事實、定義、公式。題目通常問「是什麼」「哪一個」。
+
+| 考試 | 題目範例 |
+|------|----------|
+{% for ex in examples.remember %}
+| {{ ex.country }} | {{ ex.question }} |
+{% endfor %}
+
+### 理解（Understand）
+
+用自己的話解釋、舉例說明。題目通常問「為什麼」「這代表什麼」。
+
+| 考試 | 題目範例 |
+|------|----------|
+{% for ex in examples.understand %}
+| {{ ex.country }} | {{ ex.question }} |
+{% endfor %}
+
+### 應用（Apply）
+
+把知識用在新情境、計算、解題。題目通常要「求出」「計算」。
+
+| 考試 | 題目範例 |
+|------|----------|
+{% for ex in examples.apply %}
+| {{ ex.country }} | {{ ex.question }} |
+{% endfor %}
+
+### 分析（Analyze）
+
+拆解問題、找出關係、比較方法。題目通常要「比較」「分析」「推論」。
+
+| 考試 | 題目範例 |
+|------|----------|
+{% for ex in examples.analyze %}
+| {{ ex.country }} | {{ ex.question }} |
+{% endfor %}
+
+### 評鑑（Evaluate）
+
+判斷對錯、評估優劣、驗證證明。題目通常要「判斷」「評估」「這個對嗎」。
+
+| 考試 | 題目範例 |
+|------|----------|
+{% for ex in examples.evaluate %}
+| {{ ex.country }} | {{ ex.question }} |
+{% endfor %}
+
+### 創造（Create）
+
+設計新方法、構造新解法。題目通常要「設計」「構造」「證明存在」。
+
+| 考試 | 題目範例 |
+|------|----------|
+{% for ex in examples.create %}
+| {{ ex.country }} | {{ ex.question }} |
+{% endfor %}
+
+---
+
+## 四、資料來源
+
+| 資料類型 | 來源 | 題數 |
+|----------|------|------|
+{% for src in sources %}
+| {{ src.type }} | {{ src.name }} | {{ src.count }} |
+{% endfor %}
+
+---
+
+## 五、重要說明
+
+本報告僅呈現各國考試的題目特徵統計：
+
+- ✅ **可以**：了解不同考試的認知層次分布差異
+- ✅ **可以**：參考題目範例理解各層次的意義
+- ❌ **不能**：評估個別學生的能力
+- ❌ **不能**：作為學習規劃的唯一依據
+
+**如需專業教育諮詢，請聯繫教育專業人員。**
+
+---
+
+*本報告由學生學習地圖系統自動產生*

@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "period": "2026-S1",
+    "generated_at": "2026-02-06T00:00:00Z",
+    "source_url": "https://www.ceec.edu.tw/",
+    "notes": "台灣大學入學考試中心學科能力測驗，需待官方公布 114 學年度正式數據"
+  },
+  "exam": {
+    "code": "GSAT",
+    "name": "學科能力測驗（學測）",
+    "country": "TW",
+    "type": "standardized",
+    "frequency": "yearly (January)",
+    "target_grade": "高三"
+  },
+  "scoring_system": {
+    "type": "grade_points",
+    "description": "級分制（非原始分數）",
+    "range": {
+      "min": 0,
+      "max": 15,
+      "per_subject": true
+    },
+    "subjects": ["國文", "英文", "數學A", "數學B", "社會", "自然"]
+  },
+  "percentiles": {
+    "description": "級分對應百分位（以單科為例）",
+    "levels": [
+      { "grade": 15, "percentile": 99, "label": "頂標以上" },
+      { "grade": 14, "percentile": 96, "label": "頂標" },
+      { "grade": 13, "percentile": 88, "label": "前標" },
+      { "grade": 11, "percentile": 75, "label": "均標" },
+      { "grade": 8, "percentile": 50, "label": "後標" },
+      { "grade": 5, "percentile": 25, "label": "底標" }
+    ]
+  },
+  "cutoffs": [
+    {
+      "name": "top_standard",
+      "grade": 14,
+      "percentile": 88,
+      "description": "頂標 - 成績位於前 12%",
+      "qualifies_for": "頂尖大學申請門檻"
+    },
+    {
+      "name": "front_standard",
+      "grade": 13,
+      "percentile": 75,
+      "description": "前標 - 成績位於前 25%",
+      "qualifies_for": "多數公立大學申請門檻"
+    },
+    {
+      "name": "average_standard",
+      "grade": 11,
+      "percentile": 50,
+      "description": "均標 - 成績位於前 50%",
+      "qualifies_for": "一般大學申請門檻"
+    },
+    {
+      "name": "back_standard",
+      "grade": 8,
+      "percentile": 25,
+      "description": "後標 - 成績位於前 75%"
+    },
+    {
+      "name": "bottom_standard",
+      "grade": 5,
+      "percentile": 12,
+      "description": "底標 - 成績位於前 88%"
+    }
+  ],
+  "university_references": {
+    "description": "主要大學科系參考門檻（僅供參考，實際依各年度公告）",
+    "examples": [
+      {
+        "university": "台灣大學",
+        "department": "電機工程學系",
+        "typical_requirement": "數學A頂標、自然頂標、英文前標"
+      },
+      {
+        "university": "清華大學",
+        "department": "資訊工程學系",
+        "typical_requirement": "數學A頂標、英文前標"
+      },
+      {
+        "university": "成功大學",
+        "department": "機械工程學系",
+        "typical_requirement": "數學A前標、自然前標"
+      }
+    ]
+  },
+  "historical_trend": {
+    "notes": "級分標準每年依據考生成績分布調整，此處為典型參考值",
+    "data_pending": true
+  }
+}

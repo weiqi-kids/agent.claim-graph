@@ -1,0 +1,79 @@
+{
+  "country": {
+    "code": "INTL",
+    "name": "國際競賽",
+    "flag": "🌍"
+  },
+  "sources": [
+    {
+      "layer": "olympiadbench_hf",
+      "questions_sampled": 200,
+      "description": "國際奧林匹克數學競賽題庫（英文版）"
+    },
+    {
+      "layer": "amc_github",
+      "questions_sampled": 30,
+      "description": "AIME 2024 競賽題"
+    },
+    {
+      "layer": "aops_hf",
+      "questions_sampled": 500,
+      "description": "Art of Problem Solving 題庫"
+    }
+  ],
+  "cognitive_profile": {
+    "remember": {
+      "percent": 2,
+      "confidence": "high"
+    },
+    "understand": {
+      "percent": 5,
+      "confidence": "medium"
+    },
+    "apply": {
+      "percent": 20,
+      "confidence": "high"
+    },
+    "analyze": {
+      "percent": 45,
+      "confidence": "high"
+    },
+    "evaluate": {
+      "percent": 18,
+      "confidence": "medium"
+    },
+    "create": {
+      "percent": 10,
+      "confidence": "medium"
+    }
+  },
+  "characteristics": {
+    "summary": "最高難度的認知挑戰，分析與評鑑層次佔比最高，幾乎無記憶型題目",
+    "emphasis": [
+      "創意解題",
+      "多步驟推理",
+      "數學證明",
+      "問題建構"
+    ],
+    "relatively_low": [
+      "記憶型題目",
+      "標準化流程",
+      "直接應用公式"
+    ]
+  },
+  "example_questions": {
+    "remember": [],
+    "understand": [],
+    "apply": [],
+    "analyze": [
+      "Let x, y and z be positive real numbers satisfying a system of logarithmic equations. Find the value of |log₂(x⁴y³z²)|.",
+      "There is a unique point C on AB that does not belong to any segment from family F. Find OC²."
+    ],
+    "evaluate": [
+      "Jen enters a lottery by picking 4 distinct numbers. Find the probability of winning the grand prize given that she won a prize."
+    ],
+    "create": []
+  },
+  "generated_at": "2026-02-06T00:30:00Z",
+  "methodology_version": "1.0"
+}

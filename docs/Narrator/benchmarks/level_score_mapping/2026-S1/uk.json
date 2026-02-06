@@ -1,0 +1,144 @@
+{
+  "meta": {
+    "period": "2026-S1",
+    "generated_at": "2026-02-06T00:00:00Z",
+    "description": "英國 UKMT 競賽分數門檻與認知層次要求的對應關係"
+  },
+  "exam": {
+    "code": "UKMT_SMC",
+    "name": "UK Mathematics Trust Senior Mathematical Challenge",
+    "country": "GB"
+  },
+  "cognitive_profile_ref": "../cognitive_level/uk.json",
+  "score_standards_ref": "../score_standards/2026-S1/ukmt.json",
+  "level_score_tiers": [
+    {
+      "tier": "participation",
+      "name": "參與",
+      "score_threshold": "0-48 / 125",
+      "percentile": 33,
+      "description": "參與證書",
+      "cognitive_requirement": {
+        "primary_levels": ["understand", "apply"],
+        "minimum_mastery": {
+          "remember": 50,
+          "understand": 40,
+          "apply": 30,
+          "analyze": 10
+        },
+        "interpretation": "能理解題意，處理基礎應用，但分析題尚困難"
+      }
+    },
+    {
+      "tier": "bronze",
+      "name": "銅獎",
+      "score_threshold": "49+ / 125",
+      "percentile": 55,
+      "description": "前 66% 獲獎",
+      "cognitive_requirement": {
+        "primary_levels": ["apply", "analyze"],
+        "minimum_mastery": {
+          "remember": 70,
+          "understand": 65,
+          "apply": 55,
+          "analyze": 30
+        },
+        "interpretation": "應用題穩定，開始能處理分析題"
+      }
+    },
+    {
+      "tier": "silver",
+      "name": "銀獎",
+      "score_threshold": "66+ / 125",
+      "percentile": 78,
+      "description": "前 44% 獲獎",
+      "cognitive_requirement": {
+        "primary_levels": ["apply", "analyze"],
+        "minimum_mastery": {
+          "remember": 80,
+          "understand": 75,
+          "apply": 70,
+          "analyze": 50,
+          "evaluate": 15
+        },
+        "interpretation": "分析層次成為關鍵，需能拆解問題找出關係"
+      }
+    },
+    {
+      "tier": "gold",
+      "name": "金獎",
+      "score_threshold": "83+ / 125",
+      "percentile": 89,
+      "description": "前 11% 獲獎",
+      "cognitive_requirement": {
+        "primary_levels": ["analyze", "evaluate"],
+        "minimum_mastery": {
+          "remember": 85,
+          "understand": 82,
+          "apply": 80,
+          "analyze": 65,
+          "evaluate": 30
+        },
+        "interpretation": "分析與評鑑層次是主要區分點"
+      }
+    },
+    {
+      "tier": "kangaroo",
+      "name": "Senior Kangaroo 資格",
+      "score_threshold": "90+ / 125",
+      "percentile": 95,
+      "description": "前約 8000 名",
+      "cognitive_requirement": {
+        "primary_levels": ["analyze", "evaluate"],
+        "minimum_mastery": {
+          "remember": 88,
+          "understand": 85,
+          "apply": 85,
+          "analyze": 75,
+          "evaluate": 40
+        },
+        "interpretation": "高階認知層次熟練"
+      }
+    },
+    {
+      "tier": "bmo1",
+      "name": "BMO1 資格",
+      "score_threshold": "100+ / 125",
+      "percentile": 99,
+      "description": "前約 1000 名",
+      "cognitive_requirement": {
+        "primary_levels": ["analyze", "evaluate", "create"],
+        "minimum_mastery": {
+          "remember": 90,
+          "understand": 88,
+          "apply": 88,
+          "analyze": 85,
+          "evaluate": 55,
+          "create": 20
+        },
+        "interpretation": "需要創造性解題思維，能設計解法"
+      }
+    }
+  ],
+  "key_insight": {
+    "description": "英國 UKMT 的認知層次特色",
+    "points": [
+      "競賽導向，應用與分析各佔 35%",
+      "記憶型題目極少（5%），不靠背誦",
+      "評鑑層次佔 10%，需驗證和判斷",
+      "創造層次佔 5%，BMO 資格需要"
+    ]
+  },
+  "phase2_usage": {
+    "description": "Phase 2 比對邏輯",
+    "example": {
+      "child_profile": {
+        "remember_mastery": 78,
+        "understand_mastery": 72,
+        "apply_mastery": 68,
+        "analyze_mastery": 45
+      },
+      "result": "接近「銀獎」要求，分析層次需從 45% 提升至 50%"
+    }
+  }
+}

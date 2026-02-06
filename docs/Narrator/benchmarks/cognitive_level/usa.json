@@ -1,0 +1,68 @@
+{
+  "country": {
+    "code": "US",
+    "name": "美國",
+    "flag": "🇺🇸"
+  },
+  "sources": [
+    {
+      "layer": "sat_math_hf",
+      "questions_sampled": 200,
+      "description": "SAT 數學題庫"
+    },
+    {
+      "layer": "scienceqa",
+      "questions_sampled": 200,
+      "description": "科學問答題庫"
+    }
+  ],
+  "cognitive_profile": {
+    "remember": {
+      "percent": 15,
+      "confidence": "medium"
+    },
+    "understand": {
+      "percent": 20,
+      "confidence": "medium"
+    },
+    "apply": {
+      "percent": 45,
+      "confidence": "high"
+    },
+    "analyze": {
+      "percent": 12,
+      "confidence": "medium"
+    },
+    "evaluate": {
+      "percent": 5,
+      "confidence": "low"
+    },
+    "create": {
+      "percent": 3,
+      "confidence": "low"
+    }
+  },
+  "characteristics": {
+    "summary": "應用層次為主，題目常有生活情境，強調「能不能用」",
+    "emphasis": [
+      "實際應用",
+      "情境問題解決",
+      "數量推理"
+    ],
+    "relatively_low": [
+      "純記憶型題目",
+      "抽象數學推導"
+    ]
+  },
+  "example_questions": {
+    "remember": [],
+    "understand": [
+      "Does this passage describe the weather or the climate?",
+      "In this food chain, the Mojave yucca is a producer. Why?"
+    ],
+    "apply": [],
+    "analyze": []
+  },
+  "generated_at": "2026-02-06T00:00:00Z",
+  "methodology_version": "1.0"
+}

@@ -1,0 +1,173 @@
+{
+  "meta": {
+    "period": "2026-S1",
+    "generated_at": "2026-02-06T00:00:00Z",
+    "description": "國際數學競賽分數門檻與認知層次要求的對應關係"
+  },
+  "exams": [
+    {
+      "code": "AMC_AIME",
+      "name": "American Mathematics Competitions → AIME",
+      "country": "US/INTL"
+    },
+    {
+      "code": "IMO",
+      "name": "International Mathematical Olympiad",
+      "country": "INTL"
+    }
+  ],
+  "cognitive_profile_ref": "../cognitive_level/international.json",
+  "score_standards_ref": "../score_standards/2026-S1/amc_aime.json",
+  "level_score_tiers": [
+    {
+      "tier": "amc_participation",
+      "name": "AMC 參與",
+      "score_threshold": "60 / 150",
+      "percentile": 50,
+      "description": "AMC 10/12 平均水準",
+      "cognitive_requirement": {
+        "primary_levels": ["apply"],
+        "minimum_mastery": {
+          "remember": 70,
+          "understand": 65,
+          "apply": 50,
+          "analyze": 20
+        },
+        "interpretation": "基礎應用能力，能處理前 10 題"
+      }
+    },
+    {
+      "tier": "amc_honor",
+      "name": "AMC 榮譽榜",
+      "score_threshold": "90 / 150",
+      "percentile": 80,
+      "description": "前 20%",
+      "cognitive_requirement": {
+        "primary_levels": ["apply", "analyze"],
+        "minimum_mastery": {
+          "remember": 80,
+          "understand": 78,
+          "apply": 70,
+          "analyze": 40
+        },
+        "interpretation": "穩定的應用能力，開始處理分析題"
+      }
+    },
+    {
+      "tier": "aime_qualification",
+      "name": "AIME 資格",
+      "score_threshold": "103.5 / 150 (AMC10)",
+      "percentile": 95,
+      "description": "約前 5%",
+      "cognitive_requirement": {
+        "primary_levels": ["analyze"],
+        "minimum_mastery": {
+          "remember": 85,
+          "understand": 82,
+          "apply": 80,
+          "analyze": 55,
+          "evaluate": 25
+        },
+        "interpretation": "分析層次是關鍵門檻"
+      }
+    },
+    {
+      "tier": "aime_average",
+      "name": "AIME 平均",
+      "score_threshold": "5 / 15",
+      "percentile": 97,
+      "description": "AIME 參加者平均",
+      "cognitive_requirement": {
+        "primary_levels": ["analyze", "evaluate"],
+        "minimum_mastery": {
+          "remember": 88,
+          "understand": 85,
+          "apply": 85,
+          "analyze": 65,
+          "evaluate": 35
+        },
+        "interpretation": "分析與評鑑層次都需穩定"
+      }
+    },
+    {
+      "tier": "usamo_qualification",
+      "name": "USAMO 資格",
+      "score_threshold": "10+ / 15",
+      "percentile": 99.5,
+      "description": "約前 500 名",
+      "cognitive_requirement": {
+        "primary_levels": ["analyze", "evaluate", "create"],
+        "minimum_mastery": {
+          "remember": 92,
+          "understand": 90,
+          "apply": 90,
+          "analyze": 80,
+          "evaluate": 55,
+          "create": 30
+        },
+        "interpretation": "高階認知全面精熟，需要創造性思維"
+      }
+    },
+    {
+      "tier": "imo_level",
+      "name": "IMO 國家隊水準",
+      "score_threshold": "IMO 42 / 42",
+      "percentile": 99.99,
+      "description": "世界頂尖",
+      "cognitive_requirement": {
+        "primary_levels": ["evaluate", "create"],
+        "minimum_mastery": {
+          "remember": 95,
+          "understand": 95,
+          "apply": 95,
+          "analyze": 95,
+          "evaluate": 80,
+          "create": 60
+        },
+        "interpretation": "所有認知層次都需精熟，創造層次是關鍵區分"
+      }
+    }
+  ],
+  "pathway_cognitive_progression": {
+    "description": "競賽路徑的認知層次遞進",
+    "stages": [
+      {
+        "stage": "AMC 入門",
+        "focus": "應用 → 分析",
+        "key_transition": "從「會算」到「會想」"
+      },
+      {
+        "stage": "AIME 進階",
+        "focus": "分析 → 評鑑",
+        "key_transition": "從「會想」到「會判斷」"
+      },
+      {
+        "stage": "USAMO/IMO 頂尖",
+        "focus": "評鑑 → 創造",
+        "key_transition": "從「會判斷」到「會發明」"
+      }
+    ]
+  },
+  "key_insight": {
+    "description": "國際競賽的認知層次特色",
+    "points": [
+      "分析層次佔 45%，是所有考試中最高",
+      "評鑑層次佔 18%，需驗證和批判",
+      "創造層次佔 10%，需設計新解法",
+      "記憶幾乎不重要（2%），靠理解和推理"
+    ]
+  },
+  "phase2_usage": {
+    "description": "Phase 2 比對邏輯",
+    "example": {
+      "child_profile": {
+        "remember_mastery": 85,
+        "understand_mastery": 80,
+        "apply_mastery": 78,
+        "analyze_mastery": 52,
+        "evaluate_mastery": 22
+      },
+      "result": "接近「AIME 資格」要求，分析層次需從 52% 提升至 55%"
+    }
+  }
+}

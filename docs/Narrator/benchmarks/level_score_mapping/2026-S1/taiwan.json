@@ -1,0 +1,134 @@
+{
+  "meta": {
+    "period": "2026-S1",
+    "generated_at": "2026-02-06T00:00:00Z",
+    "description": "台灣學測分數門檻與認知層次要求的對應關係"
+  },
+  "exam": {
+    "code": "GSAT",
+    "name": "學科能力測驗",
+    "country": "TW"
+  },
+  "cognitive_profile_ref": "../cognitive_level/taiwan.json",
+  "score_standards_ref": "../score_standards/2026-S1/taiwan_gsat.json",
+  "level_score_tiers": [
+    {
+      "tier": "bottom",
+      "name": "底標",
+      "score_threshold": "5 級分",
+      "percentile": 12,
+      "description": "基本門檻",
+      "cognitive_requirement": {
+        "primary_levels": ["remember"],
+        "minimum_mastery": {
+          "remember": 80,
+          "understand": 30,
+          "apply": 10
+        },
+        "interpretation": "主要依賴記憶層次，能回憶基本事實與定義即可達標"
+      }
+    },
+    {
+      "tier": "back",
+      "name": "後標",
+      "score_threshold": "8 級分",
+      "percentile": 25,
+      "description": "前 75%",
+      "cognitive_requirement": {
+        "primary_levels": ["remember", "understand"],
+        "minimum_mastery": {
+          "remember": 90,
+          "understand": 60,
+          "apply": 30
+        },
+        "interpretation": "記憶為主，需具備基礎理解能力"
+      }
+    },
+    {
+      "tier": "average",
+      "name": "均標",
+      "score_threshold": "11 級分",
+      "percentile": 50,
+      "description": "前 50%",
+      "cognitive_requirement": {
+        "primary_levels": ["remember", "understand", "apply"],
+        "minimum_mastery": {
+          "remember": 95,
+          "understand": 80,
+          "apply": 50
+        },
+        "interpretation": "需穩定掌握記憶與理解，並能處理一半的應用題"
+      }
+    },
+    {
+      "tier": "front",
+      "name": "前標",
+      "score_threshold": "13 級分",
+      "percentile": 75,
+      "description": "前 25%",
+      "cognitive_requirement": {
+        "primary_levels": ["apply", "understand"],
+        "minimum_mastery": {
+          "remember": 98,
+          "understand": 90,
+          "apply": 75,
+          "analyze": 30
+        },
+        "interpretation": "應用層次為主要區分點，需能靈活運用知識解題"
+      }
+    },
+    {
+      "tier": "top",
+      "name": "頂標",
+      "score_threshold": "14 級分",
+      "percentile": 88,
+      "description": "前 12%",
+      "cognitive_requirement": {
+        "primary_levels": ["apply", "analyze"],
+        "minimum_mastery": {
+          "remember": 99,
+          "understand": 95,
+          "apply": 90,
+          "analyze": 50
+        },
+        "interpretation": "需掌握大部分應用題，並能處理部分分析題"
+      }
+    },
+    {
+      "tier": "perfect",
+      "name": "滿級分",
+      "score_threshold": "15 級分",
+      "percentile": 99,
+      "description": "前 1%",
+      "cognitive_requirement": {
+        "primary_levels": ["apply", "analyze"],
+        "minimum_mastery": {
+          "remember": 100,
+          "understand": 98,
+          "apply": 95,
+          "analyze": 70,
+          "evaluate": 20
+        },
+        "interpretation": "全面掌握應用層次，分析層次需有相當熟練度"
+      }
+    }
+  ],
+  "phase2_usage": {
+    "description": "Phase 2 比對邏輯",
+    "steps": [
+      "1. 分析孩子練習紀錄的認知層次分布",
+      "2. 計算各層次的掌握度（答對率）",
+      "3. 對照 minimum_mastery 找出最接近的 tier",
+      "4. 報告：「目前練習 profile 接近 {tier} 的要求」"
+    ],
+    "example": {
+      "child_profile": {
+        "remember_mastery": 92,
+        "understand_mastery": 75,
+        "apply_mastery": 45,
+        "analyze_mastery": 15
+      },
+      "result": "接近「均標」要求，應用層次尚需加強以達「前標」"
+    }
+  }
+}

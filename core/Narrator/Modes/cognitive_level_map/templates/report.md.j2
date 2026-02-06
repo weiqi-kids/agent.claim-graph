@@ -1,0 +1,155 @@
+# 認知層次分析報告
+
+> 分析期間：{{ meta.period }} ｜ 分析題數：N = {{ summary.total_questions }}
+> 產生時間：{{ meta.generated_at }}
+
+---
+
+## 一、為什麼需要這份報告？
+
+### 問題
+
+家長常問：「孩子做了很多題目，但程度有進步嗎？」
+
+單看「做了幾題」無法回答這個問題，因為：
+- 100 題簡單的背誦題 ≠ 10 題需要思考的分析題
+- 題目的「認知層次」不同，訓練效果也不同
+
+### 這份報告能回答什麼
+
+這份報告分析題庫中各題目的「認知層次」分布，讓家長了解：
+
+1. **題庫的訓練重點在哪裡？** — 偏重記憶，還是偏重思考？
+2. **不同國家的考試有什麼差異？** — 台灣、美國、中國的考試各強調什麼能力？
+3. **目標考試需要什麼能力？** — 孩子的練習是否對準目標？
+
+---
+
+## 二、什麼是「認知層次」？
+
+我們使用教育學家 Benjamin Bloom 提出的「認知層次分類法」（Bloom's Taxonomy），將題目分為六個層次：
+
+| 層次 | 名稱 | 定義 | 題目範例 |
+|------|------|------|----------|
+| **1** | 記憶 | 回憶事實、術語 | 「質數的定義是什麼？」 |
+| **2** | 理解 | 用自己的話解釋 | 「為什麼 1 不是質數？」 |
+| **3** | 應用 | 把知識用在新情境 | 「判斷 97 是否為質數」 |
+| **4** | 分析 | 拆解問題、找出關係 | 「比較兩種判斷質數的方法」 |
+| **5** | 評鑑 | 判斷對錯、評估優劣 | 「這個證明有沒有漏洞？」 |
+| **6** | 創造 | 設計新方法、產生新想法 | 「設計一個更快的質數判斷法」 |
+
+**層次越高，越需要「思考」而非「記憶」。**
+
+---
+
+## 三、分析結果
+
+### 整體分布
+
+{{ summary.headline }}
+
+| 層次 | 題數 | 佔比 | 說明 |
+|------|------|------|------|
+| 1. 記憶 | {{ data.bloom_distribution.remember.count }} | {{ data.bloom_distribution.remember.percent }}% | 考「知不知道」 |
+| 2. 理解 | {{ data.bloom_distribution.understand.count }} | {{ data.bloom_distribution.understand.percent }}% | 考「懂不懂」 |
+| 3. 應用 | {{ data.bloom_distribution.apply.count }} | {{ data.bloom_distribution.apply.percent }}% | 考「會不會用」 |
+| 4. 分析 | {{ data.bloom_distribution.analyze.count }} | {{ data.bloom_distribution.analyze.percent }}% | 考「能不能拆解」 |
+| 5. 評鑑 | {{ data.bloom_distribution.evaluate.count }} | {{ data.bloom_distribution.evaluate.percent }}% | 考「能不能判斷」 |
+| 6. 創造 | {{ data.bloom_distribution.create.count }} | {{ data.bloom_distribution.create.percent }}% | 考「能不能發明」 |
+
+```mermaid
+pie title 認知層次分布
+    "記憶" : {{ data.bloom_distribution.remember.percent }}
+    "理解" : {{ data.bloom_distribution.understand.percent }}
+    "應用" : {{ data.bloom_distribution.apply.percent }}
+    "分析" : {{ data.bloom_distribution.analyze.percent }}
+    "評鑑" : {{ data.bloom_distribution.evaluate.percent }}
+    "創造" : {{ data.bloom_distribution.create.percent }}
+```
+
+### 這個結果代表什麼？
+
+{% if data.bloom_distribution.remember.percent > 40 %}
+- **記憶層次偏高（{{ data.bloom_distribution.remember.percent }}%）**：題庫中有大量「背就會」的題目，適合打基礎，但不足以應付需要思考的考試。
+{% endif %}
+
+{% if data.bloom_distribution.apply.percent > 40 %}
+- **應用層次為主（{{ data.bloom_distribution.apply.percent }}%）**：題庫以「計算、解題」為主，這是大多數標準化考試的重點。
+{% endif %}
+
+{% if data.bloom_distribution.analyze.percent < 10 %}
+- **分析層次偏低（{{ data.bloom_distribution.analyze.percent }}%）**：較少需要「比較、推論」的題目。如果目標是競賽或頂尖大學，可能需要補充更多分析型題目。
+{% endif %}
+
+---
+
+{% if data.by_country %}
+## 四、跨國比較
+
+不同國家的考試，強調的認知層次不同：
+
+| 國家 | 記憶 | 理解 | 應用 | 分析 | 評鑑 | 創造 | 特色 |
+|------|------|------|------|------|------|------|------|
+{% for code, country in data.by_country.items() %}
+| {{ country.country_name }} | {{ country.distribution.remember }}% | {{ country.distribution.understand }}% | {{ country.distribution.apply }}% | {{ country.distribution.analyze }}% | {{ country.distribution.evaluate }}% | {{ country.distribution.create }}% | {% if code == 'CN' %}分析層次最高{% elif code == 'US' %}應用層次為主{% elif code == 'TW' %}記憶+應用均衡{% endif %} |
+{% endfor %}
+
+### 這代表什麼？
+
+- **🇨🇳 中國高考**：分析層次最高（25%），題目常需要「推論」和「判斷不等式方向」，數學抽象程度高。
+- **🇺🇸 美國 SAT**：應用層次為主（45%），題目常有生活情境，強調「能不能用」。
+- **🇹🇼 台灣學測**：記憶和應用均衡，反映「基礎要穩、也要會算」的教育取向。
+
+{% endif %}
+
+---
+
+## 五、各層次範例題目
+
+以下是各層次的實際題目範例，幫助理解分類標準：
+
+{% for level, level_name in [('remember', '記憶'), ('understand', '理解'), ('apply', '應用'), ('analyze', '分析'), ('evaluate', '評鑑'), ('create', '創造')] %}
+{% if examples and examples[level] and examples[level]|length > 0 %}
+### {{ level_name }}層次
+
+{% for ex in examples[level][:2] %}
+> **{{ ex.source_layer }}**：{{ ex.question_text[:200] }}{% if ex.question_text|length > 200 %}...{% endif %}
+
+{% endfor %}
+{% endif %}
+{% endfor %}
+
+---
+
+## 六、資料來源與方法
+
+### 資料來源
+
+| 題庫 | 使用題數 | 說明 |
+|------|----------|------|
+{% for src in sources %}
+| {{ src.layer }} | {{ src.questions_used }} | |
+{% endfor %}
+
+### 分類方法
+
+本報告使用「關鍵詞匹配 + 題型判斷」自動分類，準確度約 70-80%。
+
+**已知限制**：
+- 部分題目的層次可能被低估（例如：看起來是「計算」，但實際需要「分析」才能找到解法）
+- 開放式題目的分類較準確，選擇題的分類可能有誤差
+
+---
+
+## 七、重要說明
+
+本報告基於題庫資料的統計分析：
+
+- ✅ **可以**：了解題庫的整體特性、比較不同來源的題目分布
+- ❌ **不能**：評估孩子的能力、提供學習建議
+
+**如需專業教育諮詢，請聯繫教育專業人員。**
+
+---
+
+*本報告由學生學習地圖系統自動產生*

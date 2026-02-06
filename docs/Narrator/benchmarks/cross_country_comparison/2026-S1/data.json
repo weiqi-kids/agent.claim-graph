@@ -1,0 +1,258 @@
+{
+  "meta": {
+    "period": "2026-S1",
+    "generated_at": "2026-02-06T00:00:00Z",
+    "description": "各國考試認知層次跨國對照資料"
+  },
+  "score_thresholds": [
+    {
+      "percentile": 50,
+      "label": "平均",
+      "taiwan": "均標 11 級",
+      "usa": "1030",
+      "china": "二本 450",
+      "uk": null,
+      "intl": null
+    },
+    {
+      "percentile": 33,
+      "label": null,
+      "taiwan": null,
+      "usa": "1100",
+      "china": null,
+      "uk": "銅 49+",
+      "intl": null
+    },
+    {
+      "percentile": 25,
+      "label": "中上",
+      "taiwan": "前標 13 級",
+      "usa": "1200",
+      "china": "一本 500",
+      "uk": null,
+      "intl": null
+    },
+    {
+      "percentile": 22,
+      "label": null,
+      "taiwan": null,
+      "usa": null,
+      "china": null,
+      "uk": "銀 66+",
+      "intl": null
+    },
+    {
+      "percentile": 12,
+      "label": "優秀",
+      "taiwan": "頂標 14 級",
+      "usa": "1350",
+      "china": "一本 520",
+      "uk": null,
+      "intl": null
+    },
+    {
+      "percentile": 11,
+      "label": null,
+      "taiwan": null,
+      "usa": null,
+      "china": null,
+      "uk": "金 83+",
+      "intl": null
+    },
+    {
+      "percentile": 10,
+      "label": null,
+      "taiwan": null,
+      "usa": null,
+      "china": "985 線 600",
+      "uk": null,
+      "intl": null
+    },
+    {
+      "percentile": 5,
+      "label": null,
+      "taiwan": null,
+      "usa": null,
+      "china": null,
+      "uk": null,
+      "intl": "AIME 資格"
+    },
+    {
+      "percentile": 4,
+      "label": "頂尖",
+      "taiwan": null,
+      "usa": "1450",
+      "china": null,
+      "uk": null,
+      "intl": null
+    },
+    {
+      "percentile": 2,
+      "label": "菁英",
+      "taiwan": null,
+      "usa": "1500",
+      "china": null,
+      "uk": null,
+      "intl": null
+    },
+    {
+      "percentile": 1,
+      "label": "最頂尖",
+      "taiwan": "滿級 15 級",
+      "usa": "1520",
+      "china": "清北 680",
+      "uk": "BMO1 100+",
+      "intl": "USAMO"
+    }
+  ],
+  "cognitive_distribution": {
+    "taiwan": {
+      "country": "台灣",
+      "exam": "學測",
+      "remember": 25,
+      "understand": 25,
+      "apply": 35,
+      "analyze": 10,
+      "evaluate": 3,
+      "create": 2
+    },
+    "usa": {
+      "country": "美國",
+      "exam": "SAT",
+      "remember": 15,
+      "understand": 20,
+      "apply": 45,
+      "analyze": 12,
+      "evaluate": 5,
+      "create": 3
+    },
+    "china": {
+      "country": "中國",
+      "exam": "高考",
+      "remember": 10,
+      "understand": 15,
+      "apply": 40,
+      "analyze": 25,
+      "evaluate": 7,
+      "create": 3
+    },
+    "uk": {
+      "country": "英國",
+      "exam": "UKMT",
+      "remember": 5,
+      "understand": 10,
+      "apply": 35,
+      "analyze": 35,
+      "evaluate": 10,
+      "create": 5
+    },
+    "intl": {
+      "country": "國際",
+      "exam": "競賽",
+      "remember": 2,
+      "understand": 5,
+      "apply": 20,
+      "analyze": 45,
+      "evaluate": 18,
+      "create": 10
+    }
+  },
+  "examples": {
+    "remember": [
+      {
+        "country": "🇹🇼",
+        "exam": "學測",
+        "question": "下列何者為累進稅制的定義？"
+      },
+      {
+        "country": "🇹🇼",
+        "exam": "學測",
+        "question": "下列何者是影響某一商品供給的價格彈性的重要因素？"
+      }
+    ],
+    "understand": [
+      {
+        "country": "🇹🇼",
+        "exam": "學測",
+        "question": "當經濟體系出現金融市場復甦強勁，但就業市場復甦緩慢的兩極化現象，此稱為什麼型態的復甦？"
+      },
+      {
+        "country": "🇺🇸",
+        "exam": "ScienceQA",
+        "question": "Does this passage describe the weather or the climate?"
+      },
+      {
+        "country": "🇺🇸",
+        "exam": "ScienceQA",
+        "question": "In this food chain, the Mojave yucca is a producer. Why?"
+      }
+    ],
+    "apply": [
+      {
+        "country": "🇹🇼",
+        "exam": "學測",
+        "question": "關於平衡預算乘數，下列敘述何者正確？"
+      },
+      {
+        "country": "🇺🇸",
+        "exam": "SAT",
+        "question": "If (x-1)/3 = k and k = 3, what is the value of x?"
+      },
+      {
+        "country": "🇬🇧",
+        "exam": "UKMT",
+        "question": "What is two-fifths of the recurring decimal 0.25̇?"
+      }
+    ],
+    "analyze": [
+      {
+        "country": "🇹🇼",
+        "exam": "學測",
+        "question": "下列有關自然獨占廠商效率分析的說明，何者錯誤？"
+      },
+      {
+        "country": "🇹🇼",
+        "exam": "學測",
+        "question": "有關成本效益分析方法之運用，下列何者正確？"
+      },
+      {
+        "country": "🇨🇳",
+        "exam": "高考",
+        "question": "若將白水泥稅額調高一倍，水泥市場之超額負擔將會如何變化？"
+      },
+      {
+        "country": "🇬🇧",
+        "exam": "UKMT",
+        "question": "Two dice are stacked. The sum of visible faces is 33. What is on the touching faces?"
+      }
+    ],
+    "evaluate": [
+      {
+        "country": "🌍",
+        "exam": "AIME",
+        "question": "Find the probability of winning the grand prize given that she won a prize."
+      }
+    ],
+    "create": [
+      {
+        "country": "🌍",
+        "exam": "IMO",
+        "question": "Construct a function satisfying the given conditions."
+      },
+      {
+        "country": "🌍",
+        "exam": "USAMO",
+        "question": "Design a strategy that guarantees winning."
+      }
+    ]
+  },
+  "sources": [
+    { "type": "題庫", "name": "tmmlu_tw", "count": 200, "country": "TW" },
+    { "type": "題庫", "name": "sat_math_hf", "count": 200, "country": "US" },
+    { "type": "題庫", "name": "scienceqa", "count": 200, "country": "US" },
+    { "type": "題庫", "name": "gaokao_cn", "count": 100, "country": "CN" },
+    { "type": "題庫", "name": "ukmt_uk", "count": 100, "country": "GB" },
+    { "type": "題庫", "name": "olympiadbench_hf", "count": 200, "country": "INTL" },
+    { "type": "題庫", "name": "amc_github", "count": 30, "country": "INTL" }
+  ]
+}

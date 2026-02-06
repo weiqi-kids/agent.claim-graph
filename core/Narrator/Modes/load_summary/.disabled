@@ -1,0 +1,4 @@
+# Phase 4 Mode - Not yet implemented
+# Requires L7 wellbeing_signals Layer to be enabled
+# WARNING: This mode handles sensitive wellbeing data
+# Remove this file to enable the Mode

@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "period": "2026-S1",
+    "generated_at": "2026-02-06T00:00:00Z",
+    "source_url": "https://gaokao.chsi.com.cn/",
+    "notes": "中國普通高等學校招生全國統一考試，分數線因省份而異"
+  },
+  "exam": {
+    "code": "GAOKAO",
+    "name": "普通高等學校招生全國統一考試（高考）",
+    "country": "CN",
+    "type": "standardized",
+    "frequency": "yearly (June)",
+    "target_grade": "高三"
+  },
+  "scoring_system": {
+    "type": "raw_score",
+    "description": "原始分數制",
+    "total_score": 750,
+    "subjects": {
+      "required": ["語文", "數學", "外語"],
+      "required_score_each": 150,
+      "elective": {
+        "description": "3+1+2 或 3+3 模式",
+        "score": 300
+      }
+    }
+  },
+  "score_range": {
+    "min": 0,
+    "max": 750,
+    "notes": "總分 750 分（語數外各 150 + 選考 300）"
+  },
+  "cutoffs": {
+    "description": "分數線因省份、年度而異，以下為典型參考值",
+    "notes": "2025 年各省一本/二本線待公布",
+    "typical_ranges": [
+      {
+        "name": "first_tier",
+        "chinese_name": "一本線 / 特殊類型招生線",
+        "score_range": { "min": 500, "max": 580 },
+        "description": "重點大學錄取線（因省份差異大）",
+        "qualifies_for": "985/211 工程大學"
+      },
+      {
+        "name": "second_tier",
+        "chinese_name": "二本線 / 本科線",
+        "score_range": { "min": 400, "max": 500 },
+        "description": "普通本科錄取線",
+        "qualifies_for": "一般本科大學"
+      },
+      {
+        "name": "specialist",
+        "chinese_name": "專科線",
+        "score_range": { "min": 150, "max": 300 },
+        "description": "專科學校錄取線"
+      }
+    ]
+  },
+  "provincial_examples": {
+    "description": "2024 年部分省份參考（2025 年數據待更新）",
+    "data": [
+      {
+        "province": "北京",
+        "first_tier": 523,
+        "second_tier": 448,
+        "notes": "不分一二本，此為特殊類型招生線"
+      },
+      {
+        "province": "上海",
+        "first_tier": 503,
+        "notes": "綜合改革省份"
+      },
+      {
+        "province": "河南",
+        "first_tier_science": 514,
+        "first_tier_arts": 521,
+        "second_tier_science": 409,
+        "second_tier_arts": 428,
+        "notes": "考生大省，競爭激烈"
+      },
+      {
+        "province": "江蘇",
+        "first_tier": 516,
+        "notes": "新高考省份"
+      }
+    ]
+  },
+  "math_subject": {
+    "max_score": 150,
+    "description": "數學單科",
+    "difficulty_levels": {
+      "easy": { "percent": 30, "score_contribution": 45 },
+      "medium": { "percent": 50, "score_contribution": 75 },
+      "hard": { "percent": 20, "score_contribution": 30 }
+    },
+    "typical_scores": {
+      "top_5_percent": 140,
+      "top_20_percent": 120,
+      "average": 90,
+      "passing": 60
+    }
+  },
+  "university_references": {
+    "top_tier": {
+      "universities": ["清華大學", "北京大學"],
+      "typical_total_score": "680+",
+      "notes": "各省錄取分數差異大"
+    },
+    "985_universities": {
+      "universities": ["復旦大學", "上海交通大學", "浙江大學", "南京大學"],
+      "typical_total_score": "650+"
+    },
+    "211_universities": {
+      "typical_total_score": "580+"
+    }
+  },
+  "historical_trend": {
+    "notes": "分數線每年依據考試難度和招生計劃調整",
+    "data_pending": true
+  }
+}

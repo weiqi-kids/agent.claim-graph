@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>認知層次分析 - 2026-S1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        .level-card:hover { transform: translateY(-2px); transition: transform 0.2s; }
+        .examples-list { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
+        .examples-list.open { max-height: 500px; }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 py-6">
+            <h1 class="text-2xl font-bold text-gray-800">認知層次分析報告</h1>
+            <p class="text-gray-500 mt-1">2026-S1 | 分析 700 題</p>
+        </div>
+    </header>
+
+    <!-- Summary -->
+    <main class="max-w-6xl mx-auto px-4 py-8">
+        <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8">
+            <p class="text-lg text-blue-800">題庫分析：53.6% 的題目屬於「apply」層次</p>
+        </div>
+
+        <!-- Charts Row -->
+        <div class="grid md:grid-cols-2 gap-6 mb-8">
+            <!-- Pie Chart -->
+            <div class="bg-white rounded-lg shadow p-6">
+                <h2 class="text-lg font-semibold mb-4">Bloom 認知層次分布</h2>
+                <canvas id="bloomPieChart"></canvas>
+            </div>
+
+            <!-- Bar Chart -->
+            <div class="bg-white rounded-lg shadow p-6">
+                <h2 class="text-lg font-semibold mb-4">各層次題數</h2>
+                <canvas id="bloomBarChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Level Cards -->
+        <h2 class="text-xl font-semibold mb-4">各層次詳細</h2>
+        <div class="grid md:grid-cols-3 gap-4 mb-8">
+            
+            <div class="level-card bg-white rounded-lg shadow p-4 cursor-pointer" onclick="toggleExamples('remember')">
+                <div class="flex justify-between items-center">
+                    <span class="font-medium">記憶</span>
+                    <span class="text-2xl font-bold text-blue-600">44.4%</span>
+                </div>
+                <p class="text-gray-500 text-sm">311 題</p>
+                <div id="examples-remember" class="examples-list mt-3 text-sm text-gray-600">
+                    
+                    <p class="font-medium mb-2">範例題目：</p>
+                    <ul class="list-disc pl-4 space-y-1">
+                        
+                        <li>下列何者為累進稅制的定義？</li>
+                        
+                        <li>下列何者是影響某一商品供給的價格彈性的重要因素？</li>
+                        
+                        <li>小明暑假到超商打工，放棄下列 4 項可能的活動，何者是小明的機會成本？</li>
+                        
+                    </ul>
+                    
+                </div>
+            </div>
+            
+            <div class="level-card bg-white rounded-lg shadow p-4 cursor-pointer" onclick="toggleExamples('understand')">
+                <div class="flex justify-between items-center">
+                    <span class="font-medium">理解</span>
+                    <span class="text-2xl font-bold text-blue-600">0.7%</span>
+                </div>
+                <p class="text-gray-500 text-sm">5 題</p>
+                <div id="examples-understand" class="examples-list mt-3 text-sm text-gray-600">
+                    
+                    <p class="font-medium mb-2">範例題目：</p>
+                    <ul class="list-disc pl-4 space-y-1">
+                        
+                        <li>當經濟體系出現金融市場復甦強勁，但就業市場復甦緩慢的兩極化現象，此稱為什麼型態的復甦？</li>
+                        
+                        <li>Does this passage describe the weather or the climate?
+There was rain and sleet in Sioux Falls, Sout...</li>
+                        
+                        <li>In this food chain, the Mojave yucca is a producer. Why?</li>
+                        
+                    </ul>
+                    
+                </div>
+            </div>
+            
+            <div class="level-card bg-white rounded-lg shadow p-4 cursor-pointer" onclick="toggleExamples('apply')">
+                <div class="flex justify-between items-center">
+                    <span class="font-medium">應用</span>
+                    <span class="text-2xl font-bold text-blue-600">53.6%</span>
+                </div>
+                <p class="text-gray-500 text-sm">375 題</p>
+                <div id="examples-apply" class="examples-list mt-3 text-sm text-gray-600">
+                    
+                    <p class="font-medium mb-2">範例題目：</p>
+                    <ul class="list-disc pl-4 space-y-1">
+                        
+                        <li>寡占市場結構與其他三種類型市場結構之最大差異在於下列何者？</li>
+                        
+                        <li>下列關於帝波模型的假設，何者正確？</li>
+                        
+                        <li>關於平衡預算乘數，下列敘述何者正確？</li>
+                        
+                    </ul>
+                    
+                </div>
+            </div>
+            
+            <div class="level-card bg-white rounded-lg shadow p-4 cursor-pointer" onclick="toggleExamples('analyze')">
+                <div class="flex justify-between items-center">
+                    <span class="font-medium">分析</span>
+                    <span class="text-2xl font-bold text-blue-600">1.3%</span>
+                </div>
+                <p class="text-gray-500 text-sm">9 題</p>
+                <div id="examples-analyze" class="examples-list mt-3 text-sm text-gray-600">
+                    
+                    <p class="font-medium mb-2">範例題目：</p>
+                    <ul class="list-disc pl-4 space-y-1">
+                        
+                        <li>下列有關自然獨占廠商效率分析的說明，何者錯誤？</li>
+                        
+                        <li>有關成本效益分析方法之運用，下列何者正確？</li>
+                        
+                        <li>現行貨物稅條例對於白水泥或有色水泥每公噸徵收 600 元。若將白水泥或有色水泥之稅額調高一倍、改為每公噸徵收 1,200 元；在部分均衡分析、不考慮外部性的情形下，相較於原稅額，水泥市場之超額負擔將會...</li>
+                        
+                    </ul>
+                    
+                </div>
+            </div>
+            
+            <div class="level-card bg-white rounded-lg shadow p-4 cursor-pointer" onclick="toggleExamples('evaluate')">
+                <div class="flex justify-between items-center">
+                    <span class="font-medium">評鑑</span>
+                    <span class="text-2xl font-bold text-blue-600">0.0%</span>
+                </div>
+                <p class="text-gray-500 text-sm">0 題</p>
+                <div id="examples-evaluate" class="examples-list mt-3 text-sm text-gray-600">
+                    
+                    <p class="text-gray-400">無範例</p>
+                    
+                </div>
+            </div>
+            
+            <div class="level-card bg-white rounded-lg shadow p-4 cursor-pointer" onclick="toggleExamples('create')">
+                <div class="flex justify-between items-center">
+                    <span class="font-medium">創造</span>
+                    <span class="text-2xl font-bold text-blue-600">0.0%</span>
+                </div>
+                <p class="text-gray-500 text-sm">0 題</p>
+                <div id="examples-create" class="examples-list mt-3 text-sm text-gray-600">
+                    
+                    <p class="text-gray-400">無範例</p>
+                    
+                </div>
+            </div>
+            
+        </div>
+
+        
+        <!-- Country Comparison -->
+        <h2 class="text-xl font-semibold mb-4">跨國比較</h2>
+        <div class="bg-white rounded-lg shadow p-6 mb-8">
+            <canvas id="countryChart"></canvas>
+        </div>
+        
+
+        <!-- Data Sources -->
+        <h2 class="text-xl font-semibold mb-4">資料來源</h2>
+        <div class="bg-white rounded-lg shadow overflow-hidden mb-8">
+            <table class="w-full">
+                <thead class="bg-gray-50">
+                    <tr>
+                        <th class="px-4 py-3 text-left text-sm font-medium text-gray-500">Layer</th>
+                        <th class="px-4 py-3 text-right text-sm font-medium text-gray-500">題數</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y">
+                    
+                    <tr>
+                        <td class="px-4 py-3">tmmlu_tw</td>
+                        <td class="px-4 py-3 text-right">200</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="px-4 py-3">sat_math_hf</td>
+                        <td class="px-4 py-3 text-right">200</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="px-4 py-3">gaokao_cn</td>
+                        <td class="px-4 py-3 text-right">100</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="px-4 py-3">scienceqa</td>
+                        <td class="px-4 py-3 text-right">200</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Disclaimer -->
+        <div class="bg-gray-100 rounded-lg p-4 text-sm text-gray-600">
+            <p><strong>說明</strong>：本報告基於題庫資料的統計分析，不包含教育建議。如需專業諮詢，請聯繫教育專業人員。</p>
+            <p class="mt-2">產生時間：2026-02-05T23:04:26.089892</p>
+        </div>
+    </main>
+
+    <script>
+        // Data from analysis.json
+        const analysisData = {"bloom_distribution": {"remember": {"count": 311, "percent": 44.4}, "understand": {"count": 5, "percent": 0.7}, "apply": {"count": 375, "percent": 53.6}, "analyze": {"count": 9, "percent": 1.3}, "evaluate": {"count": 0, "percent": 0.0}, "create": {"count": 0, "percent": 0.0}}, "by_country": {"US": {"country_code": "US", "country_name": "美國", "sample_size": 200, "distribution": {"remember": 15, "understand": 20, "apply": 45, "analyze": 12, "evaluate": 5, "create": 3}}, "TW": {"country_code": "TW", "country_name": "台灣", "sample_size": 200, "distribution": {"remember": 25, "understand": 25, "apply": 35, "analyze": 10, "evaluate": 3, "create": 2}}, "CN": {"country_code": "CN", "country_name": "中國", "sample_size": 100, "distribution": {"remember": 10, "understand": 15, "apply": 40, "analyze": 25, "evaluate": 7, "create": 3}}}};
+        const bloomLevels = ['記憶', '理解', '應用', '分析', '評鑑', '創造'];
+        const bloomKeys = ['remember', 'understand', 'apply', 'analyze', 'evaluate', 'create'];
+        const bloomColors = ['#ef4444', '#f97316', '#eab308', '#22c55e', '#3b82f6', '#8b5cf6'];
+
+        // Pie Chart
+        const pieCtx = document.getElementById('bloomPieChart').getContext('2d');
+        new Chart(pieCtx, {
+            type: 'pie',
+            data: {
+                labels: bloomLevels,
+                datasets: [{
+                    data: bloomKeys.map(k => analysisData.bloom_distribution[k].percent),
+                    backgroundColor: bloomColors
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { position: 'bottom' }
+                }
+            }
+        });
+
+        // Bar Chart
+        const barCtx = document.getElementById('bloomBarChart').getContext('2d');
+        new Chart(barCtx, {
+            type: 'bar',
+            data: {
+                labels: bloomLevels,
+                datasets: [{
+                    label: '題數',
+                    data: bloomKeys.map(k => analysisData.bloom_distribution[k].count),
+                    backgroundColor: bloomColors
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: { legend: { display: false } },
+                scales: { y: { beginAtZero: true } }
+            }
+        });
+
+        
+        // Country Comparison Chart
+        const countryCtx = document.getElementById('countryChart').getContext('2d');
+        const countryData = analysisData.by_country;
+        const countryLabels = Object.values(countryData).map(c => c.country_name);
+        const countryDatasets = bloomKeys.map((k, i) => ({
+            label: bloomLevels[i],
+            data: Object.values(countryData).map(c => c.distribution[k] || 0),
+            backgroundColor: bloomColors[i]
+        }));
+
+        new Chart(countryCtx, {
+            type: 'bar',
+            data: { labels: countryLabels, datasets: countryDatasets },
+            options: {
+                responsive: true,
+                scales: { x: { stacked: true }, y: { stacked: true, max: 100 } }
+            }
+        });
+        
+
+        // Toggle examples
+        function toggleExamples(levelKey) {
+            const el = document.getElementById('examples-' + levelKey);
+            el.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>

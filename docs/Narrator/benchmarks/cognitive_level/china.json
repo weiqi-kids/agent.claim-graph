@@ -1,0 +1,62 @@
+{
+  "country": {
+    "code": "CN",
+    "name": "中國",
+    "flag": "🇨🇳"
+  },
+  "sources": [
+    {
+      "layer": "gaokao_cn",
+      "questions_sampled": 100,
+      "description": "中國高考數學題庫"
+    }
+  ],
+  "cognitive_profile": {
+    "remember": {
+      "percent": 10,
+      "confidence": "medium"
+    },
+    "understand": {
+      "percent": 15,
+      "confidence": "medium"
+    },
+    "apply": {
+      "percent": 40,
+      "confidence": "high"
+    },
+    "analyze": {
+      "percent": 25,
+      "confidence": "high"
+    },
+    "evaluate": {
+      "percent": 7,
+      "confidence": "medium"
+    },
+    "create": {
+      "percent": 3,
+      "confidence": "low"
+    }
+  },
+  "characteristics": {
+    "summary": "分析層次最高，題目常需要「推論」和「判斷不等式方向」，數學抽象程度高",
+    "emphasis": [
+      "推論能力",
+      "抽象數學",
+      "多步驟分析"
+    ],
+    "relatively_low": [
+      "純記憶型題目",
+      "生活情境應用"
+    ]
+  },
+  "example_questions": {
+    "remember": [],
+    "understand": [],
+    "apply": [],
+    "analyze": [
+      "現行貨物稅條例對於白水泥或有色水泥每公噸徵收 600 元。若將稅額調高一倍，水泥市場之超額負擔將會如何變化？"
+    ]
+  },
+  "generated_at": "2026-02-06T00:00:00Z",
+  "methodology_version": "1.0"
+}

@@ -1,0 +1,64 @@
+{
+  "country": {
+    "code": "GB",
+    "name": "英國",
+    "flag": "🇬🇧"
+  },
+  "sources": [
+    {
+      "layer": "ukmt_uk",
+      "questions_sampled": 100,
+      "description": "UK Mathematics Trust 2024 競賽題"
+    }
+  ],
+  "cognitive_profile": {
+    "remember": {
+      "percent": 5,
+      "confidence": "medium"
+    },
+    "understand": {
+      "percent": 10,
+      "confidence": "medium"
+    },
+    "apply": {
+      "percent": 35,
+      "confidence": "high"
+    },
+    "analyze": {
+      "percent": 35,
+      "confidence": "high"
+    },
+    "evaluate": {
+      "percent": 10,
+      "confidence": "medium"
+    },
+    "create": {
+      "percent": 5,
+      "confidence": "low"
+    }
+  },
+  "characteristics": {
+    "summary": "競賽導向，強調邏輯推理與問題分析，記憶型題目極少",
+    "emphasis": [
+      "邏輯推理",
+      "數學思維",
+      "問題分析"
+    ],
+    "relatively_low": [
+      "純記憶型題目",
+      "標準計算流程"
+    ]
+  },
+  "example_questions": {
+    "remember": [],
+    "understand": [],
+    "apply": [
+      "What is two-fifths of the recurring decimal 0.25̇?"
+    ],
+    "analyze": [
+      "Two standard dice are placed on a table, with one on top of the other, so that only nine of the faces may be seen. The sum of the visible faces is 33. What is the number on the touching faces?"
+    ]
+  },
+  "generated_at": "2026-02-06T00:30:00Z",
+  "methodology_version": "1.0"
+}

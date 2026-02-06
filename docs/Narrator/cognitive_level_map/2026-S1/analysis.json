@@ -1,0 +1,183 @@
+{
+  "meta": {
+    "mode": "cognitive_level_map",
+    "generated_at": "2026-02-05T23:04:26.089892",
+    "period": "2026-S1"
+  },
+  "summary": {
+    "headline": "題庫分析：53.6% 的題目屬於「apply」層次",
+    "total_questions": 700,
+    "dominant_level": "apply"
+  },
+  "data": {
+    "bloom_distribution": {
+      "remember": {
+        "count": 311,
+        "percent": 44.4
+      },
+      "understand": {
+        "count": 5,
+        "percent": 0.7
+      },
+      "apply": {
+        "count": 375,
+        "percent": 53.6
+      },
+      "analyze": {
+        "count": 9,
+        "percent": 1.3
+      },
+      "evaluate": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "create": {
+        "count": 0,
+        "percent": 0.0
+      }
+    },
+    "by_country": {
+      "US": {
+        "country_code": "US",
+        "country_name": "美國",
+        "sample_size": 200,
+        "distribution": {
+          "remember": 15,
+          "understand": 20,
+          "apply": 45,
+          "analyze": 12,
+          "evaluate": 5,
+          "create": 3
+        }
+      },
+      "TW": {
+        "country_code": "TW",
+        "country_name": "台灣",
+        "sample_size": 200,
+        "distribution": {
+          "remember": 25,
+          "understand": 25,
+          "apply": 35,
+          "analyze": 10,
+          "evaluate": 3,
+          "create": 2
+        }
+      },
+      "CN": {
+        "country_code": "CN",
+        "country_name": "中國",
+        "sample_size": 100,
+        "distribution": {
+          "remember": 10,
+          "understand": 15,
+          "apply": 40,
+          "analyze": 25,
+          "evaluate": 7,
+          "create": 3
+        }
+      }
+    }
+  },
+  "examples": {
+    "remember": [
+      {
+        "question_id": "tmmlu_78",
+        "question_text": "下列何者為累進稅制的定義？",
+        "source_layer": "tmmlu_tw",
+        "confidence": "medium"
+      },
+      {
+        "question_id": "tmmlu_97",
+        "question_text": "下列何者是影響某一商品供給的價格彈性的重要因素？",
+        "source_layer": "tmmlu_tw",
+        "confidence": "medium"
+      },
+      {
+        "question_id": "tmmlu_101",
+        "question_text": "小明暑假到超商打工，放棄下列 4 項可能的活動，何者是小明的機會成本？",
+        "source_layer": "tmmlu_tw",
+        "confidence": "medium"
+      }
+    ],
+    "understand": [
+      {
+        "question_id": "tmmlu_70",
+        "question_text": "當經濟體系出現金融市場復甦強勁，但就業市場復甦緩慢的兩極化現象，此稱為什麼型態的復甦？",
+        "source_layer": "tmmlu_tw",
+        "confidence": "medium"
+      },
+      {
+        "question_id": "scienceqa_50",
+        "question_text": "Does this passage describe the weather or the climate?\nThere was rain and sleet in Sioux Falls, South Dakota, last weekend.",
+        "source_layer": "scienceqa",
+        "confidence": "medium"
+      },
+      {
+        "question_id": "scienceqa_80",
+        "question_text": "In this food chain, the Mojave yucca is a producer. Why?",
+        "source_layer": "scienceqa",
+        "confidence": "medium"
+      }
+    ],
+    "apply": [
+      {
+        "question_id": "tmmlu_0",
+        "question_text": "寡占市場結構與其他三種類型市場結構之最大差異在於下列何者？",
+        "source_layer": "tmmlu_tw",
+        "confidence": "low"
+      },
+      {
+        "question_id": "tmmlu_1",
+        "question_text": "下列關於帝波模型的假設，何者正確？",
+        "source_layer": "tmmlu_tw",
+        "confidence": "low"
+      },
+      {
+        "question_id": "tmmlu_3",
+        "question_text": "關於平衡預算乘數，下列敘述何者正確？",
+        "source_layer": "tmmlu_tw",
+        "confidence": "low"
+      }
+    ],
+    "analyze": [
+      {
+        "question_id": "tmmlu_2",
+        "question_text": "下列有關自然獨占廠商效率分析的說明，何者錯誤？",
+        "source_layer": "tmmlu_tw",
+        "confidence": "medium"
+      },
+      {
+        "question_id": "tmmlu_48",
+        "question_text": "有關成本效益分析方法之運用，下列何者正確？",
+        "source_layer": "tmmlu_tw",
+        "confidence": "medium"
+      },
+      {
+        "question_id": "tmmlu_115",
+        "question_text": "現行貨物稅條例對於白水泥或有色水泥每公噸徵收 600 元。若將白水泥或有色水泥之稅額調高一倍、改為每公噸徵收 1,200 元；在部分均衡分析、不考慮外部性的情形下，相較於原稅額，水泥市場之超額負擔將會如何？",
+        "source_layer": "tmmlu_tw",
+        "confidence": "medium"
+      }
+    ],
+    "evaluate": [],
+    "create": []
+  },
+  "sources": [
+    {
+      "layer": "tmmlu_tw",
+      "questions_used": 200
+    },
+    {
+      "layer": "sat_math_hf",
+      "questions_used": 200
+    },
+    {
+      "layer": "gaokao_cn",
+      "questions_used": 100
+    },
+    {
+      "layer": "scienceqa",
+      "questions_used": 200
+    }
+  ]
+}

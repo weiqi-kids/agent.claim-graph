@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "period": "2026-S1",
+    "generated_at": "2026-02-06T00:00:00Z",
+    "description": "中國高考分數門檻與認知層次要求的對應關係"
+  },
+  "exam": {
+    "code": "GAOKAO",
+    "name": "普通高等學校招生全國統一考試",
+    "country": "CN"
+  },
+  "cognitive_profile_ref": "../cognitive_level/china.json",
+  "score_standards_ref": "../score_standards/2026-S1/china_gaokao.json",
+  "level_score_tiers": [
+    {
+      "tier": "specialist",
+      "name": "專科線",
+      "score_threshold": "300 / 750",
+      "percentile": 20,
+      "description": "專科學校錄取",
+      "cognitive_requirement": {
+        "primary_levels": ["remember", "understand"],
+        "minimum_mastery": {
+          "remember": 70,
+          "understand": 40,
+          "apply": 20
+        },
+        "interpretation": "基礎記憶與理解，少量應用"
+      }
+    },
+    {
+      "tier": "second_tier",
+      "name": "二本線",
+      "score_threshold": "450 / 750",
+      "percentile": 50,
+      "description": "普通本科錄取",
+      "cognitive_requirement": {
+        "primary_levels": ["understand", "apply"],
+        "minimum_mastery": {
+          "remember": 85,
+          "understand": 70,
+          "apply": 50,
+          "analyze": 20
+        },
+        "interpretation": "穩定的理解能力，能處理一半應用題"
+      }
+    },
+    {
+      "tier": "first_tier",
+      "name": "一本線",
+      "score_threshold": "520 / 750",
+      "percentile": 70,
+      "description": "重點大學錄取",
+      "cognitive_requirement": {
+        "primary_levels": ["apply", "analyze"],
+        "minimum_mastery": {
+          "remember": 90,
+          "understand": 85,
+          "apply": 70,
+          "analyze": 40
+        },
+        "interpretation": "應用層次需穩定，開始需要分析能力"
+      }
+    },
+    {
+      "tier": "985",
+      "name": "985 工程",
+      "score_threshold": "600 / 750",
+      "percentile": 90,
+      "description": "頂尖 985 大學",
+      "cognitive_requirement": {
+        "primary_levels": ["apply", "analyze"],
+        "minimum_mastery": {
+          "remember": 95,
+          "understand": 90,
+          "apply": 85,
+          "analyze": 60,
+          "evaluate": 20
+        },
+        "interpretation": "分析層次成為關鍵區分點，需能拆解複雜問題"
+      }
+    },
+    {
+      "tier": "top2",
+      "name": "清華北大",
+      "score_threshold": "680 / 750",
+      "percentile": 99,
+      "description": "清華、北大等頂尖學府",
+      "cognitive_requirement": {
+        "primary_levels": ["analyze", "evaluate"],
+        "minimum_mastery": {
+          "remember": 98,
+          "understand": 95,
+          "apply": 95,
+          "analyze": 80,
+          "evaluate": 40,
+          "create": 10
+        },
+        "interpretation": "高階認知層次（分析、評鑑）必須精熟，這是高考數學難題的核心"
+      }
+    }
+  ],
+  "key_insight": {
+    "description": "中國高考的認知層次特色",
+    "points": [
+      "分析層次佔 25%，是三國中最高",
+      "高分段主要靠分析和評鑑層次區分",
+      "記憶型題目少（10%），但必須全對",
+      "數學抽象程度高，需要推論和判斷能力"
+    ]
+  },
+  "phase2_usage": {
+    "description": "Phase 2 比對邏輯",
+    "example": {
+      "child_profile": {
+        "remember_mastery": 88,
+        "understand_mastery": 82,
+        "apply_mastery": 65,
+        "analyze_mastery": 35
+      },
+      "result": "接近「一本線」要求，分析層次需從 35% 提升至 40% 以穩定達標"
+    }
+  }
+}

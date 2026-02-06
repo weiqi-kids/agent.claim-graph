@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "period": "2026-S1",
+    "generated_at": "2026-02-06T00:00:00Z",
+    "source_url": "https://ukmt.org.uk/senior-challenges/senior-mathematical-challenge-awards",
+    "notes": "基於 2024 年 UKMT Senior Mathematical Challenge 結果"
+  },
+  "exam": {
+    "code": "UKMT_SMC",
+    "name": "UK Mathematics Trust Senior Mathematical Challenge",
+    "country": "GB",
+    "type": "competition",
+    "frequency": "yearly (October)"
+  },
+  "score_range": {
+    "min": 0,
+    "max": 125,
+    "mean": 55,
+    "notes": "25 題，每題 5 分，答錯倒扣"
+  },
+  "percentiles": {
+    "p33": { "score": 49, "percentile": 33, "label": "Bronze 門檻" },
+    "p55": { "score": 66, "percentile": 55, "label": "Silver 門檻" },
+    "p89": { "score": 83, "percentile": 89, "label": "Gold 門檻" },
+    "p99": { "score": 100, "percentile": 99, "label": "BMO1 資格" }
+  },
+  "cutoffs": [
+    {
+      "name": "participation",
+      "score": 0,
+      "description": "參與證書"
+    },
+    {
+      "name": "bronze",
+      "score": 49,
+      "percentile": 33,
+      "description": "銅獎",
+      "qualifies_for": "Bronze Certificate"
+    },
+    {
+      "name": "silver",
+      "score": 66,
+      "percentile": 55,
+      "description": "銀獎",
+      "qualifies_for": "Silver Certificate, Senior Kangaroo 邀請"
+    },
+    {
+      "name": "gold",
+      "score": 83,
+      "percentile": 89,
+      "description": "金獎",
+      "qualifies_for": "Gold Certificate, Senior Kangaroo 邀請"
+    },
+    {
+      "name": "bmo1_qualification",
+      "score": 100,
+      "percentile": 99,
+      "description": "前約 1000 名",
+      "qualifies_for": "British Mathematical Olympiad Round 1 資格"
+    }
+  ],
+  "related_competitions": {
+    "junior_mathematical_challenge": {
+      "target": "Year 8 and below",
+      "gold_threshold": 88,
+      "silver_threshold": 70,
+      "bronze_threshold": 53
+    },
+    "intermediate_mathematical_challenge": {
+      "target": "Year 9-11",
+      "gold_threshold": 2024,
+      "silver_threshold": 2024,
+      "bronze_threshold": 2024,
+      "notes": "2024 IMC: Gold 77+, Silver 61+, Bronze 47+"
+    }
+  },
+  "historical_trend": {
+    "2024": { "gold": 83, "silver": 66, "bronze": 49 },
+    "2023": { "gold": 82, "silver": 64, "bronze": 48 },
+    "notes": "門檻每年依據成績分布調整"
+  }
+}

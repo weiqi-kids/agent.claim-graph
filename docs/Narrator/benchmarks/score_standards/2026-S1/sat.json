@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "period": "2026-S1",
+    "generated_at": "2026-02-06T00:00:00Z",
+    "source_url": "https://research.collegeboard.org/reports/sat-suite/understanding-scores/sat",
+    "notes": "基於 2025 年 College Board 公布的 SAT Suite Annual Report"
+  },
+  "exam": {
+    "code": "SAT",
+    "name": "Scholastic Assessment Test",
+    "country": "US",
+    "type": "standardized",
+    "frequency": "multiple times per year"
+  },
+  "score_range": {
+    "min": 400,
+    "max": 1600,
+    "mean": 1029,
+    "median": 1030,
+    "std_dev": 217
+  },
+  "percentiles": {
+    "p25": { "score": 880, "percentile": 25, "label": "第一四分位" },
+    "p50": { "score": 1030, "percentile": 50, "label": "中位數" },
+    "p75": { "score": 1200, "percentile": 75, "label": "第三四分位" },
+    "p90": { "score": 1350, "percentile": 90, "label": "前 10%" },
+    "p95": { "score": 1420, "percentile": 95, "label": "前 5%" },
+    "p99": { "score": 1520, "percentile": 99, "label": "前 1%" }
+  },
+  "cutoffs": [
+    {
+      "name": "below_average",
+      "score": 1000,
+      "percentile": 40,
+      "description": "低於平均水準"
+    },
+    {
+      "name": "average",
+      "score": 1030,
+      "percentile": 50,
+      "description": "平均水準"
+    },
+    {
+      "name": "good",
+      "score": 1200,
+      "percentile": 75,
+      "description": "良好，多數大學可申請"
+    },
+    {
+      "name": "excellent",
+      "score": 1350,
+      "percentile": 90,
+      "description": "優秀，可申請競爭性大學"
+    },
+    {
+      "name": "elite",
+      "score": 1450,
+      "percentile": 96,
+      "description": "頂尖，可申請頂尖大學"
+    },
+    {
+      "name": "ivy_league",
+      "score": 1500,
+      "percentile": 98,
+      "description": "常春藤等級（Harvard 1500-1580, MIT 1520-1570）",
+      "qualifies_for": "Ivy League, MIT, Stanford 等頂尖學府申請"
+    }
+  ],
+  "section_scores": {
+    "reading_writing": {
+      "min": 200,
+      "max": 800,
+      "mean": 521
+    },
+    "math": {
+      "min": 200,
+      "max": 800,
+      "mean": 508
+    }
+  },
+  "historical_trend": {
+    "vs_last_period": {
+      "mean_change": -5,
+      "notes": "平均分較去年略降"
+    }
+  }
+}

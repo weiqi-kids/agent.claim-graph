@@ -1,0 +1,175 @@
+{
+  "meta": {
+    "period": "2026-S1",
+    "generated_at": "2026-02-06T00:00:00Z",
+    "source_url": "https://www.maa.org/math-competitions",
+    "notes": "基於 MAA 歷年 AMC/AIME 競賽數據"
+  },
+  "competitions": [
+    {
+      "exam": {
+        "code": "AMC8",
+        "name": "American Mathematics Competition 8",
+        "country": "US",
+        "type": "competition",
+        "frequency": "yearly (January)",
+        "target_grade": "Grade 8 and below"
+      },
+      "score_range": {
+        "min": 0,
+        "max": 25,
+        "mean": 10,
+        "notes": "25 題，每題 1 分，無倒扣"
+      },
+      "cutoffs": [
+        {
+          "name": "honor_roll",
+          "score": 15,
+          "percentile": 95,
+          "description": "Honor Roll（前 5%）"
+        },
+        {
+          "name": "distinguished_honor_roll",
+          "score": 19,
+          "percentile": 99,
+          "description": "Distinguished Honor Roll（前 1%）"
+        },
+        {
+          "name": "perfect_score",
+          "score": 25,
+          "description": "滿分"
+        }
+      ]
+    },
+    {
+      "exam": {
+        "code": "AMC10",
+        "name": "American Mathematics Competition 10",
+        "country": "US",
+        "type": "competition",
+        "frequency": "yearly (November)",
+        "target_grade": "Grade 10 and below"
+      },
+      "score_range": {
+        "min": 0,
+        "max": 150,
+        "mean": 60,
+        "notes": "25 題，答對 6 分，空白 1.5 分，答錯 0 分"
+      },
+      "cutoffs": [
+        {
+          "name": "aime_qualification",
+          "score": 103.5,
+          "percentile": 97,
+          "description": "AIME 資格（2024 年門檻）",
+          "qualifies_for": "American Invitational Mathematics Examination",
+          "historical": {
+            "2024": 103.5,
+            "2023": 103.5,
+            "2022": 93,
+            "2021": 103.5
+          }
+        },
+        {
+          "name": "honor_roll",
+          "score": 90,
+          "percentile": 90,
+          "description": "榮譽榜"
+        },
+        {
+          "name": "distinguished_honor_roll",
+          "score": 120,
+          "percentile": 99,
+          "description": "傑出榮譽榜"
+        }
+      ]
+    },
+    {
+      "exam": {
+        "code": "AMC12",
+        "name": "American Mathematics Competition 12",
+        "country": "US",
+        "type": "competition",
+        "frequency": "yearly (November)",
+        "target_grade": "Grade 12 and below"
+      },
+      "score_range": {
+        "min": 0,
+        "max": 150,
+        "mean": 55,
+        "notes": "25 題，答對 6 分，空白 1.5 分，答錯 0 分"
+      },
+      "cutoffs": [
+        {
+          "name": "aime_qualification",
+          "score": 85.5,
+          "percentile": 95,
+          "description": "AIME 資格（2024 年門檻）",
+          "qualifies_for": "American Invitational Mathematics Examination",
+          "historical": {
+            "2024": 85.5,
+            "2023": 85.5,
+            "2022": 85.5,
+            "2021": 91.5
+          }
+        },
+        {
+          "name": "honor_roll",
+          "score": 82.5,
+          "percentile": 90,
+          "description": "榮譽榜"
+        }
+      ]
+    },
+    {
+      "exam": {
+        "code": "AIME",
+        "name": "American Invitational Mathematics Examination",
+        "country": "US",
+        "type": "competition",
+        "frequency": "yearly (February)",
+        "target_grade": "AMC 10/12 qualifiers"
+      },
+      "score_range": {
+        "min": 0,
+        "max": 15,
+        "mean": 5,
+        "notes": "15 題，每題 1 分，答案為 000-999 整數"
+      },
+      "cutoffs": [
+        {
+          "name": "usamo_qualification",
+          "score": 10,
+          "percentile": 95,
+          "description": "USAMO 資格（結合 AMC 分數計算）",
+          "qualifies_for": "USA Mathematical Olympiad",
+          "notes": "實際門檻為 AMC + 10×AIME 的綜合分數"
+        },
+        {
+          "name": "usajmo_qualification",
+          "score": 8,
+          "percentile": 90,
+          "description": "USAJMO 資格（AMC10 考生）",
+          "qualifies_for": "USA Junior Mathematical Olympiad"
+        }
+      ],
+      "difficulty_distribution": {
+        "levels": [
+          { "level": "1-5", "description": "基礎題", "typical_solve_rate": "50-70%" },
+          { "level": "6-10", "description": "中等題", "typical_solve_rate": "20-40%" },
+          { "level": "11-15", "description": "困難題", "typical_solve_rate": "5-15%" }
+        ]
+      }
+    }
+  ],
+  "pathway": {
+    "description": "美國數學競賽晉級路徑",
+    "stages": [
+      { "stage": 1, "exam": "AMC 8/10/12", "participants": "~300,000" },
+      { "stage": 2, "exam": "AIME", "participants": "~10,000" },
+      { "stage": 3, "exam": "USAMO/USAJMO", "participants": "~500" },
+      { "stage": 4, "exam": "MOP (Math Olympiad Program)", "participants": "~60" },
+      { "stage": 5, "exam": "IMO Team Selection", "participants": "6" }
+    ]
+  }
+}

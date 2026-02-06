@@ -1,0 +1,140 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Score Standards",
+  "description": "各考試的分數標準與門檻（按學期版本化）",
+  "type": "object",
+  "required": ["meta", "exam", "score_range", "percentiles", "cutoffs"],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": ["period", "generated_at", "source_url"],
+      "properties": {
+        "period": {
+          "type": "string",
+          "pattern": "^\\d{4}-S[12]$",
+          "description": "記錄期間，格式：YYYY-S1 或 YYYY-S2"
+        },
+        "generated_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "source_url": {
+          "type": "string",
+          "description": "資料來源 URL"
+        },
+        "notes": {
+          "type": "string",
+          "description": "備註說明"
+        }
+      }
+    },
+    "exam": {
+      "type": "object",
+      "required": ["code", "name", "country", "type"],
+      "properties": {
+        "code": {
+          "type": "string",
+          "description": "考試代碼，如 SAT, UKMT_SMC, AMC10"
+        },
+        "name": {
+          "type": "string",
+          "description": "考試全名"
+        },
+        "country": {
+          "type": "string",
+          "description": "國家代碼"
+        },
+        "type": {
+          "type": "string",
+          "enum": ["standardized", "competition", "platform"],
+          "description": "考試類型"
+        },
+        "frequency": {
+          "type": "string",
+          "description": "考試頻率，如 yearly, monthly"
+        }
+      }
+    },
+    "score_range": {
+      "type": "object",
+      "required": ["min", "max"],
+      "properties": {
+        "min": { "type": "number" },
+        "max": { "type": "number" },
+        "mean": { "type": "number", "description": "平均分" },
+        "median": { "type": "number", "description": "中位數" },
+        "std_dev": { "type": "number", "description": "標準差" }
+      }
+    },
+    "percentiles": {
+      "type": "object",
+      "description": "分數對應的百分位",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "score": { "type": "number" },
+          "percentile": { "type": "number" },
+          "label": { "type": "string" }
+        }
+      }
+    },
+    "cutoffs": {
+      "type": "array",
+      "description": "重要門檻分數",
+      "items": {
+        "type": "object",
+        "required": ["name", "score", "description"],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "門檻名稱，如 gold, passing, ivy_league"
+          },
+          "score": { "type": "number" },
+          "percentile": { "type": "number" },
+          "description": { "type": "string" },
+          "qualifies_for": {
+            "type": "string",
+            "description": "達到此門檻可獲得的資格"
+          }
+        }
+      }
+    },
+    "difficulty_distribution": {
+      "type": "object",
+      "description": "題目難度分布（如適用）",
+      "properties": {
+        "levels": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "level": { "type": "string" },
+              "count": { "type": "integer" },
+              "percent": { "type": "number" },
+              "typical_score_range": {
+                "type": "object",
+                "properties": {
+                  "min": { "type": "number" },
+                  "max": { "type": "number" }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "historical_trend": {
+      "type": "object",
+      "description": "與前期比較",
+      "properties": {
+        "vs_last_period": {
+          "type": "object",
+          "properties": {
+            "mean_change": { "type": "number" },
+            "cutoff_changes": { "type": "object" }
+          }
+        }
+      }
+    }
+  }
+}

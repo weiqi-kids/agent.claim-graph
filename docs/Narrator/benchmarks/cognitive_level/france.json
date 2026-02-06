@@ -1,0 +1,66 @@
+{
+  "country": {
+    "code": "FR",
+    "name": "法國",
+    "flag": "🇫🇷"
+  },
+  "sources": [
+    {
+      "layer": "math_french",
+      "questions_sampled": 500,
+      "description": "法文數學題庫（涵蓋 Precalculus、Algebra、Intermediate Algebra 等）"
+    }
+  ],
+  "cognitive_profile": {
+    "remember": {
+      "percent": 10,
+      "confidence": "medium"
+    },
+    "understand": {
+      "percent": 15,
+      "confidence": "medium"
+    },
+    "apply": {
+      "percent": 45,
+      "confidence": "high"
+    },
+    "analyze": {
+      "percent": 20,
+      "confidence": "high"
+    },
+    "evaluate": {
+      "percent": 7,
+      "confidence": "medium"
+    },
+    "create": {
+      "percent": 3,
+      "confidence": "low"
+    }
+  },
+  "characteristics": {
+    "summary": "重視推導過程與邏輯表達，應用與分析層次並重",
+    "emphasis": [
+      "推導過程",
+      "邏輯表達",
+      "數學證明"
+    ],
+    "relatively_low": [
+      "純記憶型題目",
+      "多選題型"
+    ]
+  },
+  "example_questions": {
+    "remember": [],
+    "understand": [
+      "Convertir le point (0,3) en coordonnées rectangulaires en coordonnées polaires."
+    ],
+    "apply": [
+      "Si f(x) = (3x-2)/(x-2), quelle est la valeur de f(-2) + f(-1) + f(0)?"
+    ],
+    "analyze": [
+      "Trouver une manière d'écrire ∑∑ 1/(j+k)³ en termes de p et q."
+    ]
+  },
+  "generated_at": "2026-02-06T00:30:00Z",
+  "methodology_version": "1.0"
+}

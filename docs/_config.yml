@@ -1,0 +1,41 @@
+title: 學生學習地圖系統
+description: 協助家長了解孩子在各學習標準框架下的進度位置
+baseurl: "/agent.claim-graph"
+url: "https://weiqi-kids.github.io"
+
+theme: just-the-docs
+
+# 排除不需要的內容
+exclude:
+  - Extractor/
+  - SESSION_STATE.md
+  - "*.parquet"
+  - "*.jsonl"
+  - "*.csv"
+  - Gemfile
+  - Gemfile.lock
+  - "**/README.md"
+  - "**/DATA_AVAILABILITY.md"
+
+# 導覽設定
+nav_sort: case_sensitive
+search_enabled: true
+back_to_top: true
+back_to_top_text: "回到頂部"
+
+# 語言
+lang: zh-TW
+
+# 頁尾
+footer_content: "系統只做「資料彙整」，不做「教育諮詢」"
+
+# 編輯連結
+gh_edit_link: true
+gh_edit_link_text: "在 GitHub 上編輯"
+gh_edit_repository: "https://github.com/weiqi-kids/agent.claim-graph"
+gh_edit_branch: "main"
+gh_edit_source: docs
+gh_edit_view_mode: "tree"
+
+# 顏色主題
+color_scheme: light

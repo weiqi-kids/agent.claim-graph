@@ -1,0 +1,20 @@
+# 環境設定
+.env
+
+# 原始資料（約 4GB）
+docs/Extractor/*/raw/
+raw/
+*.parquet
+*.jsonl
+*.csv
+
+# Jekyll 產出
+_site/
+.jekyll-cache/
+.jekyll-metadata
+docs/Gemfile.lock
+
+# 其他
+*.xml
+.DS_Store
+node_modules/

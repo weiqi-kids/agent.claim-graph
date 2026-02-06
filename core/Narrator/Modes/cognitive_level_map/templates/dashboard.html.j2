@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>認知層次分析 - {{ meta.period }}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        .level-card:hover { transform: translateY(-2px); transition: transform 0.2s; }
+        .examples-list { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
+        .examples-list.open { max-height: 500px; }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 py-6">
+            <h1 class="text-2xl font-bold text-gray-800">認知層次分析報告</h1>
+            <p class="text-gray-500 mt-1">{{ meta.period }} | 分析 {{ summary.total_questions }} 題</p>
+        </div>
+    </header>
+
+    <!-- Summary -->
+    <main class="max-w-6xl mx-auto px-4 py-8">
+        <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8">
+            <p class="text-lg text-blue-800">{{ summary.headline }}</p>
+        </div>
+
+        <!-- Charts Row -->
+        <div class="grid md:grid-cols-2 gap-6 mb-8">
+            <!-- Pie Chart -->
+            <div class="bg-white rounded-lg shadow p-6">
+                <h2 class="text-lg font-semibold mb-4">Bloom 認知層次分布</h2>
+                <canvas id="bloomPieChart"></canvas>
+            </div>
+
+            <!-- Bar Chart -->
+            <div class="bg-white rounded-lg shadow p-6">
+                <h2 class="text-lg font-semibold mb-4">各層次題數</h2>
+                <canvas id="bloomBarChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Level Cards -->
+        <h2 class="text-xl font-semibold mb-4">各層次詳細</h2>
+        <div class="grid md:grid-cols-3 gap-4 mb-8">
+            {% for level_key, level_name in [('remember', '記憶'), ('understand', '理解'), ('apply', '應用'), ('analyze', '分析'), ('evaluate', '評鑑'), ('create', '創造')] %}
+            <div class="level-card bg-white rounded-lg shadow p-4 cursor-pointer" onclick="toggleExamples('{{ level_key }}')">
+                <div class="flex justify-between items-center">
+                    <span class="font-medium">{{ level_name }}</span>
+                    <span class="text-2xl font-bold text-blue-600">{{ data.bloom_distribution[level_key].percent }}%</span>
+                </div>
+                <p class="text-gray-500 text-sm">{{ data.bloom_distribution[level_key].count }} 題</p>
+                <div id="examples-{{ level_key }}" class="examples-list mt-3 text-sm text-gray-600">
+                    {% if examples and examples[level_key] %}
+                    <p class="font-medium mb-2">範例題目：</p>
+                    <ul class="list-disc pl-4 space-y-1">
+                        {% for ex in examples[level_key][:3] %}
+                        <li>{{ ex.question_text[:100] }}{% if ex.question_text|length > 100 %}...{% endif %}</li>
+                        {% endfor %}
+                    </ul>
+                    {% else %}
+                    <p class="text-gray-400">無範例</p>
+                    {% endif %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        {% if data.by_country %}
+        <!-- Country Comparison -->
+        <h2 class="text-xl font-semibold mb-4">跨國比較</h2>
+        <div class="bg-white rounded-lg shadow p-6 mb-8">
+            <canvas id="countryChart"></canvas>
+        </div>
+        {% endif %}
+
+        <!-- Data Sources -->
+        <h2 class="text-xl font-semibold mb-4">資料來源</h2>
+        <div class="bg-white rounded-lg shadow overflow-hidden mb-8">
+            <table class="w-full">
+                <thead class="bg-gray-50">
+                    <tr>
+                        <th class="px-4 py-3 text-left text-sm font-medium text-gray-500">Layer</th>
+                        <th class="px-4 py-3 text-right text-sm font-medium text-gray-500">題數</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y">
+                    {% for src in sources %}
+                    <tr>
+                        <td class="px-4 py-3">{{ src.layer }}</td>
+                        <td class="px-4 py-3 text-right">{{ src.questions_used }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Disclaimer -->
+        <div class="bg-gray-100 rounded-lg p-4 text-sm text-gray-600">
+            <p><strong>說明</strong>：本報告基於題庫資料的統計分析，不包含教育建議。如需專業諮詢，請聯繫教育專業人員。</p>
+            <p class="mt-2">產生時間：{{ meta.generated_at }}</p>
+        </div>
+    </main>
+
+    <script>
+        // Data from analysis.json
+        const analysisData = {{ data | tojson }};
+        const bloomLevels = ['記憶', '理解', '應用', '分析', '評鑑', '創造'];
+        const bloomKeys = ['remember', 'understand', 'apply', 'analyze', 'evaluate', 'create'];
+        const bloomColors = ['#ef4444', '#f97316', '#eab308', '#22c55e', '#3b82f6', '#8b5cf6'];
+
+        // Pie Chart
+        const pieCtx = document.getElementById('bloomPieChart').getContext('2d');
+        new Chart(pieCtx, {
+            type: 'pie',
+            data: {
+                labels: bloomLevels,
+                datasets: [{
+                    data: bloomKeys.map(k => analysisData.bloom_distribution[k].percent),
+                    backgroundColor: bloomColors
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { position: 'bottom' }
+                }
+            }
+        });
+
+        // Bar Chart
+        const barCtx = document.getElementById('bloomBarChart').getContext('2d');
+        new Chart(barCtx, {
+            type: 'bar',
+            data: {
+                labels: bloomLevels,
+                datasets: [{
+                    label: '題數',
+                    data: bloomKeys.map(k => analysisData.bloom_distribution[k].count),
+                    backgroundColor: bloomColors
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: { legend: { display: false } },
+                scales: { y: { beginAtZero: true } }
+            }
+        });
+
+        {% if data.by_country %}
+        // Country Comparison Chart
+        const countryCtx = document.getElementById('countryChart').getContext('2d');
+        const countryData = analysisData.by_country;
+        const countryLabels = Object.values(countryData).map(c => c.country_name);
+        const countryDatasets = bloomKeys.map((k, i) => ({
+            label: bloomLevels[i],
+            data: Object.values(countryData).map(c => c.distribution[k] || 0),
+            backgroundColor: bloomColors[i]
+        }));
+
+        new Chart(countryCtx, {
+            type: 'bar',
+            data: { labels: countryLabels, datasets: countryDatasets },
+            options: {
+                responsive: true,
+                scales: { x: { stacked: true }, y: { stacked: true, max: 100 } }
+            }
+        });
+        {% endif %}
+
+        // Toggle examples
+        function toggleExamples(levelKey) {
+            const el = document.getElementById('examples-' + levelKey);
+            el.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>

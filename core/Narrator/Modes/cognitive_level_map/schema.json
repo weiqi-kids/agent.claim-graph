@@ -1,0 +1,189 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Cognitive Level Map Analysis",
+  "description": "Bloom 認知層次分析結果",
+  "type": "object",
+  "required": ["meta", "summary", "data", "sources"],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": ["mode", "generated_at", "period"],
+      "properties": {
+        "mode": {
+          "type": "string",
+          "const": "cognitive_level_map"
+        },
+        "generated_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "產生時間（ISO 8601）"
+        },
+        "period": {
+          "type": "string",
+          "pattern": "^\\d{4}-S[12]$",
+          "description": "分析期間，格式：YYYY-S1 或 YYYY-S2"
+        },
+        "child_id": {
+          "type": "string",
+          "description": "孩子 ID（Phase 2 才會有）"
+        }
+      }
+    },
+    "summary": {
+      "type": "object",
+      "required": ["headline", "total_questions"],
+      "properties": {
+        "headline": {
+          "type": "string",
+          "description": "一句話摘要，如「70% 練習集中在記憶層次」"
+        },
+        "total_questions": {
+          "type": "integer",
+          "description": "分析的題目總數"
+        },
+        "dominant_level": {
+          "type": "string",
+          "enum": ["remember", "understand", "apply", "analyze", "evaluate", "create"],
+          "description": "佔比最高的層次"
+        }
+      }
+    },
+    "data": {
+      "type": "object",
+      "required": ["bloom_distribution"],
+      "properties": {
+        "bloom_distribution": {
+          "type": "object",
+          "description": "六個 Bloom 層次的分布",
+          "properties": {
+            "remember": { "$ref": "#/$defs/levelData" },
+            "understand": { "$ref": "#/$defs/levelData" },
+            "apply": { "$ref": "#/$defs/levelData" },
+            "analyze": { "$ref": "#/$defs/levelData" },
+            "evaluate": { "$ref": "#/$defs/levelData" },
+            "create": { "$ref": "#/$defs/levelData" }
+          }
+        },
+        "by_country": {
+          "type": "object",
+          "description": "按國家分組的分布",
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "country_code": { "type": "string" },
+              "country_name": { "type": "string" },
+              "sample_size": { "type": "integer" },
+              "distribution": {
+                "type": "object",
+                "additionalProperties": { "type": "number" }
+              }
+            }
+          }
+        },
+        "by_subject": {
+          "type": "object",
+          "description": "按學科分組的分布",
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "sample_size": { "type": "integer" },
+              "distribution": {
+                "type": "object",
+                "additionalProperties": { "type": "number" }
+              }
+            }
+          }
+        },
+        "comparison": {
+          "type": "object",
+          "properties": {
+            "vs_last_period": {
+              "type": "object",
+              "description": "與上學期比較",
+              "additionalProperties": {
+                "type": "number",
+                "description": "百分比變化（正數為增加）"
+              }
+            }
+          }
+        }
+      }
+    },
+    "examples": {
+      "type": "object",
+      "description": "各層次的範例題目",
+      "properties": {
+        "remember": { "$ref": "#/$defs/exampleList" },
+        "understand": { "$ref": "#/$defs/exampleList" },
+        "apply": { "$ref": "#/$defs/exampleList" },
+        "analyze": { "$ref": "#/$defs/exampleList" },
+        "evaluate": { "$ref": "#/$defs/exampleList" },
+        "create": { "$ref": "#/$defs/exampleList" }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "description": "資料來源",
+      "items": {
+        "type": "object",
+        "required": ["layer", "questions_used"],
+        "properties": {
+          "layer": {
+            "type": "string",
+            "description": "Layer 名稱"
+          },
+          "questions_used": {
+            "type": "integer",
+            "description": "使用的題目數"
+          },
+          "file_path": {
+            "type": "string",
+            "description": "資料檔案路徑"
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "levelData": {
+      "type": "object",
+      "required": ["count", "percent"],
+      "properties": {
+        "count": {
+          "type": "integer",
+          "description": "題目數量"
+        },
+        "percent": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "百分比"
+        },
+        "confidence": {
+          "type": "string",
+          "enum": ["high", "medium", "low"],
+          "description": "分類信心度"
+        }
+      }
+    },
+    "exampleList": {
+      "type": "array",
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "properties": {
+          "question_id": { "type": "string" },
+          "question_text": {
+            "type": "string",
+            "maxLength": 500
+          },
+          "source_layer": { "type": "string" },
+          "confidence": {
+            "type": "string",
+            "enum": ["high", "medium", "low"]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "meta": {
+    "period": "2026-S1",
+    "generated_at": "2026-02-06T00:00:00Z",
+    "description": "美國 SAT 分數門檻與認知層次要求的對應關係"
+  },
+  "exam": {
+    "code": "SAT",
+    "name": "Scholastic Assessment Test",
+    "country": "US"
+  },
+  "cognitive_profile_ref": "../cognitive_level/usa.json",
+  "score_standards_ref": "../score_standards/2026-S1/sat.json",
+  "level_score_tiers": [
+    {
+      "tier": "below_average",
+      "name": "低於平均",
+      "score_threshold": "1000 / 1600",
+      "percentile": 40,
+      "description": "低於全國平均",
+      "cognitive_requirement": {
+        "primary_levels": ["remember", "understand"],
+        "minimum_mastery": {
+          "remember": 60,
+          "understand": 50,
+          "apply": 30
+        },
+        "interpretation": "基礎記憶與理解，應用層次仍在建立中"
+      }
+    },
+    {
+      "tier": "average",
+      "name": "平均",
+      "score_threshold": "1030 / 1600",
+      "percentile": 50,
+      "description": "全國平均水準",
+      "cognitive_requirement": {
+        "primary_levels": ["understand", "apply"],
+        "minimum_mastery": {
+          "remember": 75,
+          "understand": 65,
+          "apply": 45
+        },
+        "interpretation": "理解為主，開始能處理應用情境題"
+      }
+    },
+    {
+      "tier": "good",
+      "name": "良好",
+      "score_threshold": "1200 / 1600",
+      "percentile": 75,
+      "description": "可申請多數大學",
+      "cognitive_requirement": {
+        "primary_levels": ["apply"],
+        "minimum_mastery": {
+          "remember": 85,
+          "understand": 80,
+          "apply": 65,
+          "analyze": 25
+        },
+        "interpretation": "應用層次穩定，能處理生活情境問題"
+      }
+    },
+    {
+      "tier": "excellent",
+      "name": "優秀",
+      "score_threshold": "1350 / 1600",
+      "percentile": 90,
+      "description": "可申請競爭性大學",
+      "cognitive_requirement": {
+        "primary_levels": ["apply", "analyze"],
+        "minimum_mastery": {
+          "remember": 90,
+          "understand": 88,
+          "apply": 80,
+          "analyze": 45
+        },
+        "interpretation": "應用層次熟練，分析能力開始發揮作用"
+      }
+    },
+    {
+      "tier": "elite",
+      "name": "頂尖",
+      "score_threshold": "1450 / 1600",
+      "percentile": 96,
+      "description": "可申請頂尖大學",
+      "cognitive_requirement": {
+        "primary_levels": ["apply", "analyze"],
+        "minimum_mastery": {
+          "remember": 95,
+          "understand": 92,
+          "apply": 90,
+          "analyze": 60,
+          "evaluate": 20
+        },
+        "interpretation": "應用與分析都需穩定，評鑑層次開始需要"
+      }
+    },
+    {
+      "tier": "ivy_league",
+      "name": "常春藤等級",
+      "score_threshold": "1500 / 1600",
+      "percentile": 98,
+      "description": "Harvard, MIT, Stanford 等",
+      "cognitive_requirement": {
+        "primary_levels": ["apply", "analyze", "evaluate"],
+        "minimum_mastery": {
+          "remember": 98,
+          "understand": 95,
+          "apply": 95,
+          "analyze": 75,
+          "evaluate": 35
+        },
+        "interpretation": "高階應用與分析必須精熟，需能評估和驗證解題方法"
+      }
+    }
+  ],
+  "key_insight": {
+    "description": "美國 SAT 的認知層次特色",
+    "points": [
+      "應用層次佔 45%，是主要考核重點",
+      "題目常有生活情境，強調「能不能用」",
+      "記憶型題目少（15%），但仍需穩固",
+      "分析層次（12%）是高分段的區分點"
+    ]
+  },
+  "phase2_usage": {
+    "description": "Phase 2 比對邏輯",
+    "example": {
+      "child_profile": {
+        "remember_mastery": 82,
+        "understand_mastery": 78,
+        "apply_mastery": 60,
+        "analyze_mastery": 20
+      },
+      "result": "接近「良好」(1200) 要求，應用層次需從 60% 提升至 65% 以穩定達標"
+    }
+  }
+}

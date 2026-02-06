@@ -1,0 +1,128 @@
+{
+  "meta": {
+    "period": "2026-S1",
+    "generated_at": "2026-02-06T00:00:00Z",
+    "source_url": "https://codeforces.com/blog/entry/68288",
+    "notes": "Codeforces 官方 rating 系統說明"
+  },
+  "exam": {
+    "code": "CF_RATING",
+    "name": "Codeforces Rating System",
+    "country": "INTL",
+    "type": "platform",
+    "frequency": "continuous (multiple contests per week)"
+  },
+  "score_range": {
+    "min": 0,
+    "max": 4000,
+    "mean": 1200,
+    "notes": "新用戶起始 rating 為 0，首次參賽後通常在 400-1400 之間"
+  },
+  "percentiles": {
+    "newbie": { "score": 0, "percentile": 0, "label": "新手" },
+    "pupil": { "score": 1200, "percentile": 50, "label": "學徒" },
+    "specialist": { "score": 1400, "percentile": 70, "label": "專家" },
+    "expert": { "score": 1600, "percentile": 85, "label": "熟練者" },
+    "candidate_master": { "score": 1900, "percentile": 95, "label": "候選大師" },
+    "master": { "score": 2100, "percentile": 98, "label": "大師" },
+    "international_master": { "score": 2300, "percentile": 99, "label": "國際大師" },
+    "grandmaster": { "score": 2400, "percentile": 99.5, "label": "特級大師" }
+  },
+  "cutoffs": [
+    {
+      "name": "newbie",
+      "score": 0,
+      "color": "gray",
+      "description": "灰名 - 新手",
+      "percentile": 0
+    },
+    {
+      "name": "pupil",
+      "score": 1200,
+      "color": "green",
+      "description": "綠名 - 學徒",
+      "percentile": 50
+    },
+    {
+      "name": "specialist",
+      "score": 1400,
+      "color": "cyan",
+      "description": "青名 - 專家",
+      "percentile": 70
+    },
+    {
+      "name": "expert",
+      "score": 1600,
+      "color": "blue",
+      "description": "藍名 - 熟練者",
+      "percentile": 85
+    },
+    {
+      "name": "candidate_master",
+      "score": 1900,
+      "color": "violet",
+      "description": "紫名 - 候選大師",
+      "percentile": 95
+    },
+    {
+      "name": "master",
+      "score": 2100,
+      "color": "orange",
+      "description": "橙名 - 大師",
+      "percentile": 98
+    },
+    {
+      "name": "international_master",
+      "score": 2300,
+      "color": "orange",
+      "description": "橙名 - 國際大師",
+      "percentile": 99
+    },
+    {
+      "name": "grandmaster",
+      "score": 2400,
+      "color": "red",
+      "description": "紅名 - 特級大師",
+      "percentile": 99.5
+    },
+    {
+      "name": "international_grandmaster",
+      "score": 2600,
+      "color": "red",
+      "description": "紅名 - 國際特級大師",
+      "percentile": 99.9
+    },
+    {
+      "name": "legendary_grandmaster",
+      "score": 3000,
+      "color": "legendary",
+      "description": "傳奇特級大師（紅名第一字母黑色）",
+      "percentile": 99.99
+    }
+  ],
+  "problem_difficulty": {
+    "description": "題目難度對應 rating",
+    "levels": [
+      { "rating": 800, "level": "入門", "typical_solver": "Newbie" },
+      { "rating": 1000, "level": "簡單", "typical_solver": "Newbie-Pupil" },
+      { "rating": 1200, "level": "基礎", "typical_solver": "Pupil" },
+      { "rating": 1400, "level": "中等", "typical_solver": "Specialist" },
+      { "rating": 1600, "level": "中上", "typical_solver": "Expert" },
+      { "rating": 1800, "level": "較難", "typical_solver": "Expert-CM" },
+      { "rating": 2000, "level": "困難", "typical_solver": "Candidate Master" },
+      { "rating": 2200, "level": "很難", "typical_solver": "Master" },
+      { "rating": 2400, "level": "極難", "typical_solver": "Grandmaster" },
+      { "rating": 2800, "level": "頂級", "typical_solver": "IGM+" },
+      { "rating": 3500, "level": "傳奇", "typical_solver": "LGM only" }
+    ]
+  },
+  "dataset_stats": {
+    "from_codeforces_layer": {
+      "total_problems": 458,
+      "rating_min": 800,
+      "rating_max": 3500,
+      "rating_mean": 1882,
+      "rating_median": 1800
+    }
+  }
+}
