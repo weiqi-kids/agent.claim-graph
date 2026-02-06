@@ -123,15 +123,7 @@ jobs:
               dirname=$(basename "$dir")
               if [ ! -f "${dir}index.md" ] && [ ! -f "${dir}README.md" ]; then
                 echo "Creating index for $dirname"
-                cat > "${dir}index.md" << INDEXEOF
----
-layout: default
-title: ${dirname}
-has_children: true
----
-
-# ${dirname}
-INDEXEOF
+                printf '%s\n' "---" "layout: default" "title: ${dirname}" "has_children: true" "---" "" "# ${dirname}" > "${dir}index.md"
                 fixed=true
               fi
             fi
