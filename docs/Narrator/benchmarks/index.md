@@ -3,7 +3,6 @@ layout: default
 title: 考試門檻
 nav_order: 4
 has_children: true
-permalink: /benchmarks/
 ---
 
 # 考試門檻

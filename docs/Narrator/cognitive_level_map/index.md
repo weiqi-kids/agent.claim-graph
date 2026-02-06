@@ -3,7 +3,6 @@ layout: default
 title: 考試題型分析
 nav_order: 3
 has_children: true
-permalink: /cognitive-level-map/
 ---
 
 # 考試題型分析

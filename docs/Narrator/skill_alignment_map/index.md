@@ -3,7 +3,6 @@ layout: default
 title: 年級技能標準
 nav_order: 2
 has_children: true
-permalink: /skill-alignment-map/
 ---
 
 # 年級技能標準
