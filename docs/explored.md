@@ -19,12 +19,30 @@ nav_exclude: true
 | IMO Official Results | https://www.imo-official.org/results.aspx | HTML | 國際數學奧林匹亞成績 |
 | UKMT Awards Info | https://ukmt.org.uk/senior-challenges/senior-mathematical-challenge-awards | HTML | 英國數學競賽獎項門檻 |
 
+### 台灣十二年國教課綱 PDF（備份記錄）
+
+| 文件名稱 | URL | 發布單位 | 發布日期 | 備註 |
+|----------|-----|----------|----------|------|
+| 十二年國民基本教育課程綱要國民中小學暨普通型高級中等學校-數學領域 | https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf | 國家教育研究院 (NAER) | 2018年6月 | 83頁，PDF-1.5格式，涵蓋國小至高中數學課綱 |
+| 十二年國民基本教育課程綱要國民中小學暨普通型高級中等學校—數學領域 | https://www.k12ea.gov.tw/files/class_schema/%E8%AA%B2%E7%B6%B1/12-%E6%95%B8%E5%AD%B8/12-1/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1%E2%94%80%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf | 教育部國民及學前教育署 (K12EA) | 2018年6月 | 教育部官方版本（與NAER版本內容相同） |
+
+### 台灣課綱相關 CSV（部分結構化）
+
+| 資料源 | URL | 格式 | 用途 |
+|--------|-----|------|------|
+| NAER 影片資料庫 | https://opendata.naer.edu.tw/stvlist20230412.csv | CSV | 含「學習內容」「學習表現」欄位，可篩選數學主題 |
+| NAER 數學學術名詞 | https://opendata.naer.edu.tw/學術名詞/國家教育研究院-數學學術名詞.csv | CSV | 英中數學名詞對照 |
+| NAER 題庫網 | https://opendata.naer.edu.tw/全國中小學題庫網/examnaer20230412.csv | CSV | 考題資源目錄 |
+
 ### 已確認不可用
 
 | 資料源 | 原因 |
 |--------|------|
 | Common Standards Project API | 頁面僅有 JavaScript，無實際 API 端點可用 |
 | 國家教育研究院課綱頁面 | 僅為導航頁，實際課綱在 PDF 檔案中 |
+| 台灣課綱 JSON/API | 官方未提供結構化資料，僅 PDF 格式 |
+| 均一教育平台 API | 有課綱對應內容但無公開 API |
+| LearnMode 學習吧 API | 有課綱對應內容但無公開 API |
 
 ---
 
@@ -68,7 +86,6 @@ nav_exclude: true
 
 | 資料源 | 類型 | URL | 格式 | 發現日期 | 狀態 |
 |--------|------|-----|------|----------|------|
-| 台灣課綱 — NAER | 課綱 | https://www.naer.edu.tw/PageSyllabus?fid=52 | PDF/HTML | 2026-02-02 | 待萃取方案 |
 | 台灣 data.gov.tw 教育類 | 開放資料 | https://data.gov.tw/datasets/agency/教育部 | Various | 2026-02-02 | 待挖掘 |
 | 均一平台 open data | 學習平台 | https://www.junyiacademy.org/open-data-iot | Unknown | 2026-02-02 | 需驗證 API |
 | CEFR-J 詞彙/語法 | GitHub | https://github.com/openlanguageprofiles/olp-en-cefrj | CSV/JSON | 2026-02-02 | 可作為 L2 補充 |
