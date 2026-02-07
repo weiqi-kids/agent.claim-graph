@@ -6,6 +6,26 @@ nav_exclude: true
 
 # 資料源探索紀錄
 
+## 2026-02-08 探索紀錄
+
+### 已驗證可用
+
+| 資料源 | URL | 格式 | 用途 |
+|--------|-----|------|------|
+| College Board 2025 Annual Report | https://reports.collegeboard.org/media/pdf/2025-total-group-sat-suite-of-assessments-annual-report.pdf | PDF | SAT 2025 年度統計報告（平均分 1029）|
+| MAA 2025-26 AIME Thresholds | https://maa.org/news/2025-26-aime-thresholds-are-now-available/ | HTML | AIME 資格分數線（已確認更新）|
+| 大考中心 114 學年度學測統計 | https://www.ceec.edu.tw/xmdoc/cont?xsmsid=0J018604485538810196&sid=0P055615788466837352 | HTML | 114 學測五標與統計圖表 |
+| Common Core Grade 6 Standards | https://www.thecorestandards.org/Math/Content/6/ | HTML | 美國六年級數學課程標準 |
+
+### 已確認尚無資料
+
+| 資料源 | 原因 |
+|--------|------|
+| PISA 2025 | 結果預計 2026 年底發布 |
+| IMO 2026 (67th) | 競賽尚未舉行（通常在 7 月）|
+
+---
+
 ## 2026-02-07 探索紀錄
 
 ### 已驗證可用
