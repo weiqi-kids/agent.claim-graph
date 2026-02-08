@@ -42,8 +42,15 @@ nav_exclude: true
 
 | 資料源 | 原因 |
 |--------|------|
-| PISA 2025 | 結果預計 2026 年底發布 |
-| IMO 2026 (67th) | 競賽尚未舉行（通常在 7 月）|
+| PISA 2025 | 結果預計 2026 年 9 月發布 |
+| IMO 2026 (67th) | 競賽尚未舉行（2026 年 7 月，上海）|
+
+### 新驗證可用（2026-02-08 補充）
+
+| 資料源 | URL | 格式 | 用途 |
+|--------|-----|------|------|
+| 🌍 IMO 2025 (66th) 結果 | https://www.imo-official.org/year_info.aspx?year=2025 | HTML | 66 屆 IMO 成績、獎牌分數線 |
+| 🌍 IMO 2025 國家排名 | https://www.imo-official.org/year_country_r.aspx?year=2025 | HTML | 110 國團隊排名 |
 
 ---
 
