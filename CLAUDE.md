@@ -37,12 +37,16 @@ docs/
 
 | 資料源 | URL | 用途 |
 |--------|-----|------|
-| College Board | https://research.collegeboard.org/reports/sat-suite | SAT 分數統計 |
-| 大考中心 | https://www.ceec.edu.tw | 學測統計資料 |
-| MAA | https://maa.org/math-competitions | AMC/AIME 競賽資料 |
-| UKMT | https://www.ukmt.org.uk | 英國數學競賽資料 |
-| IMO Official | https://www.imo-official.org | 國際數學奧林匹亞 |
-| OECD PISA | https://www.oecd.org/pisa | 國際學生評量 |
+| 🇺🇸 College Board | https://research.collegeboard.org/reports/sat-suite | SAT、AP 分數統計 |
+| 🇺🇸 MAA | https://maa.org/math-competitions | AMC/AIME 競賽資料 |
+| 🇹🇼 大考中心 | https://www.ceec.edu.tw | 學測統計資料 |
+| 🇸🇬 MOE Singapore | https://www.moe.gov.sg | 新加坡數學課綱 |
+| 🇯🇵 MEXT | https://www.mext.go.jp | 日本課程指引 |
+| 🇬🇧 UKMT | https://www.ukmt.org.uk | 英國數學競賽資料 |
+| 🇦🇺 ACARA | https://www.acara.edu.au | 澳洲 NAPLAN 統計 |
+| 🇨🇦 Ontario | https://www.ontario.ca/page/math-curriculum-grades-1-8 | 加拿大課綱 |
+| 🌍 IMO Official | https://www.imo-official.org | 國際數學奧林匹亞 |
+| 🌍 OECD PISA | https://www.oecd.org/pisa | 國際學生評量 |
 
 ### 已確認不可用
 
