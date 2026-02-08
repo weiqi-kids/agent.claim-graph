@@ -16,6 +16,12 @@ nav_exclude: true
 | MAA 2025-26 AIME Thresholds | https://maa.org/news/2025-26-aime-thresholds-are-now-available/ | HTML | AIME 資格分數線（已確認更新）|
 | 大考中心 114 學年度學測統計 | https://www.ceec.edu.tw/xmdoc/cont?xsmsid=0J018604485538810196&sid=0P055615788466837352 | HTML | 114 學測五標與統計圖表 |
 | Common Core Grade 6 Standards | https://www.thecorestandards.org/Math/Content/6/ | HTML | 美國六年級數學課程標準 |
+| 🇹🇼 台灣十二年國教數學領域課綱 | https://www.k12ea.gov.tw/files/class_schema/%E8%AA%B2%E7%B6%B1/12-%E6%95%B8%E5%AD%B8/12-1/ | PDF | 台灣國小至高中數學課程標準（2018年6月發布）|
+| 🇸🇬 Singapore MOE Primary Math Syllabus | https://www.moe.gov.sg/-/media/files/primary/2021-primary-mathematics-syllabus-p1-to-p6-updated-dec-2024.pdf | PDF | 新加坡小學數學課綱（2021版，2024年12月更新）|
+| 🇸🇬 Singapore MOE Secondary Math Syllabus | https://www.moe.gov.sg/-/media/files/secondary/syllabuses/maths/2020-express_na-maths_syllabuses.pdf | PDF | 新加坡中學數學課綱（Express/N(A)）|
+| 🇬🇧 UK National Curriculum - Primary Math | https://assets.publishing.service.gov.uk/media/5a7da548ed915d2ac884cb07/PRIMARY_national_curriculum_-_Mathematics_220714.pdf | PDF | 英國小學數學課程（Key Stage 1-2）|
+| 🇬🇧 UK National Curriculum - Secondary Math | https://assets.publishing.service.gov.uk/media/5a7c1408e5274a1f5cc75a68/SECONDARY_national_curriculum_-_Mathematics.pdf | PDF | 英國中學數學課程（Key Stage 3-4）|
+| 🇬🇧 UK KS3 Math Guidance | https://assets.publishing.service.gov.uk/media/621629ac8fa8f5490d52ee78/KS3_NonStatutory_Guidance_Sept_2021_NCETM.pdf | PDF | 英國 Key Stage 3 數學教學指引 |
 
 ### 新發現（多執行緒探索）
 
