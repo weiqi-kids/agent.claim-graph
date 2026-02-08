@@ -6,7 +6,7 @@ nav_order: 3
 
 # 各國考試分析
 
-> 分析題數：1,030 題 ｜ 更新時間：2026-02-08
+> 涵蓋 8 國資料 ｜ 更新時間：2026-02-08
 
 ---
 
@@ -14,19 +14,51 @@ nav_order: 3
 
 不同考試要考幾分，才能達到前 50%、前 10%、前 1%？
 
-| 程度 | 🇹🇼 學測 | 🇺🇸 SAT | 🇺🇸 AP Calc | 🇨🇳 高考 | 🇬🇧 UKMT | 🌍 AMC |
-|------|---------|---------|-------------|---------|---------|--------|
-| **前 50%** | 均標 11 級 | 1010 分 | 3 分 | 二本 450 分 | 銅獎 | — |
-| **前 25%** | 前標 13 級 | 1190 分 | 4 分 | 一本 500 分 | 銀獎 | — |
-| **前 10%** | 頂標 14 級 | 1290 分 | — | 985 線 550 分 | 金獎 | — |
-| **前 5%** | — | 1400 分 | 5 分 (BC) | — | — | AIME 資格 |
-| **前 1%** | 滿級 15 級 | 1510 分 | — | 清北 680 分 | BMO1 | USAMO |
+### 升學考試
+
+| 程度 | 🇹🇼 學測 | 🇺🇸 SAT | 🇺🇸 AP Calc | 🇨🇳 高考 | 🇦🇺 NAPLAN Y9 |
+|------|---------|---------|-------------|---------|---------------|
+| **前 50%** | 均標 11 級 | 1010 分 | 3 分 | 二本 450 分 | ~580 分 |
+| **前 25%** | 前標 13 級 | 1190 分 | 4 分 | 一本 500 分 | — |
+| **前 10%** | 頂標 14 級 | 1290 分 | 5 分 (AB) | 985 線 550 分 | — |
+| **前 1%** | 滿級 15 級 | 1510 分 | 5 分 (BC) | 清北 680 分 | — |
+
+### 數學競賽
+
+| 程度 | 🇬🇧 UKMT | 🌍 AMC 10/12 | 🌍 IMO |
+|------|---------|--------------|--------|
+| **前 50%** | 銅獎 | — | — |
+| **前 25%** | 銀獎 | — | — |
+| **前 10%** | 金獎 | — | 銅牌 (16/42) |
+| **前 5%** | JMO/SMO | AIME 資格 (105-115) | 銀牌 (25/42) |
+| **前 1%** | BMO1 | USAMO | 金牌 (35/42) |
 
 ---
 
-## 二、考試題型分布
+## 二、國際數學排名（PISA 2022）
 
-各考試的題目，分別測驗哪種程度的思考能力？
+> 本比較僅呈現數據差異，不構成評估建議。
+
+| 排名 | 國家/地區 | 數學平均分 | 與 OECD 平均比較 | 課程特色 |
+|------|-----------|------------|------------------|----------|
+| 1 | 🇸🇬 新加坡 | 575 | +103 | CPA 教學法、螺旋式課程 |
+| 2 | 🇲🇴 澳門 | 552 | +80 | — |
+| 3 | 🇹🇼 台灣 | 547 | +75 | 108 課綱 |
+| 4 | 🇭🇰 香港 | 540 | +68 | — |
+| 5 | 🇯🇵 日本 | 536 | +64 | 每 10 年修訂課綱 |
+| 6 | 🇰🇷 韓國 | 527 | +55 | — |
+| — | OECD 平均 | 472 | — | — |
+| 12 | 🇨🇦 加拿大 | 497 | +25 | 省級自治 |
+| 13 | 🇦🇺 澳洲 | 487 | +15 | NAPLAN 全國評量 |
+| 28 | 🇺🇸 美國 | 465 | -7 | Common Core |
+
+*來源：OECD PISA 2022 Results*
+
+---
+
+## 三、考試題型分布
+
+各考試的題目，分別測驗哪種程度的思考能力？（Bloom's Taxonomy）
 
 | 類型 | 說明 | 🇹🇼 學測 | 🇺🇸 SAT | 🇨🇳 高考 | 🇬🇧 UKMT | 🌍 競賽 |
 |------|------|:-------:|:-------:|:-------:|:-------:|:------:|
@@ -46,251 +78,112 @@ nav_order: 3
 
 ---
 
-## 三、各類型題目範例
+## 四、各類型題目範例
 
 ### 記憶（回憶定義、公式）
-
-問「是什麼」「哪一個」，直接考背誦。
 
 | 考試 | 題目範例 |
 |------|----------|
 | 🇹🇼 學測 | 下列何者為累進稅制的定義？ |
-| 🇹🇼 學測 | 下列何者是影響某一商品供給的價格彈性的重要因素？ |
 | 🇺🇸 SAT | What is the value of π rounded to the nearest tenth? |
 | 🇨🇳 高考 | 設集合 A = {1,2,3}，則 A 的子集個數為？ |
 | 🇬🇧 UKMT | What is the smallest prime number greater than 50? |
-
----
-
-### 理解（解釋意義）
-
-問「為什麼」「這代表什麼」，考是否真的懂。
-
-| 考試 | 題目範例 |
-|------|----------|
-| 🇹🇼 學測 | 當經濟體系出現金融市場復甦強勁，但就業市場復甦緩慢的兩極化現象，此稱為什麼型態的復甦？ |
-| 🇺🇸 SAT | Does this passage describe the weather or the climate? |
-| 🇺🇸 SAT | In this food chain, the Mojave yucca is a producer. Why? |
-| 🇨🇳 高考 | 為什麼說函數 f(x) = x² 在 x = 0 處取得最小值？ |
-| 🇬🇧 UKMT | Explain why the sum of three consecutive integers is always divisible by 3. |
-
----
+| 🇰🇷 CSAT | 다음 중 소수인 것은? (下列何者為質數？) |
 
 ### 應用（計算、解題）
-
-要求「求出」「計算」，把知識用在解題上。
 
 | 考試 | 題目範例 |
 |------|----------|
 | 🇹🇼 學測 | 關於平衡預算乘數，下列敘述何者正確？ |
-| 🇺🇸 SAT | If (x-1)/3 = k and k = 3, what is the value of x? |
-| 🇺🇸 SAT | A line passes through the points (2, 5) and (4, 9). What is the slope? |
-| 🇨🇳 高考 | 已知等差數列 {aₙ} 的公差為 2，若 a₁ + a₃ + a₅ = 12，則 a₄ = ? |
-| 🇬🇧 UKMT | What is two-fifths of the recurring decimal 0.25̇? |
-| 🌍 AMC | In triangle ABC, AB = 5, BC = 7, and CA = 8. What is the area? |
-
----
+| 🇺🇸 SAT | A line passes through (2, 5) and (4, 9). What is the slope? |
+| 🇨🇳 高考 | 已知等差數列的公差為 2，若 a₁ + a₃ + a₅ = 12，則 a₄ = ? |
+| 🇯🇵 高校入試 | 二次方程式 x² - 5x + 6 = 0 を解け。 |
+| 🌍 AMC | In triangle ABC, AB = 5, BC = 7, CA = 8. What is the area? |
 
 ### 分析（比較、推論）
 
-要求「比較」「分析」「推論」，需要拆解問題結構。
-
 | 考試 | 題目範例 |
 |------|----------|
-| 🇹🇼 學測 | 下列有關自然獨占廠商效率分析的說明，何者錯誤？ |
 | 🇹🇼 學測 | 有關成本效益分析方法之運用，下列何者正確？ |
-| 🇺🇸 SAT | The graph shows the relationship between x and y. Based on the pattern, what is the value of y when x = 10? |
-| 🇨🇳 高考 | 若將白水泥稅額調高一倍，水泥市場之超額負擔將會如何變化？ |
+| 🇺🇸 SAT | Based on the graph pattern, what is y when x = 10? |
 | 🇨🇳 高考 | 比較 f(x) = x³ 和 g(x) = 3ˣ 在 x > 0 時的增長速度。 |
-| 🇬🇧 UKMT | Amy, Beth and Carol each think of a number. The sum of Amy's and Beth's numbers is 6... What is Carol's number? |
-| 🌍 AIME | Let S be the set of all positive integers n such that n² is a multiple of both 24 and 108. What is the smallest element of S? |
+| 🇬🇧 UKMT | Amy, Beth and Carol each think of a number... What is Carol's? |
+| 🌍 AIME | Let S be the set of positive integers n such that n² is a multiple of both 24 and 108. |
 
 ---
 
-### 評鑑（判斷、驗證）
-
-要求「判斷對錯」「評估」「驗證」，需要批判性思考。
-
-| 考試 | 題目範例 |
-|------|----------|
-| 🇹🇼 學測 | 某生的證明過程如下，請問哪一步有誤？ |
-| 🇺🇸 SAT | Is the student's solution correct? If not, identify the error. |
-| 🇨🇳 高考 | 判斷下列命題的真假，並說明理由。 |
-| 🇬🇧 UKMT | The diagram shows a proposed proof. Is it valid? |
-| 🌍 競賽 | Determine whether the following inequality holds for all positive real numbers. |
-
----
-
-### 創造（設計、發明）
-
-要求「設計」「建構」「發明」，需要產生新想法。
-
-| 考試 | 題目範例 |
-|------|----------|
-| 🇨🇳 高考 | 設計一個函數，使其在 x = 0 處不連續但在其他點連續。 |
-| 🇬🇧 UKMT | Construct a triangle with the given properties. |
-| 🌍 IMO | Find all functions f: ℝ → ℝ satisfying f(x + y) = f(x) + f(y) for all x, y. |
-| 🌍 競賽 | Design an algorithm to find the shortest path in a weighted graph. |
-
----
-
-## 四、資料來源
-
-| 題庫 | 國家 | 題數 |
-|------|------|------|
-| tmmlu_tw | 🇹🇼 台灣 | 200 |
-| sat_math_hf | 🇺🇸 美國 | 200 |
-| scienceqa | 🇺🇸 美國 | 200 |
-| gaokao_cn | 🇨🇳 中國 | 100 |
-| ukmt_uk | 🇬🇧 英國 | 100 |
-| olympiadbench_hf | 🌍 國際 | 200 |
-| amc_github | 🌍 國際 | 30 |
-
-**分析方法**：使用「關鍵詞匹配 + 題型判斷」自動分類，準確度約 70-80%。詳見[方法論說明](methodology)。
-
----
-
-## 五、重要說明
-
-> **本報告基於題庫統計，不能用於評估個別學生能力。**
-
-- ✅ 可以：了解不同考試的難度差異
-- ✅ 可以：參考題目範例理解各層次的意義
-- ❌ 不能：評估個別學生的能力
-- ❌ 不能：作為學習規劃的唯一依據
-
-**如需學習建議，請諮詢教育專業人員。**
-
----
-
-## 六、國際數學基準（PISA 2022）
+## 五、門檻變化趨勢
 
 > 本比較僅呈現數據差異，不構成評估建議。
 
-| 排名 | 國家/地區 | 數學平均分 | 與 OECD 平均比較 |
-|------|-----------|------------|------------------|
-| 1 | 🇸🇬 新加坡 | 575 | +103 |
-| 2 | 🇲🇴 澳門 | 552 | +80 |
-| 3 | 🇹🇼 台灣 | 547 | +75 |
-| 4 | 🇭🇰 香港 | 540 | +68 |
-| 5 | 🇯🇵 日本 | 536 | +64 |
-| 6 | 🇰🇷 韓國 | 527 | +55 |
-| — | OECD 平均 | 472 | — |
-| 28 | 🇺🇸 美國 | 465 | -7 |
+### 🌍 AMC 競賽門檻逐年上升
 
-*來源：OECD PISA 2022 Results*
-
----
-
-## 七、頂尖競賽門檻（IMO 2025）
-
-國際數學奧林匹亞（IMO）是全球最頂尖的中學數學競賽。
-
-| 獎項 | 2025 分數門檻 | 人數 | 說明 |
-|------|---------------|------|------|
-| 金牌 | 35/42 | 72 人 | 史上最高門檻 |
-| 銀牌 | 25/42 | ~150 人 | — |
-| 銅牌 | 16/42 | ~200 人 | — |
-
-**2025 年國家排名前五**：
-1. 🇨🇳 中國 (231 分)
-2. 🇺🇸 美國 (216 分)
-3. 🇰🇷 韓國 (203 分)
-4. 🇷🇺 俄羅斯 (196 分)
-5. 🇮🇳 印度 (193 分)
-
-*來源：[IMO Official](https://www.imo-official.org/results.aspx)*
-
----
-
-## 八、門檻變化趨勢
-
-> 本比較僅呈現數據差異，不構成評估建議。
-
-### AMC 競賽門檻逐年上升
-
-從 2020 至 2025 年，AMC 10 的 AIME 資格分數線呈現明顯上升趨勢：
-
-| 年份 | AMC 10 AIME 門檻 | 趨勢 |
+| 年份 | AMC 10 AIME 門檻 | 變化 |
 |------|------------------|------|
 | 2020 | ~100 分 | — |
 | 2021-2023 | 100-105 分 | ↑ |
 | 2024-2025 | 105-115 分 | ↑↑ |
 
-**這代表什麼？**
-- 頂尖競爭加劇，更多學生達到高分
-- 自 2025-26 學年起，國際學生不再影響門檻計算
-- 自 2025-26 學年起，門檻上限取消（原本 AMC 10 上限 120，AMC 12 上限 100）
+*2025-26 起：國際學生不再影響門檻、門檻上限取消*
 
-*來源：[MAA 2025-26 AIME Thresholds](https://maa.org/news/2025-26-aime-thresholds-are-now-available/)*
+### 🇹🇼 學測 114 學年度
 
-### 台灣學測 114 學年度變化
-
-| 科目 | 頂標 | 前標 | 均標 | 與去年比較 |
-|------|------|------|------|------------|
+| 科目 | 頂標 | 前標 | 均標 | 變化 |
+|------|------|------|------|------|
 | 數學 A | 13 | 11 | 8 | 各降 1 級分 |
-| 國文 | — | — | — | 滿級分人數創 15 年新低 |
-| 英文 | — | — | — | 滿級分 3,874 人（各科最多）|
 
-*來源：[大考中心 114 學年度統計](https://www.ceec.edu.tw)*
+### 🇺🇸 AP Calculus 2025
 
----
+| 考試 | 考生數 | 平均分 | 5 分比例 |
+|------|--------|--------|----------|
+| AB | 285,891 | 3.21 | 20.3% |
+| BC | 160,436 | 3.82 | 44.0% |
 
-## 九、AP 考試統計（美國 2025）
+### 🇦🇺 NAPLAN 2025
 
-> 本比較僅呈現數據差異，不構成評估建議。
-
-AP（Advanced Placement）是美國大學先修課程考試，滿分 5 分。
-
-| 考試 | 考生人數 | 平均分 | 3+ 通過率 | 5 分比例 |
-|------|----------|--------|-----------|----------|
-| AP Calculus AB | 285,891 | 3.21 | 64.2% | 20.3% |
-| AP Calculus BC | 160,436 | 3.82 | 78.6% | 44.0% |
-
-**這代表什麼？**
-- Calculus BC 難度較高，但選修者程度也較高，故通過率反而更高
-- 約 2 成 AB 考生、4 成 BC 考生達到最高分
-
-*來源：[College Board AP Score Distributions](https://apstudents.collegeboard.org/about-ap-scores/score-distributions)*
+- Year 5/7/9 Numeracy 同步提升（2017 年以來首次）
+- 全國參與率達 93.8%（2017 年以來最高）
 
 ---
 
-## 十、澳洲 NAPLAN 數學統計（2025）
+## 六、各國課程標準
 
-> 本比較僅呈現數據差異，不構成評估建議。
-
-NAPLAN 是澳洲全國學力測驗，測量 3、5、7、9 年級學生的讀寫與數學能力。
-
-| 年級 | 全國平均 | 領先州 | 落後州 |
-|------|----------|--------|--------|
-| Year 5 | 491.8 | 🏆 Victoria 502.7 | NT 較低 |
-| Year 7 | 544.9 | 🏆 NSW 555.2 | NT < 500 |
-| Year 9 | ~580 | 🏆 NSW, Victoria > 580 | NT < 500 |
-
-**主要發現**：
-- 2025 年 Numeracy 成績在 5、7、9 年級都有提升（2017 年以來首次）
-- 男生數學平均高於女生（Year 3：413 vs 398）
-- 超過 35 萬學生需要額外學習支援
-
-*來源：[ACARA NAPLAN National Results](https://www.acara.edu.au/reporting/national-report-on-schooling-in-australia/naplan-national-results)*
+| 國家 | 課程標準 | 官方連結 |
+|------|----------|----------|
+| 🇺🇸 美國 | Common Core | [thecorestandards.org](https://www.thecorestandards.org/Math/) |
+| 🇸🇬 新加坡 | MOE Syllabus | [moe.gov.sg](https://www.moe.gov.sg) |
+| 🇯🇵 日本 | 學習指導要領 | [mext.go.jp](https://www.mext.go.jp) |
+| 🇬🇧 英國 | National Curriculum | [gov.uk](https://www.gov.uk/national-curriculum) |
+| 🇨🇦 加拿大 | Ontario Curriculum | [ontario.ca](https://www.ontario.ca/page/math-curriculum-grades-1-8) |
+| 🇦🇺 澳洲 | Australian Curriculum | [australiancurriculum.edu.au](https://www.australiancurriculum.edu.au/) |
+| 🇹🇼 台灣 | 十二年國教課綱 | [naer.edu.tw](https://www.naer.edu.tw/PageSyllabus?fid=52) |
 
 ---
 
-## 十一、各國課程標準資源
+## 七、資料來源
 
-> 本比較僅呈現數據差異，不構成評估建議。
+| 題庫/資料 | 國家 | 說明 |
+|-----------|------|------|
+| tmmlu_tw | 🇹🇼 | 台灣學測題庫 |
+| sat_math_hf | 🇺🇸 | SAT 數學題庫 |
+| gaokao_cn | 🇨🇳 | 中國高考題庫 |
+| ukmt_uk | 🇬🇧 | 英國 UKMT 題庫 |
+| korean_csat | 🇰🇷 | 韓國大學入學考試 |
+| gsm8k_zh | 🇨🇳 | 中文數學推理題 |
+| olympiadbench_hf | 🌍 | 國際奧林匹克題庫 |
+| amc_aime | 🌍 | 美國數學競賽題庫 |
 
-| 國家 | 課程標準 | 官方連結 | 特色 |
-|------|----------|----------|------|
-| 🇺🇸 美國 | Common Core | [thecorestandards.org](https://www.thecorestandards.org/Math/) | K-12 統一標準 |
-| 🇸🇬 新加坡 | MOE Syllabus | [moe.gov.sg](https://www.moe.gov.sg/-/media/files/primary/2021-primary-mathematics-syllabus-p1-to-p6-updated-dec-2024.pdf) | CPA 教學法、螺旋式課程 |
-| 🇯🇵 日本 | 學習指導要領 | [mext.go.jp](https://www.mext.go.jp/en/policy/education/elsec/title02/detail02/1373859.htm) | 每 10 年修訂 |
-| 🇬🇧 英國 | National Curriculum | [gov.uk](https://www.gov.uk/national-curriculum) | Key Stage 1-4 |
-| 🇨🇦 加拿大 | 各省課綱 | [ontario.ca](https://www.ontario.ca/page/math-curriculum-grades-1-8) | 省級自治 |
-| 🇦🇺 澳洲 | Australian Curriculum | [australiancurriculum.edu.au](https://www.australiancurriculum.edu.au/) | 全國統一 |
-| 🇹🇼 台灣 | 十二年國教課綱 | [naer.edu.tw](https://www.naer.edu.tw/PageSyllabus?fid=52) | 108 課綱 |
+**分析方法**：關鍵詞匹配 + 題型判斷，準確度約 70-80%。詳見[方法論說明](methodology)。
 
-**新加坡為何 PISA 第一？**
-- 採用 Concrete-Pictorial-Abstract（CPA）教學法
-- 螺旋式課程設計，概念逐年深化
-- 小五起分流（Standard / Foundation）
+---
+
+## 八、重要說明
+
+> **本報告基於公開資料統計，不能用於評估個別學生能力。**
+
+- ✅ 可以：了解不同考試的難度差異
+- ✅ 可以：參考各國課程標準
+- ❌ 不能：評估個別學生的能力
+- ❌ 不能：作為學習規劃的唯一依據
+
+**如需學習建議，請諮詢教育專業人員。**
