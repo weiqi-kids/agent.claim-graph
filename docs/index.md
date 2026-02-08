@@ -16,14 +16,24 @@ nav_order: 1
 
 ### 1. 各年級該掌握的技能
 
-依據課程標準，列出每個年級學生應該掌握的數學技能。
+依據課程標準，列出每個年級學生應該掌握的技能。
+
+#### 數學
 
 | 年級 | 標準 | 技能數 |
 |------|------|--------|
 | [國小四年級](Narrator/skill_alignment_map/Grade-4-Math) | 美國 Common Core | 28 項 |
 | [國中二年級](Narrator/skill_alignment_map/Grade-8-Math) | 美國 Common Core | 28 項 |
 
+#### 語文
+
+| 年級 | 標準 | 技能數 |
+|------|------|--------|
+| [國小四年級](Narrator/skill_alignment_map/Grade-4-ELA) | 美國 Common Core | 45 項 |
+| [國中二年級](Narrator/skill_alignment_map/Grade-8-ELA) | 美國 Common Core | 42 項 |
+
 > 美國 Grade 4 約等於台灣國小四年級，Grade 8 約等於國中二年級。
+> **語文**指對當地主流母語的掌握（美國為英語）。
 
 ---
 
