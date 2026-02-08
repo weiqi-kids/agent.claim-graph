@@ -17,6 +17,21 @@ nav_exclude: true
 | 大考中心 114 學年度學測統計 | https://www.ceec.edu.tw/xmdoc/cont?xsmsid=0J018604485538810196&sid=0P055615788466837352 | HTML | 114 學測五標與統計圖表 |
 | Common Core Grade 6 Standards | https://www.thecorestandards.org/Math/Content/6/ | HTML | 美國六年級數學課程標準 |
 
+### 新發現（多執行緒探索）
+
+| 資料源 | URL | 格式 | 用途 |
+|--------|-----|------|------|
+| 🇸🇬 新加坡小學數學課綱 | https://www.moe.gov.sg/-/media/files/primary/2021-primary-mathematics-syllabus-p1-to-p6-updated-dec-2024.pdf | PDF | MOE 官方 P1-P6 數學課綱（2021版，2024更新）|
+| 🇸🇬 新加坡中學數學課綱 | https://www.moe.gov.sg/-/media/files/secondary/syllabuses/maths/2020-express_na-maths_syllabuses.pdf | PDF | MOE 官方 Express/N(A) 課程 |
+| 🇯🇵 日本中學數學指引 | https://www.criced.tsukuba.ac.jp/math/apec/ICME12/Lesson_Study_set/Junior_high_school-teaching-guide-Mathmatics-EN.pdf | PDF | MEXT 課程指引英文版（G7-9）|
+| 🇯🇵 MEXT 課程標準 | https://www.mext.go.jp/en/policy/education/elsec/title02/detail02/1373859.htm | HTML | 日本文部科學省官方頁面 |
+| 🇬🇧 UK A-Level 分數線 | https://qualifications.pearson.com/en/support/support-topics/results-certification/grade-boundaries.html | HTML | Edexcel 官方分數線（含數學）|
+| 🇺🇸 AP Calculus 分數分布 | https://apstudents.collegeboard.org/about-ap-scores/score-distributions | HTML | College Board 官方 AP 考試統計 |
+| 🇦🇺 NAPLAN 全國結果 | https://www.acara.edu.au/reporting/national-report-on-schooling-in-australia/naplan-national-results | HTML | ACARA 官方 Numeracy 統計 |
+| 🇨🇦 Ontario 數學課綱 | https://www.ontario.ca/page/math-curriculum-grades-1-8 | HTML | Ontario 省政府官方 G1-8 課綱 |
+| 🇰🇷 韓國數學題庫 | https://huggingface.co/collections/ChuGyouk/korean-math-dataset-66e45de804349c17401c38c7 | HF | 大學入學考試（CSAT）數學題 |
+| 🇨🇳 GSM8K 中文版 | https://huggingface.co/datasets/meta-math/GSM8K_zh | HF | 中文數學推理題庫 |
+
 ### 已確認尚無資料
 
 | 資料源 | 原因 |
