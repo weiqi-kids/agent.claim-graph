@@ -1,8 +1,9 @@
 ---
 layout: default
 title: 英國小學五年級數學
-parent: 年級技能標準
-nav_order: 7
+parent: 英國
+grand_parent: 年級技能標準
+nav_order: 1
 mode: skill_alignment_map
 verifiability: Factual
 generated_at: 2026-02-08T00:00:00Z

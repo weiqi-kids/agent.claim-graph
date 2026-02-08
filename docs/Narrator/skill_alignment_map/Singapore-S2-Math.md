@@ -1,8 +1,9 @@
 ---
 layout: default
 title: 新加坡中學二年級數學
-parent: 年級技能標準
-nav_order: 6
+parent: 新加坡
+grand_parent: 年級技能標準
+nav_order: 2
 mode: skill_alignment_map
 verifiability: Factual
 generated_at: 2026-02-08T00:00:00Z

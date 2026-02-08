@@ -1,8 +1,9 @@
 ---
 layout: default
 title: 國中二年級科學
-parent: 年級技能標準
-nav_order: 4
+parent: 美國
+grand_parent: 年級技能標準
+nav_order: 18
 mode: skill_alignment_map
 verifiability: Factual
 generated_at: 2026-02-08T12:30:00Z

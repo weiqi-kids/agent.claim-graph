@@ -1,7 +1,8 @@
 ---
 layout: default
 title: 國小一年級數學
-parent: 年級技能標準
+parent: 美國
+grand_parent: 年級技能標準
 nav_order: 1
 mode: skill_alignment_map
 verifiability: Factual

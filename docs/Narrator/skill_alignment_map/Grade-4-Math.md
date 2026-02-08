@@ -1,8 +1,9 @@
 ---
 layout: default
 title: 國小四年級數學
-parent: 年級技能標準
-nav_order: 1
+parent: 美國
+grand_parent: 年級技能標準
+nav_order: 4
 mode: skill_alignment_map
 verifiability: Factual
 generated_at: 2026-02-06T11:09:18Z

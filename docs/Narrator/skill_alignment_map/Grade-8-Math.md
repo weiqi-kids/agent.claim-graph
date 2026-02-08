@@ -1,8 +1,9 @@
 ---
 layout: default
 title: 國中二年級數學
-parent: 年級技能標準
-nav_order: 2
+parent: 美國
+grand_parent: 年級技能標準
+nav_order: 8
 mode: skill_alignment_map
 verifiability: Factual
 generated_at: 2026-02-06T11:09:18Z
