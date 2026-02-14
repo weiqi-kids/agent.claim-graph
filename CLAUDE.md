@@ -13,7 +13,7 @@
 
 ## 網站
 
-**URL**：https://weiqi-kids.github.io/agent.claim-graph/
+**URL**：https://learn.weiqi.kids/
 
 ```
 docs/
