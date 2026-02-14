@@ -1,7 +1,7 @@
 title: 學生學習地圖系統
 description: 協助家長了解孩子在各學習標準框架下的進度位置
-baseurl: "/agent.claim-graph"
-url: "https://weiqi-kids.github.io"
+baseurl: ""
+url: "https://learn.weiqi.kids"
 
 theme: just-the-docs
 
