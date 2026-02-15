@@ -2,6 +2,7 @@
 layout: default
 title: 考試分析
 nav_order: 3
+description: 各國升學考試與數學競賽的分數門檻對照表，包含學測、SAT、高考、UKMT、AMC、IMO 等考試的前 50%、前 10%、前 1% 門檻。
 ---
 
 # 各國考試分析

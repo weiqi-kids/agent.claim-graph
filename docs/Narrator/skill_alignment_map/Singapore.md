@@ -4,6 +4,7 @@ title: 新加坡
 parent: 年級技能標準
 has_children: true
 nav_order: 3
+description: 新加坡教育部 (MOE) 數學課程綱要，採用 CPA 教學法與螺旋式課程設計，涵蓋 Primary 4 與 Secondary 2 數學技能。
 ---
 
 # 新加坡課程標準

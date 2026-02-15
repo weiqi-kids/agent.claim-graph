@@ -2,6 +2,7 @@
 layout: default
 title: 方法論說明
 nav_order: 4
+description: 說明本系統如何使用 Bloom 認知層次分類法，從題庫資料萃取各國考試的認知層次分布。
 ---
 
 # 認知層次基準線分類方法

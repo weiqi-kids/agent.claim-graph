@@ -4,6 +4,7 @@ title: 新加坡中學二年級數學
 parent: 新加坡
 grand_parent: 年級技能標準
 nav_order: 2
+description: 新加坡教育部 (MOE) 中學二年級數學課綱，涵蓋代數式、二次方程式、畢氏定理、三角學等主題。
 mode: skill_alignment_map
 verifiability: Factual
 generated_at: 2026-02-08T00:00:00Z

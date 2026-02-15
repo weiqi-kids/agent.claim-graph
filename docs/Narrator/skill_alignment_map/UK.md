@@ -4,6 +4,7 @@ title: 英國
 parent: 年級技能標準
 has_children: true
 nav_order: 4
+description: 英國 National Curriculum 數學課程標準，涵蓋 Key Stage 2 (Year 5) 與 Key Stage 3 (Year 8) 數學技能。
 ---
 
 # 英國課程標準

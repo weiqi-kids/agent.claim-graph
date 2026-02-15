@@ -3,6 +3,7 @@ layout: default
 title: 年級技能標準
 nav_order: 2
 has_children: true
+description: 彙整美國、台灣、新加坡、英國的課程標準，列出各年級學生應掌握的數學、語文、科學技能清單。
 ---
 
 # 年級技能標準

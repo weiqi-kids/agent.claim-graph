@@ -4,6 +4,7 @@ title: 國中二年級科學
 parent: 美國
 grand_parent: 年級技能標準
 nav_order: 18
+description: 美國 NGSS 國中二年級科學技能標準，包含物質與能量、生命科學、地球與太空科學、工程設計等領域。
 mode: skill_alignment_map
 verifiability: Factual
 generated_at: 2026-02-08T12:30:00Z

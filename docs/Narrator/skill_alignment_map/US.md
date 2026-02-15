@@ -4,6 +4,7 @@ title: 美國
 parent: 年級技能標準
 has_children: true
 nav_order: 1
+description: 美國 Common Core State Standards (CCSS) 數學與語文課程標準，以及 NGSS 科學標準，涵蓋 Grade 1-8 各年級技能。
 ---
 
 # 美國課程標準

@@ -4,6 +4,7 @@ title: 台灣國中八年級數學
 parent: 台灣
 grand_parent: 年級技能標準
 nav_order: 2
+description: 台灣十二年國教課綱國中八年級數學技能標準，包含乘法公式、因式分解、畢氏定理、一次函數等核心能力。
 mode: skill_alignment_map
 verifiability: Factual
 generated_at: 2026-02-08T00:00:00Z

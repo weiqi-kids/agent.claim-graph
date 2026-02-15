@@ -4,6 +4,7 @@ title: 英國中學八年級數學
 parent: 英國
 grand_parent: 年級技能標準
 nav_order: 2
+description: 英國 National Curriculum Year 8 (Key Stage 3) 數學技能標準，涵蓋代數、畢氏定理、變換、機率等主題。
 mode: skill_alignment_map
 verifiability: Factual
 generated_at: 2026-02-08T00:00:00Z

@@ -59,6 +59,45 @@ docs/
 
 ---
 
+## SEO 規則
+
+本專案遵循 `seo/CLAUDE.md` 的 SEO/AEO 優化標準。
+
+### 適用的 Schema
+
+| Schema | 用途 | 說明 |
+|--------|------|------|
+| WebPage + Speakable | 每個頁面 | 必填 |
+| Article | 文章頁面 | 必填，citations 連結到「已驗證可用」的資料源 |
+| Organization | 網站資訊 | 必填 |
+| BreadcrumbList | 導覽路徑 | 必填 |
+| FAQPage | 常見問題 | 考試門檻頁面適用 |
+| Table | 比較表格 | 跨國比較適用 |
+| ItemList | 排名清單 | 競賽排名適用 |
+
+### 不適用的 Schema
+
+本專案為資料彙整型網站，以下 Schema **不使用**：
+
+- `Person`（無個人作者，以資料來源為權威）
+- `Recipe`、`Product`、`LocalBusiness`、`Event`、`Course`（非此類內容）
+- `Review`（不做評價）
+
+### 觸發時機
+
+當使用者說「SEO 優化」或「檢查 SEO」時：
+1. 讀取 `seo/CLAUDE.md` 了解完整規則
+2. 使用 Writer 角色（`seo/writer/CLAUDE.md`）產出優化建議
+3. 使用 Reviewer 角色（`seo/review/CLAUDE.md`）檢查輸出
+
+### Jekyll 整合
+
+- JSON-LD 透過 `docs/_includes/head_custom.html` 注入
+- Meta 標籤由 `jekyll-seo-tag` 插件處理
+- 每個頁面的 front matter 需包含 `description` 欄位
+
+---
+
 ## 執行完整流程
 
 當使用者說「執行完整流程」時：

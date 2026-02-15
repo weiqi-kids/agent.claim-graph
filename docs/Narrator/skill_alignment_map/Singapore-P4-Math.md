@@ -4,6 +4,7 @@ title: 新加坡小學四年級數學
 parent: 新加坡
 grand_parent: 年級技能標準
 nav_order: 1
+description: 新加坡教育部 (MOE) 小學四年級數學課綱，採用 CPA 教學法，涵蓋整數、分數、小數、因數倍數、角度、面積等主題。
 mode: skill_alignment_map
 verifiability: Factual
 generated_at: 2026-02-08T00:00:00Z

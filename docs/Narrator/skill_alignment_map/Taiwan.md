@@ -4,6 +4,7 @@ title: 台灣
 parent: 年級技能標準
 has_children: true
 nav_order: 2
+description: 台灣十二年國民基本教育課程綱要，涵蓋國小四年級與國中八年級數學技能標準。
 ---
 
 # 台灣課程標準

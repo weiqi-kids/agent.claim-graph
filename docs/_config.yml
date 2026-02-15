@@ -39,3 +39,16 @@ gh_edit_view_mode: "tree"
 
 # 顏色主題
 color_scheme: light
+
+# SEO 設定
+plugins:
+  - jekyll-seo-tag
+
+# Open Graph 預設值
+author: 學生學習地圖系統
+twitter:
+  card: summary
+social:
+  name: 學生學習地圖系統
+  links:
+    - https://github.com/weiqi-kids/agent.claim-graph
