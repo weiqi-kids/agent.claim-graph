@@ -141,7 +141,86 @@ git add docs/ && git commit -m "chore: update reports (YYYY-MM-DD)" && git push
 
 ---
 
+### 7. 品質關卡檢查
+
+**全部通過才能視為流程成功完成。**
+
+---
+
+## 品質關卡
+
+### 1. 連結檢查
+
+- [ ] 所有新增/修改的內部連結正常，無 404
+- [ ] 所有新增/修改的外部連結正常
+- [ ] 無死連結或斷裂連結
+
+### 2. SEO + AEO 標籤檢查
+
+#### 2.1 Meta 標籤
+
+- [ ] `<title>` 存在且 ≤ 60 字，含核心關鍵字
+- [ ] `<meta name="description">` 存在且 ≤ 155 字
+- [ ] `og:title`, `og:description`, `og:image`, `og:url` 存在
+- [ ] `og:type` = "article"
+- [ ] `article:published_time`, `article:modified_time` 存在（ISO 8601 格式）
+- [ ] `twitter:card` = "summary_large_image"
+
+#### 2.2 JSON-LD Schema（本專案必填）
+
+| Schema | 必填欄位 |
+|--------|----------|
+| WebPage | speakable（至少 7 個 cssSelector） |
+| Article | isAccessibleForFree, isPartOf（含 SearchAction）, significantLink, citations |
+| Organization | contactPoint, logo（含 width/height） |
+| BreadcrumbList | position 從 1 開始連續編號 |
+| FAQPage | 3-5 個 Question + Answer（考試門檻頁面） |
+| ItemList | itemListElement（競賽排名頁面） |
+
+> **注意**：本專案不使用 Person、Recipe、Product、LocalBusiness、Event、Course、Review Schema。
+
+#### 2.3 條件式 Schema（依內容判斷）
+
+| Schema | 觸發條件 | 必填欄位 |
+|--------|----------|----------|
+| HowTo | 有步驟教學 | step, totalTime |
+| VideoObject | 有嵌入影片 | duration, thumbnailUrl |
+| Table | 有比較表格 | 跨國比較適用 |
+
+#### 2.4 E-E-A-T 信號
+
+- [ ] Article Schema 的 citations 連結到「已驗證可用」的資料源
+- [ ] 至少 2 個高權威外部連結（.gov、學術期刊、專業協會）
+
+> **注意**：本專案以資料來源為權威，不使用個人作者（Person Schema）。
+
+### 3. 內容更新確認
+
+- [ ] 列出本次預計修改的所有檔案
+- [ ] 逐一確認每個檔案都已正確更新
+- [ ] 修改內容與任務要求一致
+- [ ] 無遺漏項目
+- [ ] 比較類分析已加警語：「本比較僅呈現數據差異，不構成評估建議」
+
+### 4. Git 狀態檢查
+
+- [ ] 所有變更已 commit
+- [ ] commit message 清楚描述本次變更
+- [ ] 已 push 到 Github（除非另有指示）
+- [ ] 遠端分支已更新
+
+### 5. SOP 完成度檢查
+
+- [ ] 回顧原始任務需求
+- [ ] 原訂 SOP 每個步驟都已執行（步驟 1-6）
+- [ ] 無遺漏的待辦項目
+- [ ] 無「之後再處理」的項目
+
+---
+
 ## 回報格式
+
+完成「執行完整流程」後，輸出以下格式：
 
 ```
 ## 執行結果
@@ -163,6 +242,31 @@ git add docs/ && git commit -m "chore: update reports (YYYY-MM-DD)" && git push
 - Grade-4-Math：✅/❌
 - Grade-8-Math：✅/❌
 
+### 品質關卡檢查
+
+| 類別 | 狀態 | 問題（如有） |
+|------|------|-------------|
+| 連結檢查 | ✅/❌ | |
+| Meta 標籤 | ✅/❌ | |
+| Schema（必填） | ✅/❌ | |
+| Schema（條件式） | ✅/❌/N/A | |
+| E-E-A-T 信號 | ✅/❌ | |
+| 內容更新 | ✅/❌ | |
+| Git 狀態 | ✅/❌ | |
+| SOP 完成度 | ✅/❌ | |
+
+**總結**：X/Y 項通過，狀態：通過/未通過
+
 ### 需人工處理
 - {列出項目，或「無」}
 ```
+
+---
+
+## 品質關卡未通過時
+
+1. **不回報完成**
+2. 列出所有未通過項目
+3. 立即修正問題
+4. 重新執行檢查
+5. 全部通過才能說「完成」
