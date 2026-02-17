@@ -21,7 +21,18 @@
       "@id": "{{ site.url }}#organization",
       "name": "{{ site.title }}",
       "url": "{{ site.url }}",
-      "description": "{{ site.description }}"
+      "description": "{{ site.description }}",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ site.url }}/assets/images/logo.png",
+        "width": 600,
+        "height": 60
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "email": "contact@weiqi.kids"
+      }
     },
     {
       "@type": "WebPage",
@@ -37,7 +48,10 @@
         "@type": "SpeakableSpecification",
         "cssSelector": [
           ".main-content h1",
+          ".main-content h2",
           ".main-content > p:first-of-type",
+          ".main-content > blockquote",
+          ".main-content table caption",
           ".key-answer",
           ".key-takeaway"
         ]
@@ -46,6 +60,7 @@
     {%- if page.layout == 'default' and page.title -%}
     ,{
       "@type": "BreadcrumbList",
+      "@id": "{{ page.url | absolute_url }}#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -74,6 +89,75 @@
           "item": "{{ page.url | absolute_url }}"
         }
         {%- endif -%}
+      ]
+    }
+    {%- endif -%}
+    {%- if page.url contains 'exam-analysis' -%}
+    ,{
+      "@type": "Article",
+      "@id": "{{ page.url | absolute_url }}#article",
+      "mainEntityOfPage": { "@id": "{{ page.url | absolute_url }}#webpage" },
+      "headline": "{{ page.title }}",
+      "description": "{{ page.description }}",
+      "inLanguage": "zh-TW",
+      "publisher": { "@id": "{{ site.url }}#organization" },
+      "datePublished": "{{ page.date | default: site.time | date_to_xmlschema }}",
+      "dateModified": "{{ page.last_modified_date | default: page.date | default: site.time | date_to_xmlschema }}",
+      "isAccessibleForFree": true,
+      "isPartOf": { "@id": "{{ site.url }}#website" },
+      "citation": [
+        "https://research.collegeboard.org/reports/sat-suite",
+        "https://maa.org/math-competitions",
+        "https://www.ceec.edu.tw",
+        "https://www.oecd.org/pisa",
+        "https://www.imo-official.org",
+        "https://www.acara.edu.au"
+      ]
+    }
+    ,{
+      "@type": "FAQPage",
+      "@id": "{{ page.url | absolute_url }}#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "SAT 要考幾分才算前 10%？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "根據 College Board 2025 年統計，SAT 1290 分約為前 10%。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "AMC 幾分可以晉級 AIME？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "2024-2025 年度，AMC 10 約需 105-115 分，AMC 12 約需 100-110 分。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "台灣學測頂標是什麼意思？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "頂標代表成績位於第 88 百分位數，約為前 12% 的考生。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "PISA 數學評量中哪個國家排名第一？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "根據 PISA 2022 結果，新加坡以 575 分排名第一，領先 OECD 平均 103 分。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "IMO 金牌需要幾分？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "以 2025 年第 66 屆 IMO 為例，金牌門檻為 35/42 分。"
+          }
+        }
       ]
     }
     {%- endif -%}
