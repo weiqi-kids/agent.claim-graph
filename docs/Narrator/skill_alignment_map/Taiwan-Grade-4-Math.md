@@ -87,6 +87,8 @@ source_layers:
 
 ## 與美國 Common Core Grade 4 的對應
 
+> **本比較僅呈現數據差異，不構成評估建議。**
+
 | 台灣課綱 | 美國 Common Core | 相似度 |
 |----------|------------------|--------|
 | 整數四則運算 | 4.NBT.B.4-6 (Multi-digit operations) | 高度相似 |
