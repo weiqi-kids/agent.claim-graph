@@ -17,16 +17,44 @@
 
 ```
 docs/
-├── index.md                     # 首頁
+├── index.md                     # 首頁（含四類受眾入口）
 ├── explored.md                  # 資料源探索紀錄
 ├── update-log.md                # 更新日誌（快取判斷用）
+├── for-parents/                 # 家長專區
+│   └── index.md
+├── for-learners/                # 自學者專區
+│   ├── index.md
+│   ├── competition-entry.md     # 競賽入門門檻
+│   └── standardized-tests.md    # SAT/AP 參考
+├── for-educators/               # 教育工作者專區
+│   ├── index.md
+│   └── standard-ids.md          # 標準 ID 索引
+├── for-researchers/             # 研究者專區
+│   ├── index.md
+│   ├── data-sources.md          # 資料來源登記冊
+│   └── pisa-data.md             # PISA 統計數據
 └── Narrator/
-    ├── exam-analysis.md         # 考試分析（門檻+題型+範例）
+    ├── exam-analysis.md         # 考試分析（舊版，保留）
     ├── methodology.md           # 方法論說明
-    └── skill_alignment_map/
-        ├── index.md             # 年級技能標準索引
-        ├── Grade-4-Math.md      # 國小四年級數學
-        └── Grade-8-Math.md      # 國中二年級數學
+    ├── exam_threshold_map/      # 考試門檻（Mode）
+    │   ├── index.md             # 總覽
+    │   ├── entrance/            # 升學考試
+    │   │   ├── taiwan-gsat.md   # 學測
+    │   │   └── us-sat.md        # SAT
+    │   └── competition/         # 數學競賽
+    │       ├── amc-aime.md      # AMC/AIME
+    │       ├── ukmt.md          # UKMT
+    │       └── entry-thresholds.md  # 入門門檻總覽
+    └── skill_alignment_map/     # 年級技能標準（Mode）
+        ├── index.md             # 索引
+        ├── Grade-4-Math.md      # 美國 Grade 4
+        ├── Grade-8-Math.md      # 美國 Grade 8
+        ├── Taiwan*.md           # 台灣（3 頁）
+        ├── Singapore*.md        # 新加坡（3 頁）
+        ├── UK*.md               # 英國（3 頁）
+        ├── Japan*.md            # 日本（3 頁）
+        ├── Canada*.md           # 加拿大（3 頁）
+        └── Australia*.md        # 澳洲（3 頁）
 ```
 
 ---
@@ -114,8 +142,18 @@ docs/
 
 | 資料類型 | 搜尋關鍵字 | 對應頁面 |
 |----------|------------|----------|
-| 考試門檻 | `{考試} {年份} statistics percentile` | exam-analysis.md |
-| 課程標準 | `Common Core Grade {N} Math standards` | skill_alignment_map/ |
+| SAT 門檻 | `SAT {年份} percentile scores` | exam_threshold_map/entrance/us-sat.md |
+| 學測門檻 | `學測 {年份} 級分 人數百分比` | exam_threshold_map/entrance/taiwan-gsat.md |
+| AMC/AIME | `AMC 10 12 {年份} cutoff scores` | exam_threshold_map/competition/amc-aime.md |
+| UKMT | `UKMT {年份} thresholds` | exam_threshold_map/competition/ukmt.md |
+| PISA | `PISA {年份} mathematics results` | for-researchers/pisa-data.md |
+| 美國課綱 | `Common Core Grade {N} Math standards` | skill_alignment_map/Grade-{N}-Math.md |
+| 台灣課綱 | `十二年國教 數學 {年級}` | skill_alignment_map/Taiwan-*.md |
+| 新加坡課綱 | `Singapore MOE Math syllabus` | skill_alignment_map/Singapore-*.md |
+| 英國課綱 | `UK National Curriculum Maths` | skill_alignment_map/UK-*.md |
+| 日本課綱 | `MEXT 学習指導要領 算数 数学` | skill_alignment_map/Japan-*.md |
+| 加拿大課綱 | `Ontario Math Curriculum` | skill_alignment_map/Canada-*.md |
+| 澳洲課綱 | `Australian Curriculum Mathematics` | skill_alignment_map/Australia-*.md |
 
 若搜尋結果與現有資料不同，更新對應頁面。
 
@@ -236,11 +274,24 @@ git add docs/ && git commit -m "chore: update reports (YYYY-MM-DD)" && git push
 - {列出項目，或「無」}
 
 ### 部署驗證
+
+**受眾入口**
 - 首頁：✅/❌
-- 考試分析：✅/❌
-- 方法論：✅/❌
-- Grade-4-Math：✅/❌
-- Grade-8-Math：✅/❌
+- 家長專區：✅/❌
+- 自學者專區：✅/❌
+- 教育工作者專區：✅/❌
+- 研究者專區：✅/❌
+
+**考試門檻**
+- 總覽：✅/❌
+- SAT：✅/❌
+- 學測：✅/❌
+- AMC/AIME：✅/❌
+
+**課綱頁面（抽驗）**
+- 美國 Grade-4-Math：✅/❌
+- 台灣 Grade-4-Math：✅/❌
+- 日本/加拿大/澳洲（任一）：✅/❌
 
 ### 品質關卡檢查
 
