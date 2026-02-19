@@ -126,6 +126,89 @@ docs/
 
 ---
 
+## 網站改版流程
+
+當需要進行**結構性改版**（非日常更新）時，使用 `revamp/` 目錄的完整流程。
+
+### 觸發條件
+
+使用者說以下關鍵字時，啟動改版流程：
+
+- 「網站改版」、「revamp」
+- 「品牌定位」、「重新定位」
+- 「競品分析」
+- 「內容策略」、「內容規劃」
+- 「全面健檢」、「網站診斷」
+
+### 流程總覽
+
+```
+0-Positioning → 1-Discovery → 2-Competitive → 3-Analysis → 4-Strategy → 5-Content-Spec → 執行 → Final-Review
+     ↓              ↓             ↓              ↓            ↓              ↓                       ↓
+  Review ✓      Review ✓      Review ✓      Review ✓     Review ✓       Review ✓                Review ✓
+```
+
+### 各階段說明
+
+| 階段 | 目的 | 輸出 | 參照文件 |
+|------|------|------|----------|
+| **0-positioning** | 釐清品牌定位、核心價值 | 定位文件 | `revamp/0-positioning/CLAUDE.md` |
+| **1-discovery** | 盤點現有內容 + 技術健檢 | 健檢報告 + KPI | `revamp/1-discovery/CLAUDE.md` |
+| **2-competitive** | 分析競爭對手 | 競品分析報告 | `revamp/2-competitive/CLAUDE.md` |
+| **3-analysis** | 受眾分析 + 內容差距 | 差距分析報告 | `revamp/3-analysis/CLAUDE.md` |
+| **4-strategy** | 改版計劃 + 優先級排序 | 改版計劃書 | `revamp/4-strategy/CLAUDE.md` |
+| **5-content-spec** | 每頁內容規格 | 內容規格書 | `revamp/5-content-spec/CLAUDE.md` |
+| **final-review** | 驗收執行結果 | 驗收報告 | `revamp/final-review/CLAUDE.md` |
+
+### 執行方式
+
+每個階段包含 Writer 和 Reviewer 兩個角色：
+
+```bash
+# 執行階段
+請以 Writer 角色，參照 revamp/[階段]/CLAUDE.md 執行
+
+# 檢查輸出
+請以 Reviewer 角色，參照 revamp/[階段]/review/CLAUDE.md 檢查輸出
+```
+
+### 自動化工具
+
+`revamp/tools/` 提供網站健檢和競品分析腳本：
+
+| 工具 | 用途 | 指令 |
+|------|------|------|
+| site-audit.sh | 完整網站健檢 | `./revamp/tools/site-audit.sh https://example.com` |
+| competitive-audit.sh | 競品比較分析 | `./revamp/tools/competitive-audit.sh [我們] [競品1] [競品2]` |
+
+**檢測項目**：
+- Lighthouse（效能、SEO、Accessibility、Best Practices）
+- 安全性（Mozilla Observatory、SSL Labs、HTTP Headers）
+- SEO 基礎（W3C 驗證、robots.txt、sitemap）
+
+### 單一階段執行
+
+可以單獨執行特定階段，不必跑完整流程：
+
+```bash
+# 只做技術健檢
+請以 Writer 角色，參照 revamp/1-discovery/CLAUDE.md 執行網站健檢
+
+# 只做競品分析
+請以 Writer 角色，參照 revamp/2-competitive/CLAUDE.md 執行競品分析
+```
+
+### 與日常流程的差異
+
+| 項目 | 日常更新（執行完整流程） | 改版流程（revamp） |
+|------|--------------------------|-------------------|
+| 目的 | 更新現有資料 | 結構性重構 |
+| 頻率 | 定期（7 天一次） | 需要時 |
+| 範圍 | 資料內容更新 | 定位、結構、內容策略 |
+| 輸出 | 更新日誌 | 完整規劃文件 |
+
+---
+
 ## 執行完整流程
 
 當使用者說「執行完整流程」時：
@@ -177,9 +260,48 @@ git add docs/ && git commit -m "chore: update reports (YYYY-MM-DD)" && git push
 
 等待 GitHub Actions 完成後，用 WebFetch 驗證各頁面（加 `?v=日期` 避免快取）。
 
+### 7. 網站健檢與優化掃描
+
+執行輕量級健檢，識別優化方向：
+
+#### 7.1 技術健檢
+
+```bash
+# 使用 PageSpeed API 快速檢測
+curl -s "https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=https://learn.weiqi.kids/&strategy=mobile" | jq '{
+  performance: (.lighthouseResult.categories.performance.score * 100),
+  seo: (.lighthouseResult.categories.seo.score * 100),
+  accessibility: (.lighthouseResult.categories.accessibility.score * 100),
+  lcp: .lighthouseResult.audits["largest-contentful-paint"].displayValue,
+  cls: .lighthouseResult.audits["cumulative-layout-shift"].displayValue
+}'
+```
+
+#### 7.2 評估標準
+
+| 指標 | 良好 | 需改善 | 差 |
+|------|------|--------|-----|
+| Performance | ≥ 90 | 50-89 | < 50 |
+| SEO | ≥ 90 | 50-89 | < 50 |
+| LCP | < 2.5s | 2.5-4s | > 4s |
+| CLS | < 0.1 | 0.1-0.25 | > 0.25 |
+
+#### 7.3 優化建議觸發條件
+
+| 條件 | 建議行動 |
+|------|----------|
+| Performance < 50 | 建議執行 `revamp/1-discovery` 完整健檢 |
+| SEO < 70 | 檢查 Schema 和 Meta 標籤 |
+| LCP > 4s | 檢查圖片優化和載入策略 |
+| 連續 3 次健檢分數下降 | 建議啟動完整 revamp 流程 |
+
+#### 7.4 記錄健檢結果
+
+將健檢數據記錄到 `docs/update-log.md`，用於追蹤趨勢。
+
 ---
 
-### 7. 品質關卡檢查
+### 8. 品質關卡檢查
 
 **全部通過才能視為流程成功完成。**
 
@@ -240,17 +362,25 @@ git add docs/ && git commit -m "chore: update reports (YYYY-MM-DD)" && git push
 - [ ] 無遺漏項目
 - [ ] 比較類分析已加警語：「本比較僅呈現數據差異，不構成評估建議」
 
-### 4. Git 狀態檢查
+### 4. 網站健檢
+
+- [ ] 執行 PageSpeed 檢測（Mobile）
+- [ ] Performance 分數 ≥ 50（⚠️ < 50 需檢視）
+- [ ] SEO 分數 ≥ 70
+- [ ] 與上次檢測比較，無重大退步（> 10 分下降）
+- [ ] 記錄數據到 update-log.md
+
+### 5. Git 狀態檢查
 
 - [ ] 所有變更已 commit
 - [ ] commit message 清楚描述本次變更
 - [ ] 已 push 到 Github（除非另有指示）
 - [ ] 遠端分支已更新
 
-### 5. SOP 完成度檢查
+### 6. SOP 完成度檢查
 
 - [ ] 回顧原始任務需求
-- [ ] 原訂 SOP 每個步驟都已執行（步驟 1-6）
+- [ ] 原訂 SOP 每個步驟都已執行（步驟 1-7）
 - [ ] 無遺漏的待辦項目
 - [ ] 無「之後再處理」的項目
 
@@ -293,6 +423,27 @@ git add docs/ && git commit -m "chore: update reports (YYYY-MM-DD)" && git push
 - 台灣 Grade-4-Math：✅/❌
 - 日本/加拿大/澳洲（任一）：✅/❌
 
+### 網站健檢
+
+| 指標 | 數值 | 上次數值 | 變化 | 評價 |
+|------|------|----------|------|------|
+| Performance | | | ↑/↓/→ | ✅/⚠️/❌ |
+| SEO | | | | |
+| Accessibility | | | | |
+| LCP | | | | |
+| CLS | | | | |
+
+### 優化建議
+
+| 優先級 | 建議 | 觸發原因 |
+|--------|------|----------|
+| P0 | {或「無」} | |
+| P1 | | |
+| P2 | | |
+
+**是否建議啟動 revamp？** ✅ 是 / ❌ 否
+- 原因：{說明}
+
 ### 品質關卡檢查
 
 | 類別 | 狀態 | 問題（如有） |
@@ -304,6 +455,7 @@ git add docs/ && git commit -m "chore: update reports (YYYY-MM-DD)" && git push
 | E-E-A-T 信號 | ✅/❌ | |
 | 內容更新 | ✅/❌ | |
 | Git 狀態 | ✅/❌ | |
+| 網站健檢 | ✅/⚠️/❌ | |
 | SOP 完成度 | ✅/❌ | |
 
 **總結**：X/Y 項通過，狀態：通過/未通過
