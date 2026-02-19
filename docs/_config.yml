@@ -43,6 +43,7 @@ color_scheme: light
 # SEO 設定
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 # Open Graph 預設值
 author: 學生學習地圖系統

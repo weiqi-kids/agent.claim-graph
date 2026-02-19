@@ -92,7 +92,7 @@
       ]
     }
     {%- endif -%}
-    {%- if page.url contains 'exam-analysis' -%}
+    {%- if page.url contains 'exam-analysis' or page.url contains 'exam_threshold_map' or page.url contains 'skill_alignment_map' -%}
     ,{
       "@type": "Article",
       "@id": "{{ page.url | absolute_url }}#article",
@@ -105,6 +105,12 @@
       "dateModified": "{{ page.last_modified_date | default: page.date | default: site.time | date_to_xmlschema }}",
       "isAccessibleForFree": true,
       "isPartOf": { "@id": "{{ site.url }}#website" },
+      "significantLink": [
+        "https://research.collegeboard.org/reports/sat-suite",
+        "https://maa.org/math-competitions",
+        "https://www.ceec.edu.tw",
+        "https://www.oecd.org/pisa"
+      ],
       "citation": [
         "https://research.collegeboard.org/reports/sat-suite",
         "https://maa.org/math-competitions",
@@ -156,6 +162,38 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "以 2025 年第 66 屆 IMO 為例，金牌門檻為 35/42 分。"
+          }
+        }
+      ]
+    }
+    {%- endif -%}
+    {%- if page.url contains 'exam_threshold_map' and page.url contains 'entrance' or page.url contains 'exam_threshold_map' and page.url contains 'competition' -%}
+    ,{
+      "@type": "FAQPage",
+      "@id": "{{ page.url | absolute_url }}#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "這個考試的門檻是什麼？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "門檻因年度而異，請參閱本頁面的詳細數據表格。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "數據來源是什麼？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "所有數據來自官方公開資料，來源已標註於頁面底部。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "數據多久更新一次？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "我們在官方公布新數據後盡快更新，通常在一週內完成。"
           }
         }
       ]
