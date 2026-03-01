@@ -6,6 +6,36 @@ nav_exclude: true
 
 # 資料源探索紀錄
 
+## 2026-03-01 探索紀錄
+
+### 已驗證可用
+
+| 資料源 | URL | 格式 | 用途 |
+|--------|-----|------|------|
+| 🌍 TIMSS 2023 Results | https://timss2023.org/results/ | HTML | 四年級/八年級數學與科學國際評量（2024/12 發布）|
+| 🌍 TIMSS 2023 Math Achievement | https://timss2023.org/results/math-achievement/ | HTML | 數學成就詳細數據 |
+| 🇺🇸 College Board 2025 Annual Report | https://reports.collegeboard.org/sat-suite-program-results | HTML | SAT Class of 2025 統計（均分 1029）|
+| 🇹🇼 大考中心 115 學測統計 | https://www.ceec.edu.tw/xmdoc/cont?xsmsid=0J018604485538810196&sid=0Q056289672991900264 | HTML | 115 學年度學測五標與統計圖表 |
+| 🇺🇸 MAA 2025-26 AIME Thresholds | https://maa.org/news/2025-26-aime-thresholds-are-now-available/ | HTML | 2025-26 AIME 資格分數線 |
+| 🇬🇧 UKMT SMC 2025 Boundaries | https://mathsaurus.com/2025/10/22/ukmt-senior-maths-challenge-2025-boundaries-announced/ | HTML | SMC 2025 獎牌門檻 |
+| 🇬🇧 UKMT IMC 2025 Boundaries | https://mathsaurus.com/2025/02/06/intermediate-maths-challenge-2025-certificate-boundaries/ | HTML | IMC 2025 證書門檻 |
+| 🇦🇺 NAPLAN 2025 Results | https://www.acara.edu.au/reporting/national-report-on-schooling-in-australia/naplan-national-results | HTML | 2025 年 Numeracy 統計 |
+| 🇺🇸 AP 2025 Score Distributions | https://apstudents.collegeboard.org/about-ap-scores/score-distributions | HTML | AP 2025 各科分數分布（6.18M 考試，Calculus BC 44% 拿 5 分）|
+| 🇺🇸 AP 2025 Score Distributions PDF | https://apcentral.collegeboard.org/media/pdf/ap-score-distributions-by-subject-2025.pdf | PDF | AP 2025 各科分數分布完整數據 |
+| 🇬🇧 UKMT JMC 2025 Boundaries | https://mathsaurus.com/2025/05/12/junior-maths-challenge-2025-grade-boundaries-released/ | HTML | JMC 2025 獎牌門檻（歷年最高） |
+
+### 已確認尚無資料
+
+| 資料源 | 原因 |
+|--------|------|
+| PISA 2025 | 結果預計 2026 年 9 月發布 |
+| IMO 2026 (67th) | 競賽尚未舉行（2026 年 7 月，上海）|
+| AIME 2026 USAMO/USAJMO 門檻 | 考試已於 2026/2/5 及 2/11 舉行，答案已公布但 USAMO/USAJMO 門檻尚未公布 |
+| SAT Class of 2026 | 年度報告預計 2026 年秋季發布 |
+| 🇨🇦 Ontario 課綱更新 | 原計劃變更已延至 2026-27 學年實施 |
+
+---
+
 ## 2026-02-08 探索紀錄
 
 ### 已驗證可用
