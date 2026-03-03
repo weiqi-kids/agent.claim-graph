@@ -100,7 +100,7 @@ IMO 國家代表
 
 ## 資料來源
 
-- [MAA AMC](https://maa.org/math-competitions)
+- [MAA AMC](https://maa.org/student-programs/amc/)
 - [UKMT](https://www.ukmt.org.uk/)
 
 ---

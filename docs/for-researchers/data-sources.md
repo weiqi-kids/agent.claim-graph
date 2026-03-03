@@ -42,7 +42,7 @@ description: 本系統使用的所有資料來源索引，含官方 URL、驗證
 | SAT | College Board | [research.collegeboard.org](https://research.collegeboard.org/reports/sat-suite) | PDF | 2026-02-18 |
 | AP | College Board | [apcentral.collegeboard.org](https://apcentral.collegeboard.org/) | PDF | 2026-02-18 |
 | 學測 | 大考中心 | [ceec.edu.tw](https://www.ceec.edu.tw/) | HTML | 2026-02-18 |
-| AMC/AIME | MAA | [maa.org](https://maa.org/math-competitions) | HTML | 2026-02-18 |
+| AMC/AIME | MAA | [maa.org](https://maa.org/student-programs/amc/) | HTML | 2026-02-18 |
 | UKMT | UKMT | [ukmt.org.uk](https://www.ukmt.org.uk/) | HTML | 2026-02-18 |
 | IMO | IMO Official | [imo-official.org](https://www.imo-official.org/) | HTML | 2026-02-18 |
 | NAPLAN | ACARA | [acara.edu.au](https://www.acara.edu.au/) | HTML | 2026-02-18 |

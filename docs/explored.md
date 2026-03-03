@@ -51,7 +51,7 @@ nav_exclude: true
 | 🇸🇬 Singapore MOE Secondary Math Syllabus | https://www.moe.gov.sg/-/media/files/secondary/syllabuses/maths/2020-express_na-maths_syllabuses.pdf | PDF | 新加坡中學數學課綱（Express/N(A)）|
 | 🇬🇧 UK National Curriculum - Primary Math | https://assets.publishing.service.gov.uk/media/5a7da548ed915d2ac884cb07/PRIMARY_national_curriculum_-_Mathematics_220714.pdf | PDF | 英國小學數學課程（Key Stage 1-2）|
 | 🇬🇧 UK National Curriculum - Secondary Math | https://assets.publishing.service.gov.uk/media/5a7c1408e5274a1f5cc75a68/SECONDARY_national_curriculum_-_Mathematics.pdf | PDF | 英國中學數學課程（Key Stage 3-4）|
-| 🇬🇧 UK KS3 Math Guidance | https://assets.publishing.service.gov.uk/media/621629ac8fa8f5490d52ee78/KS3_NonStatutory_Guidance_Sept_2021_NCETM.pdf | PDF | 英國 Key Stage 3 數學教學指引 |
+| 🇬🇧 UK KS3 Math Guidance | https://assets.publishing.service.gov.uk/media/621629ac8fa8f5490d52ee78/KS3_NonStatutory_Guidance_Sept_2021_FINAL_NCETM.pdf | PDF | 英國 Key Stage 3 數學教學指引 |
 
 ### 新發現（多執行緒探索）
 
@@ -164,10 +164,10 @@ nav_exclude: true
 
 | 資料源 | 類型 | URL | 格式 | 發現日期 | 狀態 |
 |--------|------|-----|------|----------|------|
-| 台灣 data.gov.tw 教育類 | 開放資料 | https://data.gov.tw/datasets/agency/教育部 | Various | 2026-02-02 | 待挖掘 |
+| 台灣 data.gov.tw 教育類 | 開放資料 | https://data.gov.tw/ | Various | 2026-02-02 | 待挖掘 |
 | 均一平台 open data | 學習平台 | https://www.junyiacademy.org/open-data-iot | Unknown | 2026-02-02 | 需驗證 API |
 | CEFR-J 詞彙/語法 | GitHub | https://github.com/openlanguageprofiles/olp-en-cefrj | CSV/JSON | 2026-02-02 | 可作為 L2 補充 |
-| Canvas LMS API | 學習平台 | https://www.canvas.instructure.com/doc/api/ | JSON API | 2026-02-02 | 需 OAuth |
+| Canvas LMS API | 學習平台 | https://canvas.instructure.com/doc/api/ | JSON API | 2026-02-02 | 需 OAuth |
 
 ## 已排除
 

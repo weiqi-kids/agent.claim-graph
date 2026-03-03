@@ -92,7 +92,7 @@ IMO 國家代表（6 人）
 
 ## 資料來源
 
-- [MAA AMC](https://maa.org/math-competitions)
+- [MAA AMC](https://maa.org/student-programs/amc/)
 - [2025-26 AIME Thresholds - MAA](https://maa.org/news/2025-26-aime-thresholds-are-now-available/)
 - [AMC Statistics](https://artofproblemsolving.com/wiki/index.php/AMC_historical_results)
 - 資料擷取時間：2026-03-01

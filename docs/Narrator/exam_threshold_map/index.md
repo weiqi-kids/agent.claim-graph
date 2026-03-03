@@ -19,7 +19,6 @@ description: 各國升學考試與數學競賽的百分位門檻數據彙整。
 | [學測](entrance/taiwan-gsat) | 🇹🇼 台灣 | 均標 11 級 | 頂標 14 級 | 滿級 15 級 | → |
 | [SAT](entrance/us-sat) | 🇺🇸 美國 | 1010 分 | 1290 分 | 1510 分 | → |
 | [AP Calculus](entrance/us-ap-calc) | 🇺🇸 美國 | 3 分 | 5 分 | 5 分 | → |
-| [高考](entrance/china-gaokao) | 🇨🇳 中國 | 450 分 | 550 分 | 680 分 | → |
 | [NAPLAN](entrance/australia-naplan) | 🇦🇺 澳洲 | ~580 分 | — | — | → |
 
 ---
@@ -50,7 +49,7 @@ description: 各國升學考試與數學競賽的百分位門檻數據彙整。
 |-----------|----------|
 | SAT/AP | [College Board](https://research.collegeboard.org/) |
 | 學測 | [大考中心](https://www.ceec.edu.tw/) |
-| AMC/AIME | [MAA](https://maa.org/math-competitions) |
+| AMC/AIME | [MAA](https://maa.org/student-programs/amc/) |
 | UKMT | [UKMT](https://www.ukmt.org.uk/) |
 | IMO | [IMO Official](https://www.imo-official.org/) |
 | NAPLAN | [ACARA](https://www.acara.edu.au/) |

@@ -210,14 +210,14 @@ nav_exclude: true
 | TIMSS 資料 | https://timssandpirls.bc.edu/ | 資料檔 |
 | OECD Education API | https://data.oecd.org/api/ | JSON/XML |
 | Google Classroom API | https://developers.google.com/classroom | JSON API |
-| Canvas LMS API | https://www.canvas.instructure.com/doc/api/ | JSON API |
+| Canvas LMS API | https://canvas.instructure.com/doc/api/ | JSON API |
 
 ### 需萃取或驗證
 
 | 資料源 | URL | 狀態 |
 |--------|-----|------|
 | 台灣課綱 — NAER | https://www.naer.edu.tw/PageSyllabus?fid=52 | PDF/HTML 需萃取 |
-| 台灣 data.gov.tw 教育類 | https://data.gov.tw/datasets/agency/教育部 | 需進一步挖掘 |
+| 台灣 data.gov.tw 教育類 | https://data.gov.tw/ | 需進一步挖掘 |
 | 均一平台 open data | https://www.junyiacademy.org/open-data-iot | 需驗證 |
 | APCS 台灣 | https://apcs.csie.ntnu.edu.tw/ | 只有 PDF |
 

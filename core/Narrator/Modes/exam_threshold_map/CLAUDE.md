@@ -159,7 +159,6 @@ docs/Narrator/exam_threshold_map/
 │   ├── taiwan-gsat.md         # 台灣學測
 │   ├── us-sat.md              # 美國 SAT
 │   ├── us-ap-calc.md          # 美國 AP Calculus
-│   ├── china-gaokao.md        # 中國高考
 │   ├── australia-naplan.md    # 澳洲 NAPLAN
 │   └── uk-alevel.md           # 英國 A-Level
 └── competition/                # 數學競賽

@@ -25,7 +25,7 @@ source_layers:
 本報告的所有內容來自：
 - [UK National Curriculum: Mathematics Programmes of Study - Key Stage 3](https://assets.publishing.service.gov.uk/media/5a7c1408e5274a1f5cc75a68/SECONDARY_national_curriculum_-_Mathematics.pdf)
 - [UK Government: National Curriculum in England - Mathematics](https://www.gov.uk/government/publications/national-curriculum-in-england-mathematics-programmes-of-study)
-- [Mathematics Guidance: Key Stage 3](https://assets.publishing.service.gov.uk/media/621629ac8fa8f5490d52ee78/KS3_NonStatutory_Guidance_Sept_2021_NCETM.pdf)
+- [Mathematics Guidance: Key Stage 3](https://assets.publishing.service.gov.uk/media/621629ac8fa8f5490d52ee78/KS3_NonStatutory_Guidance_Sept_2021_FINAL_NCETM.pdf)
 - [Year 8 Maths Curriculum Guide](https://doodlelearning.com/maths/year-groups/year-8/year-8-maths-curriculum)
 - [Year 8 Maths Overview](https://thirdspacelearning.com/blog/year-8-maths/)
 - 資料擷取時間：2026-02-08

@@ -151,7 +151,7 @@ CCSS.Math.Content.{Grade}.{Domain}.{Cluster}.{Standard}
 | 格式 | 來源 |
 |------|------|
 | HTML | [Common Core State Standards](http://www.corestandards.org/Math/) |
-| PDF | [CCSS Math Standards PDF](http://www.corestandards.org/wp-content/uploads/Math_Standards1.pdf) |
+| PDF | [CCSS Math Standards PDF](https://corestandards.org/wp-content/uploads/2023/09/Math_Standards1.pdf) |
 
 ---
 

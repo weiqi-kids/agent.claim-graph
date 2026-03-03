@@ -37,7 +37,7 @@ description: 資料來源索引、PISA 統計數據、資料可追溯性說明�
 | SAT | College Board | [research.collegeboard.org](https://research.collegeboard.org/reports/sat-suite) | PDF |
 | AP | College Board | [collegeboard.org](https://apcentral.collegeboard.org/) | PDF |
 | 學測 | 大考中心 | [ceec.edu.tw](https://www.ceec.edu.tw/) | HTML |
-| AMC/AIME | MAA | [maa.org](https://maa.org/math-competitions) | HTML |
+| AMC/AIME | MAA | [maa.org](https://maa.org/student-programs/amc/) | HTML |
 | UKMT | UKMT | [ukmt.org.uk](https://www.ukmt.org.uk/) | HTML |
 | IMO | IMO Official | [imo-official.org](https://www.imo-official.org/) | HTML |
 

@@ -66,7 +66,7 @@ docs/
 | 資料源 | URL | 用途 |
 |--------|-----|------|
 | 🇺🇸 College Board | https://research.collegeboard.org/reports/sat-suite | SAT、AP 分數統計 |
-| 🇺🇸 MAA | https://maa.org/math-competitions | AMC/AIME 競賽資料 |
+| 🇺🇸 MAA | https://maa.org/student-programs/amc/ | AMC/AIME 競賽資料 |
 | 🇹🇼 大考中心 | https://www.ceec.edu.tw | 學測統計資料 |
 | 🇸🇬 MOE Singapore | https://www.moe.gov.sg | 新加坡數學課綱 |
 | 🇯🇵 MEXT | https://www.mext.go.jp | 日本課程指引 |
