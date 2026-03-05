@@ -1103,19 +1103,143 @@ v9.0 六大主題：Number、Algebra、Measurement、Space、Statistics、Probab
 
 ## 科學 (Science)
 
-> **資料可用性**：此年齡段目前無詳細科學課綱資料。美國 NGSS 在此年齡段的標準待補充，其他國家亦同。
+> **資料可用性**：🇺🇸🇹🇼🇸🇬🇬🇧🇯🇵🇨🇦🇦🇺 7 國科學課綱概覽已收錄（2026-03-05）。注意：台灣、新加坡、日本的正式科學課程從 Grade 3（約 8-9 歲）才開始，之前使用整合性課程。
 
-**各國科學課綱**
+<details>
+<summary>🇺🇸 美國 NGSS — Grades K-3 概覽（點擊展開）</summary>
 
-| 國家 | 科學科目 | 狀態 |
+#### 資料來源
+- [Next Generation Science Standards](https://www.nextgenscience.org/)
+- 資料擷取時間：2026-03-05
+
+| 年級 | 主要主題 | 領域 |
 |------|----------|------|
-| 🇺🇸 美國 | Science (NGSS) | 待補充 |
-| 🇹🇼 台灣 | 自然科學 | 待補充 |
-| 🇸🇬 新加坡 | Science | 待補充 |
-| 🇬🇧 英國 | Science | 待補充 |
-| 🇯🇵 日本 | 理科 | 待補充 |
-| 🇨🇦 加拿大 | Science and Technology | 待補充 |
-| 🇦🇺 澳洲 | Science | 待補充 |
+| K | 推拉力；天氣型態；動植物需求 | PS2, PS3, LS1, ESS2, ESS3 |
+| Grade 1 | 聲音與光（振動、照射）；遺傳（後代相似）；天體型態 | PS4, LS1, LS3, ESS1 |
+| Grade 2 | 物質性質；地形與水體；地球塑形（侵蝕）；棲地生物多樣性 | PS1, LS2, LS4, ESS1, ESS2 |
+| Grade 3 | 力與運動（平衡/非平衡）；生命週期；遺傳與變異；天氣與氣候；化石證據 | PS2, LS1-4, ESS2, ESS3 |
+
+**教學方式**：三維學習（Disciplinary Core Ideas + Science & Engineering Practices + Crosscutting Concepts），探究導向。工程設計 (ETS1) 自幼兒園即整合。
+
+</details>
+
+<details>
+<summary>🇹🇼 台灣 自然科學（108 課綱）— 一至二年級為生活課程，三年級起獨立（點擊展開）</summary>
+
+#### 資料來源
+- [CIRN 十二年國教課程綱要 自然科學](https://cirn.moe.edu.tw/WebContent/index.aspx?sid=11&mid=6992)
+- 資料擷取時間：2026-03-05
+
+| 學習階段 | 年級 | 說明 |
+|----------|------|------|
+| 第一學習階段 | 一、二年級 | **無獨立科學課**。科學內容融入「生活課程」：觀察自然現象、植物與動物外觀、天氣變化、日常物質 |
+| 第二學習階段 | 三、四年級 | 獨立「自然科學」開始。植物構造（根莖葉花果種子）、磁鐵、空氣性質、水與空氣移動、天氣觀測、動物觀察、光與影 |
+
+**教學方式**：探究與實作為核心，強調「素養導向」教學。
+
+</details>
+
+<details>
+<summary>🇸🇬 新加坡 Primary Science — P3 起（點擊展開）</summary>
+
+#### 資料來源
+- [MOE Primary Science Syllabus 2023](https://www.moe.gov.sg/-/media/files/primary/syllabus/primary-science-syllabus-2023_may24.pdf)
+- 資料擷取時間：2026-03-05
+
+**注意**：P1-P2 無獨立科學課程，科學從 P3（約 9 歲）開始。
+
+| 主題 | P3 內容 |
+|------|---------|
+| Diversity | 生物 vs 非生物；動植物分類；材料多樣性 |
+| Cycles | 植物與動物生命週期 |
+| Interactions | 磁鐵（磁性/非磁性材料、磁極） |
+
+**教學方式**：主題導向，5E 教學模式（Engage, Explore, Explain, Elaborate, Evaluate）。
+
+</details>
+
+<details>
+<summary>🇬🇧 英國 Science — KS1 + Lower KS2 (Year 1-3)（點擊展開）</summary>
+
+#### 資料來源
+- [National Curriculum: Science Programmes of Study](https://www.gov.uk/government/publications/national-curriculum-in-england-science-programmes-of-study)
+- 資料擷取時間：2026-03-05
+
+| 年級 | 主要主題 |
+|------|----------|
+| Year 1 | 植物（辨認、結構）；動物含人類（身體部位、感官）；日常材料（性質）；季節變化 |
+| Year 2 | 生物與棲地（食物鏈）；植物（生長條件）；動物含人類（健康、生長、營養）；材料用途 |
+| Year 3 | 植物（部位功能、生命週期）；動物含人類（營養、骨骼、肌肉）；岩石（性質、化石、土壤）；光（光源、影子、反射）；力與磁鐵 |
+
+**教學方式**：「Working Scientifically」貫穿所有年級 — 觀察、測量、記錄、分類、回答問題。
+
+</details>
+
+<details>
+<summary>🇯🇵 日本 理科（学習指導要領 2017）— 一至二年級為生活科，三年級起獨立（點擊展開）</summary>
+
+#### 資料來源
+- [MEXT 小学校学習指導要領 理科](https://www.mext.go.jp/a_menu/shotou/new-cs/youryou/syo/ri.htm)
+- 資料擷取時間：2026-03-05
+
+| 年級 | 領域 | 主要主題 |
+|------|------|----------|
+| 一至二年級 | 生活科 | 自然觀察、種植植物、飼養小動物、季節變化（與社會科整合） |
+| 三年級 A | 物質・エネルギー | 物體與重量；風力與橡膠力；光的性質；磁鐵的性質；電路 |
+| 三年級 B | 生命・地球 | 昆蟲與植物（生命週期、身體構造）；自然觀察；太陽與地面（影子、溫度） |
+
+**教學方式**：觀察與實驗為核心。要求學生自行預測並驗證。三年級「物質・エネルギー」領域規定至少 3 項「ものづくり」（製作）活動。
+
+</details>
+
+<details>
+<summary>🇨🇦 加拿大 Ontario Science and Technology (2022) — Grades 1-3（點擊展開）</summary>
+
+#### 資料來源
+- [Ontario Science and Technology Curriculum 2022](https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/context/strands)
+- 資料擷取時間：2026-03-05
+
+| Strand | Grade 1 | Grade 2 | Grade 3 |
+|--------|---------|---------|---------|
+| B: Life Systems | 生物需求與特徵 | 動物的成長與變化 | 植物的成長與變化 |
+| C: Matter & Energy | 生活中的能量（太陽能） | 物質性質與變化（液體、固體） | 力與運動 |
+| D: Structures & Mechanisms | 日常材料、物體與結構 | 簡單機械（槓桿、滑輪） | 穩固結構 |
+| E: Earth & Space | 日夜與季節變化 | 環境中的空氣與水 | 環境中的土壤 |
+
+**Strand A**（跨 Strand）：STEM 技能，含**自 Grade 1 起整合編程**（7 國中獨有）。
+
+</details>
+
+<details>
+<summary>🇦🇺 澳洲 ACARA Science v9.0 — Year 1-3（點擊展開）</summary>
+
+#### 資料來源
+- [Australian Curriculum v9.0: Science](https://v9.australiancurriculum.edu.au/f-10-curriculum/learning-areas/science/)
+- 資料擷取時間：2026-03-05
+
+| 年級 | 主要主題 |
+|------|----------|
+| Year 1 | 光與聲音（來源、感官）；生物的可觀察特徵；材料性質；日夜與季節變化 |
+| Year 2 | 地球資源（土壤、岩石、礦物）；運動（推、拉、形狀對運動的影響）；材料變化；天空中的可觀察變化 |
+| Year 3 | 熱與狀態變化（固體、液體）；生物特徵（分群、分類）；地球自轉與運動 |
+
+**教學方式**：三 Strands 整合教學（Science Understanding + Science Inquiry Skills + Science as a Human Endeavour）。含原住民觀點。
+
+</details>
+
+### 七國科學課綱比較（6-9 歲）
+
+> **本比較僅呈現數據差異，不構成評估建議。**
+
+| 比較面向 | 🇺🇸 美國 | 🇹🇼 台灣 | 🇸🇬 新加坡 | 🇬🇧 英國 | 🇯🇵 日本 | 🇨🇦 加拿大 | 🇦🇺 澳洲 |
+|----------|---------|---------|-----------|---------|---------|-----------|---------|
+| 科學起始年齡 | K（5 歲） | G3（8 歲）* | P3（9 歲） | Y1（5 歲） | G3（8 歲）* | G1（6 歲） | Foundation（5 歲） |
+| G1-2 處理方式 | 獨立科學 | 生活課程（整合） | 無科學課 | 獨立科學 | 生活科（整合） | 獨立科技 | 獨立科學 |
+| 組織方式 | 4 DCIs | 3 課題 + 7 跨科概念 | 5 主題 | 生物/化學/物理 | 2 領域（A/B） | 5 Strands | 3 Strands |
+| 工程/STEM | 自 K 整合 | 未明確 | 未明確 | 未明確 | G3 製作活動 | **自 G1 含編程** | 未明確 |
+| 課綱年份 | 2013 | 2019 | 2023 | 2014 | 2017 | 2022 | 2022 |
+
+\* 台灣和日本 G1-2 使用整合性課程（生活課程/生活科），含科學相關內容但非獨立科目。
 
 ---
 
