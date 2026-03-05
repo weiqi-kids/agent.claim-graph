@@ -6,7 +6,7 @@
 |--------|------|------|------|
 | 6-9 歲 | 🇺🇸🇹🇼🇸🇬🇬🇧🇯🇵🇨🇦🇦🇺（7 國） | 🇺🇸🇹🇼🇸🇬🇬🇧🇯🇵🇨🇦🇦🇺（7 國） | 待補充 |
 | 9-12 歲 | 🇺🇸🇹🇼🇸🇬🇬🇧🇯🇵🇨🇦🇦🇺（7 國） | 🇺🇸🇹🇼🇸🇬🇬🇧🇯🇵🇨🇦🇦🇺（7 國） | 🇺🇸 Grade 4 Science |
-| 12-15 歲 | 🇺🇸🇹🇼🇸🇬🇬🇧🇯🇵🇨🇦🇦🇺（7 國） | 🇺🇸 Grade 7-8 ELA | 🇺🇸 Grade 8 Science |
+| 12-15 歲 | 🇺🇸🇹🇼🇸🇬🇬🇧🇯🇵🇨🇦🇦🇺（7 國） | 🇺🇸🇹🇼🇸🇬🇬🇧🇯🇵🇨🇦🇦🇺（7 國） | 🇺🇸 Grade 8 Science |
 | 15-18 歲 | 各國概覽（無詳細標準） | 待補充 | 待補充 |
 | 18+ 歲 | — | — | — |
 
@@ -46,21 +46,32 @@
 | 🇨🇦 加拿大 | Language (Ontario 2023) | 4 Strands × G4-G6: 文法進階 + 理解 + 寫作 |
 | 🇦🇺 澳洲 | English (ACARA v9.0) | Y4: 28, Y5: 24, Y6: 22 項 |
 
+## 各國語文詳細標準數量（12-15 歲）
+
+| 國家 | 科目 | 標準數 |
+|------|------|--------|
+| 🇺🇸 美國 | ELA (Common Core) | Grade 7: 41, Grade 8: 42 項 |
+| 🇹🇼 台灣 | 國語文（108 課綱） | 第四學習階段: 學習表現 27 + 學習內容 35 項 |
+| 🇸🇬 新加坡 | English (EL Syllabus 2020) | Sec 1-3: 6 AoLL 螺旋遞進 + 語法進階表 |
+| 🇬🇧 英國 | English (National Curriculum) | KS3 (Years 7-9): 4 領域法定要求 |
+| 🇯🇵 日本 | 国語（学習指導要領 2017） | 中學 3 學年: 知識技能 + 思考力 各約 25-30 項/年 |
+| 🇨🇦 加拿大 | Language (Ontario 2023) | 4 Strands × G7-G8: 批判思維 + 進階文學手法 |
+| 🇦🇺 澳洲 | English (ACARA v9.0) | Y7: 24, Y8: 23 項 |
+
 ## 資料來源
 
 | 國家 | 來源 | 涵蓋範圍 |
 |------|------|----------|
 | 🇺🇸 美國 | [Common Core State Standards](https://www.thecorestandards.org/) | 數學 Grade 1-8、ELA Grade 1-8、Science Grade 4, 8 |
-| 🇹🇼 台灣 | [教育部十二年國教課綱](https://www.k12ea.gov.tw/) | 數學 一至四年級、八年級；國語文 第一至第三學習階段 |
-| 🇸🇬 新加坡 | [MOE Syllabus](https://www.moe.gov.sg/) | 數學 P1-4、S2；English Language P1-P6 |
-| 🇬🇧 英國 | [National Curriculum](https://www.gov.uk/national-curriculum) | 數學 Year 1-5、Year 8；English Year 1-6 |
-| 🇯🇵 日本 | [MEXT 學習指導要領](https://www.mext.go.jp/) | 數學 一至四年級、中二；国語 第1～6学年 |
-| 🇨🇦 加拿大 | [Ontario Curriculum](https://www.dcp.edu.gov.on.ca/) | 數學 Grade 1-4、Grade 8；Language Grade 1-6 |
-| 🇦🇺 澳洲 | [ACARA v9.0](https://www.acara.edu.au/) | 數學 Year 1-4、Year 8；English Year 1-6 |
+| 🇹🇼 台灣 | [教育部十二年國教課綱](https://www.k12ea.gov.tw/) | 數學 一至四年級、八年級；國語文 第一至第四學習階段 |
+| 🇸🇬 新加坡 | [MOE Syllabus](https://www.moe.gov.sg/) | 數學 P1-4、S2；English Language P1-P6、Sec 1-3 |
+| 🇬🇧 英國 | [National Curriculum](https://www.gov.uk/national-curriculum) | 數學 Year 1-5、Year 8；English Year 1-6、KS3 (Year 7-9) |
+| 🇯🇵 日本 | [MEXT 學習指導要領](https://www.mext.go.jp/) | 數學 一至四年級、中二；国語 第1～6学年、中學 1-3 年級 |
+| 🇨🇦 加拿大 | [Ontario Curriculum](https://www.dcp.edu.gov.on.ca/) | 數學 Grade 1-4、Grade 8；Language Grade 1-8 |
+| 🇦🇺 澳洲 | [ACARA v9.0](https://www.acara.edu.au/) | 數學 Year 1-4、Year 8；English Year 1-8 |
 
 ## 待補充資料
 
 - 6-9 歲：所有國家的科學課綱
-- 12-15 歲：所有國家的語文課綱
 - 各年齡帶：所有國家的科學課綱
-- 15-18 歲：各國高中數學詳細課程標準
+- 15-18 歲：各國高中數學詳細課程標準、語文課綱
