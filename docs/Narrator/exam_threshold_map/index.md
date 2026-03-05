@@ -20,6 +20,11 @@ description: 各國升學考試與數學競賽的百分位門檻數據彙整。
 | [SAT](entrance/us-sat) | 🇺🇸 美國 | 1010 分 | 1290 分 | 1510 分 | → |
 | [AP Calculus](entrance/us-ap-calc) | 🇺🇸 美國 | 3 分 | 5 分 | 5 分 | → |
 | [NAPLAN](entrance/australia-naplan) | 🇦🇺 澳洲 | ~580 分 | — | — | → |
+| [GCSE](entrance/uk-gcse) | 🇬🇧 英國 | 等級 4+（67%） | 等級 7+（22%） | 等級 9（5%） | → |
+| [A-Level](entrance/uk-a-level) | 🇬🇧 英國 | A\*-C（78%） | A\*-A（28%） | A\*（9%） | → |
+| [共通テスト](entrance/japan-common-test) | 🇯🇵 日本 | 得分率 ~60% | 得分率 ~75% | 得分率 ~85% | → |
+| [PSLE](entrance/singapore-psle) | 🇸🇬 新加坡 | AL 總分 ~20 | AL 總分 ~10 | AL 總分 4-6 | → |
+| [EQAO / OSSLT](entrance/canada-eqao) | 🇨🇦 加拿大 | Level 3+（達標） | — | — | → |
 
 ---
 
@@ -53,6 +58,10 @@ description: 各國升學考試與數學競賽的百分位門檻數據彙整。
 | UKMT | [UKMT](https://www.ukmt.org.uk/) |
 | IMO | [IMO Official](https://www.imo-official.org/) |
 | NAPLAN | [ACARA](https://www.acara.edu.au/) |
+| GCSE / A-Level | [Ofqual](https://analytics.ofqual.gov.uk/)、[JCQ](https://www.jcq.org.uk/) |
+| 共通テスト | [大学入試センター](https://www.dnc.ac.jp/) |
+| PSLE | [MOE Singapore](https://www.moe.gov.sg/)、[SEAB](https://www.seab.gov.sg/) |
+| EQAO / OSSLT | [EQAO](https://www.eqao.com/) |
 
 ---
 
