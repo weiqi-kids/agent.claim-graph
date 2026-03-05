@@ -2,13 +2,13 @@
 
 ## 各年齡帶資料涵蓋範圍
 
-| 年齡帶 | 數學 | 語文 | 科學 |
-|--------|------|------|------|
-| 6-9 歲 | 🇺🇸🇹🇼🇸🇬🇬🇧🇯🇵🇨🇦🇦🇺（7 國） | 🇺🇸🇹🇼🇸🇬🇬🇧🇯🇵🇨🇦🇦🇺（7 國） | 🇺🇸🇹🇼🇸🇬🇬🇧🇯🇵🇨🇦🇦🇺（7 國概覽） |
-| 9-12 歲 | 🇺🇸🇹🇼🇸🇬🇬🇧🇯🇵🇨🇦🇦🇺（7 國） | 🇺🇸🇹🇼🇸🇬🇬🇧🇯🇵🇨🇦🇦🇺（7 國） | 🇺🇸🇹🇼🇸🇬🇬🇧🇯🇵🇨🇦🇦🇺（7 國） |
-| 12-15 歲 | 🇺🇸🇹🇼🇸🇬🇬🇧🇯🇵🇨🇦🇦🇺（7 國） | 🇺🇸🇹🇼🇸🇬🇬🇧🇯🇵🇨🇦🇦🇺（7 國） | 🇺🇸🇹🇼🇸🇬🇬🇧🇯🇵🇨🇦🇦🇺（7 國） |
-| 15-18 歲 | 各國概覽（無詳細標準） | 🇺🇸🇹🇼🇸🇬🇬🇧🇯🇵🇨🇦🇦🇺（7 國概覽） | 🇺🇸🇹🇼🇸🇬🇬🇧🇯🇵🇨🇦🇦🇺（7 國概覽） |
-| 18+ 歲 | — | — | — |
+| 年齡帶 | 數學 | 語文 | 科學 | 社會/人文 |
+|--------|------|------|------|-----------|
+| 6-9 歲 | 🇺🇸🇹🇼🇸🇬🇬🇧🇯🇵🇨🇦🇦🇺（7 國） | 🇺🇸🇹🇼🇸🇬🇬🇧🇯🇵🇨🇦🇦🇺（7 國） | 🇺🇸🇹🇼🇸🇬🇬🇧🇯🇵🇨🇦🇦🇺（7 國概覽） | 🇺🇸🇹🇼🇸🇬🇬🇧🇯🇵🇨🇦🇦🇺（7 國概覽） |
+| 9-12 歲 | 🇺🇸🇹🇼🇸🇬🇬🇧🇯🇵🇨🇦🇦🇺（7 國） | 🇺🇸🇹🇼🇸🇬🇬🇧🇯🇵🇨🇦🇦🇺（7 國） | 🇺🇸🇹🇼🇸🇬🇬🇧🇯🇵🇨🇦🇦🇺（7 國） | 🇺🇸🇹🇼🇸🇬🇬🇧🇯🇵🇨🇦🇦🇺（7 國概覽） |
+| 12-15 歲 | 🇺🇸🇹🇼🇸🇬🇬🇧🇯🇵🇨🇦🇦🇺（7 國） | 🇺🇸🇹🇼🇸🇬🇬🇧🇯🇵🇨🇦🇦🇺（7 國） | 🇺🇸🇹🇼🇸🇬🇬🇧🇯🇵🇨🇦🇦🇺（7 國） | 🇺🇸🇹🇼🇸🇬🇬🇧🇯🇵🇨🇦🇦🇺（7 國概覽） |
+| 15-18 歲 | 各國概覽（無詳細標準） | 🇺🇸🇹🇼🇸🇬🇬🇧🇯🇵🇨🇦🇦🇺（7 國概覽） | 🇺🇸🇹🇼🇸🇬🇬🇧🇯🇵🇨🇦🇦🇺（7 國概覽） | 🇺🇸🇹🇼🇸🇬🇬🇧🇯🇵🇨🇦🇦🇺（7 國概覽） |
+| 18+ 歲 | — | — | — | — |
 
 ## 各國數學詳細標準數量
 
@@ -64,14 +64,14 @@
 |------|------|----------|
 | 🇺🇸 美國 | [Common Core State Standards](https://www.thecorestandards.org/) | 數學 Grade 1-8、ELA Grade 1-8 |
 | 🇺🇸 美國 | [NGSS](https://www.nextgenscience.org/) | 科學 K-3 概覽、Grade 4-5 PE、MS (6-8) 59 PE、HS 概覽 |
-| 🇹🇼 台灣 | [教育部十二年國教課綱](https://www.k12ea.gov.tw/) | 數學 一至四年級、八年級；國語文 第一至第五學習階段；自然科學 全學段 |
-| 🇸🇬 新加坡 | [MOE Syllabus](https://www.moe.gov.sg/) | 數學 P1-4、S2；English P1-P6、Sec 1-3；Science P3 概覽、Lower Sec、O/A-Level |
-| 🇬🇧 英國 | [National Curriculum](https://www.gov.uk/national-curriculum) | 數學 Year 1-5、Year 8；English Year 1-6、KS3；Science KS1-3、GCSE/A-Level |
-| 🇯🇵 日本 | [MEXT 學習指導要領](https://www.mext.go.jp/) | 數學 一至四年級、中二；国語 全學段；理科 小中高全學段 |
-| 🇨🇦 加拿大 | [Ontario Curriculum](https://www.dcp.edu.gov.on.ca/) | 數學 Grade 1-4、Grade 8；Language Grade 1-8；Science Grade 1-8、9-12 |
-| 🇦🇺 澳洲 | [ACARA v9.0](https://www.acara.edu.au/) | 數學 Year 1-4、Year 8；English Year 1-8；Science Year 1-8、Senior Secondary |
+| 🇺🇸 美國 | [NCSS C3 Framework](https://www.socialstudies.org/standards/c3) | 社會科 K-12 框架 |
+| 🇹🇼 台灣 | [教育部十二年國教課綱](https://www.k12ea.gov.tw/) | 數學、國語文、自然科學、社會 全學段 |
+| 🇸🇬 新加坡 | [MOE Syllabus](https://www.moe.gov.sg/) | 數學、English、Science、Social Studies 全學段 |
+| 🇬🇧 英國 | [National Curriculum](https://www.gov.uk/national-curriculum) | 數學、English、Science、History、Geography 全學段 |
+| 🇯🇵 日本 | [MEXT 學習指導要領](https://www.mext.go.jp/) | 數學、国語、理科、社会/地理歴史/公民 全學段 |
+| 🇨🇦 加拿大 | [Ontario Curriculum](https://www.dcp.edu.gov.on.ca/) | 數學、Language、Science、Social Studies/History & Geography 全學段 |
+| 🇦🇺 澳洲 | [ACARA v9.0](https://www.acara.edu.au/) | 數學、English、Science、HASS 全學段 |
 
 ## 待補充資料
 
 - 15-18 歲：各國高中數學詳細課程標準（目前為概覽）
-- 各年齡帶：社會/人文課綱（尚未開始）

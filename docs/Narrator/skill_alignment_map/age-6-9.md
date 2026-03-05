@@ -3,7 +3,7 @@ layout: default
 title: "6-9 歲學習地圖"
 parent: 年齡帶學習地圖
 nav_order: 1
-description: "6-9 歲（約國小低年級）數學、語文、科學跨國課綱比較，涵蓋美國、台灣、新加坡、英國、日本、加拿大、澳洲七國。"
+description: "6-9 歲（約國小低年級）數學、語文、科學、社會跨國課綱比較，涵蓋美國、台灣、新加坡、英國、日本、加拿大、澳洲七國。"
 mode: skill_alignment_map
 redirect_from:
   - /Narrator/skill_alignment_map/Grade-1-Math
@@ -1240,6 +1240,152 @@ v9.0 六大主題：Number、Algebra、Measurement、Space、Statistics、Probab
 | 課綱年份 | 2013 | 2019 | 2023 | 2014 | 2017 | 2022 | 2022 |
 
 \* 台灣和日本 G1-2 使用整合性課程（生活課程/生活科），含科學相關內容但非獨立科目。
+
+---
+
+## 社會/人文 (Social Studies / Humanities)
+
+> **資料可用性**：🇺🇸🇹🇼🇸🇬🇬🇧🇯🇵🇨🇦🇦🇺 7 國社會/人文課綱概覽已收錄（2026-03-05）。注意：台灣和日本 G1-2 使用整合性課程（生活課程/生活科），社會科目從 G3 才獨立。
+
+### 七國社會/人文課綱比較（6-9 歲）
+
+> **本比較僅呈現數據差異，不構成評估建議。**
+
+| 比較面向 | 🇺🇸 美國 | 🇹🇼 台灣 | 🇸🇬 新加坡 | 🇬🇧 英國 | 🇯🇵 日本 | 🇨🇦 加拿大 | 🇦🇺 澳洲 |
+|----------|---------|---------|-----------|---------|---------|-----------|---------|
+| 科目名稱 | Social Studies | 生活課程 (G1-2) / 社會 (G3) | Social Studies | History + Geography（分科） | 生活科 (G1-2) / 社会 (G3) | Social Studies | HASS |
+| 整合/分科 | 整合 | G1-2 整合、G3 分科 | 整合 | **分科**（唯一） | G1-2 整合、G3 分科 | 整合（雙軸） | 整合（含子領域） |
+| G1 重點 | 家庭、社區 | 自我認識、生活探索 | 自我認同、身邊環境 | 生活記憶中的變化、英國四國 | 學校生活、家庭生活 | 角色與責任、社區 | 家庭歷史、地方特色 |
+| G3 重點 | 跨時代社區、地方政府 | 家鄉、社區地理與文化 | 新加坡環境與挑戰 | 石器→鐵器時代、氣候帶 | 地方自治體、社區安全 | 加拿大 1780-1850 社區 | 社區紀念、公民權引入 |
+| 公民教育起點 | K（規則、權利） | G3（社會規範） | P1（嵌入式） | 非獨立科目 | G3（社區角色） | G1（角色責任） | **Y3**（正式子領域） |
+| 國族認同強度 | 中（符號、節日） | 中（本土優先） | **高**（國族建構） | 中（英國歷史、地理知識） | 低→中（G3 起地方認同） | 高（多元、原住民） | 中（原住民觀點） |
+| 獨特特色 | 無國定課綱、州自訂 | G1-2 整合社會+科學+藝術 | PSLE 考科、國家凝聚力 | 歷史地理全程分科 | 生活科（1989 年創設） | G3 即學歷史時期 | Y3 起正式公民教育 |
+
+<details>
+<summary>🇺🇸 美國 Social Studies — C3 Framework Grades 1-3（點擊展開）</summary>
+
+#### 資料來源
+- [NCSS C3 Framework](https://www.socialstudies.org/standards/c3)
+- 資料擷取時間：2026-03-05
+
+C3（College, Career, and Civic Life）Framework 以「探究弧」為核心，涵蓋四大學科：公民、經濟、地理、歷史。各州自行制定具體標準。
+
+| 年級 | 典型重點 |
+|------|----------|
+| Grade 1 | 家庭與社區、社區角色、學校和住家地圖 |
+| Grade 2 | 地方政府、比較社區、美國符號與節日 |
+| Grade 3 | 跨時代社區、州/地方政府、基礎經濟學 |
+
+四大學科自 K 起即導入：公民（規則、權利）、經濟（需求 vs. 想要）、地理（地圖、地方特色）、歷史（個人與家庭歷史）。
+
+</details>
+
+<details>
+<summary>🇹🇼 台灣 生活課程（G1-2）+ 社會（G3）（點擊展開）</summary>
+
+#### 資料來源
+- [十二年國教課程綱要 — 生活課程](https://www.k12ea.gov.tw/)
+- [十二年國教課程綱要 — 社會領域](https://www.k12ea.gov.tw/)
+- 資料擷取時間：2026-03-05
+
+**生活課程（G1-2）**：整合社會、自然科學、藝術的跨領域課程，7 大主題軸——悅納自己、探究事理、樂於學習、表達想法、美的感知、合宜行為、與人合作。
+
+**社會（G3）**：獨立科目，涵蓋家鄉社區地理、社區生活與人物、時間與變遷、團體規範與文化活動。
+
+G1-2 以體驗學習為核心，銜接幼兒園與學科教學。
+
+</details>
+
+<details>
+<summary>🇸🇬 新加坡 Social Studies — Primary 1-3（點擊展開）</summary>
+
+#### 資料來源
+- [MOE Social Studies Primary Syllabus 2020](https://www.moe.gov.sg/-/media/files/primary/2020-social-studies-primary.pdf)
+- 資料擷取時間：2026-03-05
+
+以 5 大主題組織：認同/文化/遺產、人與環境、治理與組織、衝突與合作、經濟與全球化。P1-3 屬 Cluster 1-2。
+
+| 年級 | 群組 | 重點 |
+|------|------|------|
+| P1 | Cluster 1 | 自我認同、所屬群體、學校與社區 |
+| P2 | Cluster 1 | 多元族群、傳統習俗、國家符號 |
+| P3 | Cluster 2 | 新加坡環境與挑戰、資源管理 |
+
+從 P1 起即強調國家認同與多元文化和諧。Social Studies 為 PSLE 考科（P6）。
+
+</details>
+
+<details>
+<summary>🇬🇧 英國 History + Geography — KS1-2（Years 1-3）（點擊展開）</summary>
+
+#### 資料來源
+- [GOV.UK History Programmes of Study](https://www.gov.uk/government/publications/national-curriculum-in-england-history-programmes-of-study)
+- [GOV.UK Geography Programmes of Study](https://www.gov.uk/government/publications/national-curriculum-in-england-geography-programmes-of-study)
+- 資料擷取時間：2026-03-05
+
+英國全程以歷史和地理**分科**教學，不使用「社會科」。
+
+**History (KS1)**：生活記憶中的變化、超越記憶的事件（如倫敦大火）、重要人物（如南丁格爾）、地方歷史。KS2 起（Y3）：石器→鐵器時代、羅馬帝國。
+
+**Geography (KS1)**：英國四國與首都、七大洲五大洋、天氣型態、基本地圖技能。KS2 起（Y3）：氣候帶、生物群落、聚落。
+
+無國家考試，以教師評量為主。
+
+</details>
+
+<details>
+<summary>🇯🇵 日本 生活科（G1-2）+ 社会（G3）（點擊展開）</summary>
+
+#### 資料來源
+- [MEXT 生活科 学習指導要領](https://www.mext.go.jp/a_menu/shotou/new-cs/youryou/syo/sei.htm)
+- [MEXT 社会科 学習指導要領](https://www.mext.go.jp/a_menu/shotou/new-cs/youryou/syo/sya.htm)
+- 資料擷取時間：2026-03-05
+
+**生活科（G1-2）**：1989 年創設的日本獨特科目，取代低年級社會科和理科。9 大內容：學校與生活、家庭與生活、地域與生活、公共設施使用、季節變化、自然遊戲、身體遊戲、表達與溝通、自我成長。
+
+**社会（G3）**：從身邊地域出發——市區町村的地理、地標、土地利用、社區安全（警消）、地方產業。
+
+強調直接體驗與觀察（校外教學、社區探索）。同心圓式擴展：學校→社區→市區町村→都道府縣。
+
+</details>
+
+<details>
+<summary>🇨🇦 加拿大 Ontario Social Studies — Grades 1-3（點擊展開）</summary>
+
+#### 資料來源
+- [Ontario Curriculum: Social Studies 2023](https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-sshg)
+- 資料擷取時間：2026-03-05
+
+每年級雙軸架構：Strand A（遺產與認同）+ Strand B（人與環境）。
+
+| 年級 | Strand A: 遺產與認同 | Strand B: 人與環境 |
+|------|---------------------|-------------------|
+| G1 | 角色與責任的變化 | 地方社區 |
+| G2 | 家庭與社區傳統的變遷 | 全球社區 |
+| G3 | 加拿大社區 1780-1850 | 安大略省的生活與工作 |
+
+從 G1 起即嵌入歷史思維概念（重要性、因果、延續/變遷、觀點）和原住民觀點。G3 即學正式歷史時期，較多數國家更早。
+
+</details>
+
+<details>
+<summary>🇦🇺 澳洲 HASS — Years 1-3（ACARA）（點擊展開）</summary>
+
+#### 資料來源
+- [ACARA HASS Learning Area](https://www.australiancurriculum.edu.au/curriculum-information/understand-this-learning-area/humanities-and-social-sciences)
+- 資料擷取時間：2026-03-05
+
+HASS（Humanities and Social Sciences）整合歷史、地理、公民與公民權（Y3 起）、經濟與商業（Y5 起）。
+
+| 年級 | 歷史 | 地理 | 公民（Y3 起） |
+|------|------|------|--------------|
+| Y1 | 過去與現在的家庭生活 | 熟悉地方的特色 | — |
+| Y2 | 地方如何改變 | 地圖上的地方與連結 | — |
+| Y3 | 社區與紀念、貢獻者 | 澳洲與鄰國、永續性 | 社區參與、規則與法律 |
+
+跨課程優先事項：原住民與托雷斯海峽島民歷史文化、永續發展。Y3 起正式引入公民教育。
+
+</details>
 
 ---
 
