@@ -126,7 +126,7 @@ BMO2 (British Mathematical Olympiad Round 2)
 
 | 競賽 | 前置數學程度 | 對應課綱 |
 |------|--------------|----------|
-| JMC | Year 7-8 數學 | [英國 Year 8](../../skill_alignment_map/UK-Year8-Math) |
+| JMC | Year 7-8 數學 | [12-15 歲課綱](../../skill_alignment_map/age-12-15) |
 | IMC | Year 9-10 數學 | GCSE 數學 |
 | SMC | Year 12-13 數學 | A-Level 數學 |
 

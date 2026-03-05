@@ -107,7 +107,7 @@ description: 美國 AP Calculus AB/BC 的門檻數據與分數分布。
 
 | 領域 | 對應課綱 |
 |------|----------|
-| 極限與連續 | [Grade 8 Math](../../skill_alignment_map/Grade-8-Math) + Pre-Calculus |
+| 極限與連續 | [12-15 歲課綱](../../skill_alignment_map/age-12-15) + Pre-Calculus |
 | 微分 | Pre-Calculus 延伸 |
 | 積分 | AB/BC 核心內容 |
 | 級數（僅 BC） | BC 進階內容 |

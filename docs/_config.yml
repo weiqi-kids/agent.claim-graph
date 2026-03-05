@@ -44,6 +44,7 @@ color_scheme: light
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-redirect-from
 
 # Open Graph 預設值
 author: 學生學習地圖系統

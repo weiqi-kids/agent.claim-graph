@@ -91,8 +91,8 @@ NAPLAN 採用四個精熟等級（Proficiency Levels）：
 
 | NAPLAN 年級 | 對應課綱 |
 |-------------|----------|
-| Year 3 | [澳洲 Year 4 Math](../../skill_alignment_map/Australia-Year4-Math)（前置） |
-| Year 9 | [澳洲 Year 8 Math](../../skill_alignment_map/Australia-Year8-Math)（前置） |
+| Year 3 | [9-12 歲課綱](../../skill_alignment_map/age-9-12)（前置） |
+| Year 9 | [12-15 歲課綱](../../skill_alignment_map/age-12-15)（前置） |
 
 ---
 

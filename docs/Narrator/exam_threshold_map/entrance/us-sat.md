@@ -89,7 +89,7 @@ SAT 數學涵蓋的技能範圍：
 
 | 領域 | 對應課綱 |
 |------|----------|
-| 代數 | [Grade 8 Math](../../skill_alignment_map/Grade-8-Math) + Algebra I |
+| 代數 | [12-15 歲課綱](../../skill_alignment_map/age-12-15) + Algebra I |
 | 問題解決 | 比例、百分比、統計 |
 | 進階數學 | 二次方程式、函數 |
 | 幾何與三角 | 畢氏定理、三角函數基礎 |

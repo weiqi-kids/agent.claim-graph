@@ -92,9 +92,9 @@ source_layers:
 
 ## 輸出位置
 
-`docs/Narrator/skill_alignment_map/{grade_level}-{subject}.md`
+`docs/Narrator/skill_alignment_map/age-{age_band}.md`
 
-範例：`docs/Narrator/skill_alignment_map/Grade-3-Math.md`
+範例：`docs/Narrator/skill_alignment_map/age-9-12.md`
 
 ---
 

@@ -18,10 +18,10 @@ description: 各國課綱比較、技能標準 ID 查詢、Bloom 認知層次分
 
 | 國家 | 年級範圍 | 數學 | 語文 | 科學 |
 |------|----------|------|------|------|
-| 🇺🇸 美國 | Grade 1-8 | [Common Core Math](../Narrator/skill_alignment_map/US) | [Common Core ELA](../Narrator/skill_alignment_map/Grade-4-ELA) | [NGSS](../Narrator/skill_alignment_map/Grade-4-Science) |
-| 🇹🇼 台灣 | Grade 4, 8 | [十二年國教](../Narrator/skill_alignment_map/Taiwan) | — | — |
-| 🇸🇬 新加坡 | P4, S2 | [MOE 課綱](../Narrator/skill_alignment_map/Singapore) | — | — |
-| 🇬🇧 英國 | Year 5, 8 | [National Curriculum](../Narrator/skill_alignment_map/UK) | — | — |
+| 🇺🇸 美國 | 6-18 歲 | [課綱索引](../Narrator/skill_alignment_map/) | [9-12 歲 ELA](../Narrator/skill_alignment_map/age-9-12) | [9-12 歲 Science](../Narrator/skill_alignment_map/age-9-12) |
+| 🇹🇼 台灣 | 9-15 歲 | [課綱索引](../Narrator/skill_alignment_map/) | — | — |
+| 🇸🇬 新加坡 | 9-15 歲 | [課綱索引](../Narrator/skill_alignment_map/) | — | — |
+| 🇬🇧 英國 | 9-15 歲 | [課綱索引](../Narrator/skill_alignment_map/) | — | — |
 
 → [查看完整課綱索引](../Narrator/skill_alignment_map/)
 
@@ -45,10 +45,10 @@ description: 各國課綱比較、技能標準 ID 查詢、Bloom 認知層次分
 
 | 年級 | 範例 ID | 查看完整清單 |
 |------|---------|--------------|
-| Grade 4 Math | CCSS.Math.Content.4.OA.A.1 | [查看](../Narrator/skill_alignment_map/Grade-4-Math) |
-| Grade 8 Math | CCSS.Math.Content.8.F.B.4 | [查看](../Narrator/skill_alignment_map/Grade-8-Math) |
-| Grade 4 ELA | CCSS.ELA-Literacy.RL.4.1 | [查看](../Narrator/skill_alignment_map/Grade-4-ELA) |
-| Grade 8 ELA | CCSS.ELA-Literacy.RL.8.1 | [查看](../Narrator/skill_alignment_map/Grade-8-ELA) |
+| Grade 4 Math | CCSS.Math.Content.4.OA.A.1 | [查看](../Narrator/skill_alignment_map/age-9-12) |
+| Grade 8 Math | CCSS.Math.Content.8.F.B.4 | [查看](../Narrator/skill_alignment_map/age-12-15) |
+| Grade 4 ELA | CCSS.ELA-Literacy.RL.4.1 | [查看](../Narrator/skill_alignment_map/age-9-12) |
+| Grade 8 ELA | CCSS.ELA-Literacy.RL.8.1 | [查看](../Narrator/skill_alignment_map/age-12-15) |
 
 ---
 

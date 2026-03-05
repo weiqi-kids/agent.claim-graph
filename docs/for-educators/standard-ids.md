@@ -90,7 +90,7 @@ CCSS.Math.Content.{Grade}.{Domain}.{Cluster}.{Standard}
 | 4.NF.C.6 | Decimal notation for fractions |
 | 4.NF.C.7 | Compare decimals |
 
-→ [完整 Grade 4 數學標準](../Narrator/skill_alignment_map/Grade-4-Math)
+→ [完整 9-12 歲數學標準](../Narrator/skill_alignment_map/age-9-12)
 
 ---
 
@@ -140,7 +140,7 @@ CCSS.Math.Content.{Grade}.{Domain}.{Cluster}.{Standard}
 | 8.G.B.8 | Distance between points |
 | 8.G.C.9 | Volume formulas |
 
-→ [完整 Grade 8 數學標準](../Narrator/skill_alignment_map/Grade-8-Math)
+→ [完整 12-15 歲數學標準](../Narrator/skill_alignment_map/age-12-15)
 
 ---
 

@@ -45,16 +45,13 @@ docs/
     │       ├── amc-aime.md      # AMC/AIME
     │       ├── ukmt.md          # UKMT
     │       └── entry-thresholds.md  # 入門門檻總覽
-    └── skill_alignment_map/     # 年級技能標準（Mode）
-        ├── index.md             # 索引
-        ├── Grade-4-Math.md      # 美國 Grade 4
-        ├── Grade-8-Math.md      # 美國 Grade 8
-        ├── Taiwan*.md           # 台灣（3 頁）
-        ├── Singapore*.md        # 新加坡（3 頁）
-        ├── UK*.md               # 英國（3 頁）
-        ├── Japan*.md            # 日本（3 頁）
-        ├── Canada*.md           # 加拿大（3 頁）
-        └── Australia*.md        # 澳洲（3 頁）
+    └── skill_alignment_map/     # 年齡帶學習地圖（Mode）
+        ├── index.md             # 年齡帶總覽
+        ├── age-6-9.md           # 6-9 歲（國小低年級）
+        ├── age-9-12.md          # 9-12 歲（國小中高年級，7 國比較）
+        ├── age-12-15.md         # 12-15 歲（國中，7 國比較）
+        ├── age-15-18.md         # 15-18 歲（高中，競賽+考試）
+        └── age-18-plus.md       # 18 歲以上（AP、NAPLAN）
 ```
 
 ---
@@ -230,13 +227,11 @@ docs/
 | AMC/AIME | `AMC 10 12 {年份} cutoff scores` | exam_threshold_map/competition/amc-aime.md |
 | UKMT | `UKMT {年份} thresholds` | exam_threshold_map/competition/ukmt.md |
 | PISA | `PISA {年份} mathematics results` | for-researchers/pisa-data.md |
-| 美國課綱 | `Common Core Grade {N} Math standards` | skill_alignment_map/Grade-{N}-Math.md |
-| 台灣課綱 | `十二年國教 數學 {年級}` | skill_alignment_map/Taiwan-*.md |
-| 新加坡課綱 | `Singapore MOE Math syllabus` | skill_alignment_map/Singapore-*.md |
-| 英國課綱 | `UK National Curriculum Maths` | skill_alignment_map/UK-*.md |
-| 日本課綱 | `MEXT 学習指導要領 算数 数学` | skill_alignment_map/Japan-*.md |
-| 加拿大課綱 | `Ontario Math Curriculum` | skill_alignment_map/Canada-*.md |
-| 澳洲課綱 | `Australian Curriculum Mathematics` | skill_alignment_map/Australia-*.md |
+| 課綱（6-9 歲） | `Common Core Grade 1-3 Math standards` | skill_alignment_map/age-6-9.md |
+| 課綱（9-12 歲） | `Common Core Grade 4-6`, `十二年國教 數學 四年級`, `Singapore P4 Math`, `UK Year 5 Maths`, `MEXT 算数 四年`, `Ontario Grade 4 Math`, `ACARA Year 4 Math` | skill_alignment_map/age-9-12.md |
+| 課綱（12-15 歲） | `Common Core Grade 7-8`, `十二年國教 數學 八年級`, `Singapore S2 Math`, `UK Year 8 Maths`, `MEXT 数学 中二`, `Ontario Grade 8 Math`, `ACARA Year 8 Math` | skill_alignment_map/age-12-15.md |
+| 課綱（15-18 歲） | 各國高中數學概覽 | skill_alignment_map/age-15-18.md |
+| 課綱（18+ 歲） | AP Calculus, NAPLAN | skill_alignment_map/age-18-plus.md |
 
 若搜尋結果與現有資料不同，更新對應頁面。
 
@@ -418,10 +413,10 @@ curl -s "https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=https://
 - 學測：✅/❌
 - AMC/AIME：✅/❌
 
-**課綱頁面（抽驗）**
-- 美國 Grade-4-Math：✅/❌
-- 台灣 Grade-4-Math：✅/❌
-- 日本/加拿大/澳洲（任一）：✅/❌
+**年齡帶學習地圖（抽驗）**
+- 9-12 歲（7 國比較）：✅/❌
+- 12-15 歲（7 國比較）：✅/❌
+- 6-9 歲 / 15-18 歲（任一）：✅/❌
 
 ### 網站健檢
 

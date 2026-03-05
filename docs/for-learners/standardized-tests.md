@@ -29,7 +29,7 @@ SAT、AP 等標準化考試的門檻數據與技能對應。
 
 | 領域 | 佔比 | 對應課綱 |
 |------|------|----------|
-| 代數 | 35% | [Grade 8 Math](../Narrator/skill_alignment_map/Grade-8-Math) + Algebra I |
+| 代數 | 35% | [12-15 歲課綱](../Narrator/skill_alignment_map/age-12-15) + Algebra I |
 | 進階數學 | 35% | 二次方程式、函數、指數 |
 | 問題解決 | 15% | 比例、百分比、統計 |
 | 幾何與三角 | 15% | 畢氏定理、三角函數基礎 |

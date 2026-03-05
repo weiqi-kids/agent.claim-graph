@@ -120,6 +120,38 @@
         "https://www.acara.edu.au"
       ]
     }
+    {%- if page.url contains 'age-' -%}
+    ,{
+      "@type": "FAQPage",
+      "@id": "{{ page.url | absolute_url }}#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "為什麼用年齡帶而不是年級來比較各國課綱？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "各國學制命名不同（如台灣國小、新加坡 Primary、英國 Year），年齡帶提供統一的比較座標。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "各國在同年齡教的數學內容一樣嗎？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "核心概念高度相似，但深度和教學方法不同。例如台灣較早教二次方程式，新加坡強調 Bar Model 解題，英國較早引入百分數。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "這些課綱資料的來源是什麼？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "所有資料來自各國教育部官方課綱文件，包含美國 Common Core、台灣十二年國教、新加坡 MOE、英國 National Curriculum、日本 MEXT、加拿大 Ontario、澳洲 ACARA。"
+          }
+        }
+      ]
+    }
+    {%- else -%}
     ,{
       "@type": "FAQPage",
       "@id": "{{ page.url | absolute_url }}#faq",
@@ -166,6 +198,7 @@
         }
       ]
     }
+    {%- endif -%}
     {%- endif -%}
     {%- if page.url contains 'exam_threshold_map' and page.url contains 'entrance' or page.url contains 'exam_threshold_map' and page.url contains 'competition' -%}
     ,{
