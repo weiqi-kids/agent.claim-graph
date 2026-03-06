@@ -40,6 +40,10 @@ gh_edit_view_mode: "tree"
 # 顏色主題
 color_scheme: light
 
+# Mermaid 流程圖
+mermaid:
+  version: "10.9.0"
+
 # SEO 設定
 plugins:
   - jekyll-seo-tag

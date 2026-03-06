@@ -111,18 +111,13 @@ SAT、AP 等標準化考試的門檻數據與技能對應。
 
 以下是常見的技能累積順序（僅供參考，非學習建議）：
 
-```
-Grade 8 Math
-    ↓
-Algebra I（一元一次/二次方程式）
-    ↓
-Geometry（幾何證明）
-    ↓
-Algebra II（進階代數）
-    ↓
-Pre-Calculus（三角函數、極限）
-    ↓
-AP Calculus AB/BC
+```mermaid
+flowchart TD
+    A["Grade 8 Math"] --> B["Algebra I（一元一次/二次方程式）"]
+    B --> C["Geometry（幾何證明）"]
+    C --> D["Algebra II（進階代數）"]
+    D --> E["Pre-Calculus（三角函數、極限）"]
+    E --> F["AP Calculus AB/BC"]
 ```
 
 ---
