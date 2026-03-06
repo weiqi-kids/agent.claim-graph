@@ -1,3 +1,21 @@
+<!-- Twemoji: 確保所有國旗 emoji（含 🇹🇼）跨瀏覽器正常顯示 -->
+<script src="https://cdn.jsdelivr.net/npm/@twemoji/api@15/dist/twemoji.min.js" crossorigin="anonymous"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  if (typeof twemoji !== 'undefined') {
+    twemoji.parse(document.body, { folder: 'svg', ext: '.svg' });
+  }
+});
+</script>
+<style>
+img.emoji {
+  height: 1.2em;
+  width: 1.2em;
+  margin: 0 .05em 0 .1em;
+  vertical-align: -0.1em;
+}
+</style>
+
 <!-- JSON-LD Schema for SEO -->
 <script type="application/ld+json">
 {
