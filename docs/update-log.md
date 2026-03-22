@@ -19,6 +19,7 @@ nav_exclude: true
 
 | 日期 | Performance | SEO | Accessibility | Best Practices | LCP | CLS |
 |------|-------------|-----|---------------|----------------|-----|-----|
+| 2026-03-22 | — | — | — | — | — | — | PageSpeed API 配額用盡，無法檢測 |
 | 2026-03-01 | 89 | 100 | 100 | 96 | 2.0s | 0 |
 
 ---
