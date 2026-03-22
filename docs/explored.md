@@ -6,6 +6,28 @@ nav_exclude: true
 
 # 資料源探索紀錄
 
+## 2026-03-22 探索紀錄
+
+### 已驗證可用
+
+| 資料源 | URL | 格式 | 用途 |
+|--------|-----|------|------|
+| 🇬🇧 UKMT IMC 2026 Boundaries | https://mathsaurus.com/intermediate-maths-challenge-grade-boundaries/ | HTML | IMC 2026 獎牌門檻（Gold 61, Silver 46, Bronze 35）|
+| 🇺🇸 MAA 2026 USAMO/USAJMO Invitations | https://maa.org/news/2026-usamo-and-usajmo-invitations-determined/ | HTML | 2026 USAMO/USAJMO 邀請已確認（具體分數未公布）|
+
+### 已確認尚無資料
+
+| 資料源 | 原因 |
+|--------|------|
+| PISA 2025 | 結果預計 2026 年 9 月發布 |
+| IMO 2026 (67th) | 競賽尚未舉行（2026 年 7 月，上海）|
+| USAMO/USAJMO 2026 具體 index 門檻 | MAA 已確認邀請但未公開具體分數 |
+| SAT Class of 2026 | 年度報告預計 2026 年秋季發布 |
+| UKMT JMC 2026 | 競賽將於 2026 年 4 月 29 日舉行 |
+| NAPLAN 2026 | 測驗於 2026 年 3 月 11-23 日進行，結果尚未發布 |
+
+---
+
 ## 2026-03-01 探索紀錄
 
 ### 已驗證可用
