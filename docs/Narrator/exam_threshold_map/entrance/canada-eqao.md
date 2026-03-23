@@ -141,9 +141,9 @@ EQAO 採用 4 級制評定學生表現：
 
 | 年級 | 對應課綱 |
 |------|----------|
-| Grade 3 | [加拿大 Grade 1-3 數學課綱](../../skill_alignment_map/Canada-Grade-1-3-Math) |
-| Grade 6 | [加拿大 Grade 4-6 數學課綱](../../skill_alignment_map/Canada-Grade-4-6-Math) |
-| Grade 9 | [加拿大 Grade 7-9 數學課綱](../../skill_alignment_map/Canada-Grade-7-9-Math) |
+| Grade 3 | [6-9 歲學習地圖（含加拿大課綱）](../../skill_alignment_map/age-6-9) |
+| Grade 6 | [9-12 歲學習地圖（含加拿大課綱）](../../skill_alignment_map/age-9-12) |
+| Grade 9 | [12-15 歲學習地圖（含加拿大課綱）](../../skill_alignment_map/age-12-15) |
 
 ---
 
