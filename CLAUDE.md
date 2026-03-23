@@ -255,48 +255,7 @@ git add docs/ && git commit -m "chore: update reports (YYYY-MM-DD)" && git push
 
 等待 GitHub Actions 完成後，用 WebFetch 驗證各頁面（加 `?v=日期` 避免快取）。
 
-### 7. 網站健檢與優化掃描
-
-執行輕量級健檢，識別優化方向：
-
-#### 7.1 技術健檢
-
-```bash
-# 使用 PageSpeed API 快速檢測
-curl -s "https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=https://learn.weiqi.kids/&strategy=mobile" | jq '{
-  performance: (.lighthouseResult.categories.performance.score * 100),
-  seo: (.lighthouseResult.categories.seo.score * 100),
-  accessibility: (.lighthouseResult.categories.accessibility.score * 100),
-  lcp: .lighthouseResult.audits["largest-contentful-paint"].displayValue,
-  cls: .lighthouseResult.audits["cumulative-layout-shift"].displayValue
-}'
-```
-
-#### 7.2 評估標準
-
-| 指標 | 良好 | 需改善 | 差 |
-|------|------|--------|-----|
-| Performance | ≥ 90 | 50-89 | < 50 |
-| SEO | ≥ 90 | 50-89 | < 50 |
-| LCP | < 2.5s | 2.5-4s | > 4s |
-| CLS | < 0.1 | 0.1-0.25 | > 0.25 |
-
-#### 7.3 優化建議觸發條件
-
-| 條件 | 建議行動 |
-|------|----------|
-| Performance < 50 | 建議執行 `revamp/1-discovery` 完整健檢 |
-| SEO < 70 | 檢查 Schema 和 Meta 標籤 |
-| LCP > 4s | 檢查圖片優化和載入策略 |
-| 連續 3 次健檢分數下降 | 建議啟動完整 revamp 流程 |
-
-#### 7.4 記錄健檢結果
-
-將健檢數據記錄到 `docs/update-log.md`，用於追蹤趨勢。
-
----
-
-### 8. 品質關卡檢查
+### 7. 品質關卡檢查
 
 **全部通過才能視為流程成功完成。**
 
@@ -357,25 +316,17 @@ curl -s "https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=https://
 - [ ] 無遺漏項目
 - [ ] 比較類分析已加警語：「本比較僅呈現數據差異，不構成評估建議」
 
-### 4. 網站健檢
-
-- [ ] 執行 PageSpeed 檢測（Mobile）
-- [ ] Performance 分數 ≥ 50（⚠️ < 50 需檢視）
-- [ ] SEO 分數 ≥ 70
-- [ ] 與上次檢測比較，無重大退步（> 10 分下降）
-- [ ] 記錄數據到 update-log.md
-
-### 5. Git 狀態檢查
+### 4. Git 狀態檢查
 
 - [ ] 所有變更已 commit
 - [ ] commit message 清楚描述本次變更
 - [ ] 已 push 到 Github（除非另有指示）
 - [ ] 遠端分支已更新
 
-### 6. SOP 完成度檢查
+### 5. SOP 完成度檢查
 
 - [ ] 回顧原始任務需求
-- [ ] 原訂 SOP 每個步驟都已執行（步驟 1-7）
+- [ ] 原訂 SOP 每個步驟都已執行（步驟 1-6）
 - [ ] 無遺漏的待辦項目
 - [ ] 無「之後再處理」的項目
 
@@ -418,27 +369,6 @@ curl -s "https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=https://
 - 12-15 歲（7 國比較）：✅/❌
 - 6-9 歲 / 15-18 歲（任一）：✅/❌
 
-### 網站健檢
-
-| 指標 | 數值 | 上次數值 | 變化 | 評價 |
-|------|------|----------|------|------|
-| Performance | | | ↑/↓/→ | ✅/⚠️/❌ |
-| SEO | | | | |
-| Accessibility | | | | |
-| LCP | | | | |
-| CLS | | | | |
-
-### 優化建議
-
-| 優先級 | 建議 | 觸發原因 |
-|--------|------|----------|
-| P0 | {或「無」} | |
-| P1 | | |
-| P2 | | |
-
-**是否建議啟動 revamp？** ✅ 是 / ❌ 否
-- 原因：{說明}
-
 ### 品質關卡檢查
 
 | 類別 | 狀態 | 問題（如有） |
@@ -450,7 +380,6 @@ curl -s "https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=https://
 | E-E-A-T 信號 | ✅/❌ | |
 | 內容更新 | ✅/❌ | |
 | Git 狀態 | ✅/❌ | |
-| 網站健檢 | ✅/⚠️/❌ | |
 | SOP 完成度 | ✅/❌ | |
 
 **總結**：X/Y 項通過，狀態：通過/未通過
