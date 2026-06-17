@@ -4,6 +4,8 @@ title: 標準 ID 索引
 parent: 教育工作者專區
 nav_order: 1
 description: 美國 Common Core 數學標準 ID 索引，方便教育工作者對照課綱。
+lastReviewed: 2026-03-05
+reviewedBy: 學生學習地圖系統
 ---
 
 # 標準 ID 索引

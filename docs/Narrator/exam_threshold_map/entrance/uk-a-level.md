@@ -4,6 +4,8 @@ title: A-Level
 parent: 考試門檻
 nav_order: 6
 description: 英國高級程度會考 A-Level 的等級分布與門檻數據。
+lastReviewed: 2026-03-05
+reviewedBy: 學生學習地圖系統
 ---
 
 # A-Level 門檻數據

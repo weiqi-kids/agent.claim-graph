@@ -4,6 +4,8 @@ title: 競賽入門門檻
 parent: 考試門檻
 nav_order: 10
 description: 數學競賽入門門檻總覽，說明「從零開始」準備各級競賽需達到的基本水準。
+lastReviewed: 2026-03-06
+reviewedBy: 學生學習地圖系統
 ---
 
 # 數學競賽入門門檻

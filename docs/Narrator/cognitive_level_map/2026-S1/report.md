@@ -2,6 +2,8 @@
 layout: default
 title: 各國考試題型分析
 nav_exclude: true
+lastReviewed: 2026-02-07
+reviewedBy: 學生學習地圖系統
 ---
 
 # 各國考試題型分析

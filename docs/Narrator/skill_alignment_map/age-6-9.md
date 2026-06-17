@@ -12,6 +12,8 @@ redirect_from:
   - /Narrator/skill_alignment_map/Grade-1-ELA
   - /Narrator/skill_alignment_map/Grade-2-ELA
   - /Narrator/skill_alignment_map/Grade-3-ELA
+lastReviewed: 2026-03-05
+reviewedBy: 學生學習地圖系統
 ---
 
 # 6-9 歲學習地圖

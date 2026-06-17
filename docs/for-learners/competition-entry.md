@@ -4,6 +4,8 @@ title: 競賽入門指引
 parent: 自學者專區
 nav_order: 1
 description: 數學競賽入門門檻與前置條件，說明「從零開始」準備各級競賽需達到的基本水準。
+lastReviewed: 2026-06-17
+reviewedBy: 學生學習地圖系統
 ---
 
 # 數學競賽入門指引

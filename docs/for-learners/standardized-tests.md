@@ -4,6 +4,8 @@ title: 標準化考試參考
 parent: 自學者專區
 nav_order: 2
 description: SAT、AP 等標準化考試的門檻數據與技能對應，供自學者規劃參考。
+lastReviewed: 2026-03-06
+reviewedBy: 學生學習地圖系統
 ---
 
 # 標準化考試參考

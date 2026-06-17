@@ -4,6 +4,8 @@ title: GCSE
 parent: 考試門檻
 nav_order: 5
 description: 英國中等教育普通證書 GCSE 的成績等級分布與門檻數據。
+lastReviewed: 2026-03-23
+reviewedBy: 學生學習地圖系統
 ---
 
 # GCSE 門檻數據

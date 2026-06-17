@@ -2,6 +2,8 @@
 layout: default
 title: 設計教訓
 nav_exclude: true
+lastReviewed: 2026-03-06
+reviewedBy: 學生學習地圖系統
 ---
 
 # 學生學習地圖系統 — 探索階段教訓紀錄

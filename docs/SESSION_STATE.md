@@ -1,3 +1,11 @@
+---
+layout: default
+title: Session State
+nav_exclude: true
+lastReviewed: 2026-02-06
+reviewedBy: 學生學習地圖系統
+---
+
 # 工作階段狀態紀錄
 
 > 最後更新：2026-02-06 (系統巡檢後)

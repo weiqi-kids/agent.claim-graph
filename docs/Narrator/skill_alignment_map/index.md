@@ -4,6 +4,8 @@ title: 年齡帶學習地圖
 nav_order: 2
 has_children: true
 description: 以年齡帶為座標，跨國比較美國、台灣、新加坡、英國、日本、加拿大、澳洲七國的數學、語文、科學課程標準。
+lastReviewed: 2026-03-06
+reviewedBy: 學生學習地圖系統
 ---
 
 # 年齡帶學習地圖

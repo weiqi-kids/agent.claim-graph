@@ -4,6 +4,8 @@ title: AP Calculus
 parent: 考試門檻
 nav_order: 3
 description: 美國 AP Calculus AB/BC 的門檻數據與分數分布。
+lastReviewed: 2026-03-05
+reviewedBy: 學生學習地圖系統
 ---
 
 # AP Calculus 門檻數據

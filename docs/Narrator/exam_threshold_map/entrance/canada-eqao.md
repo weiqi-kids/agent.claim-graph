@@ -4,6 +4,8 @@ title: EQAO / OSSLT
 parent: 考試門檻
 nav_order: 9
 description: 加拿大安大略省 EQAO 評量與 OSSLT 讀寫測驗的達標率數據。
+lastReviewed: 2026-03-23
+reviewedBy: 學生學習地圖系統
 ---
 
 # EQAO / OSSLT 門檻數據

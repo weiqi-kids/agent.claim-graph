@@ -2,6 +2,8 @@
 layout: default
 title: 跨國對照報告
 nav_exclude: true
+lastReviewed: 2026-02-07
+reviewedBy: 學生學習地圖系統
 ---
 
 # 各國考試認知層次對照報告

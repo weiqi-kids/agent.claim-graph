@@ -2,6 +2,8 @@
 layout: default
 title: 考試門檻
 nav_exclude: true
+lastReviewed: 2026-02-07
+reviewedBy: 學生學習地圖系統
 ---
 
 # 考試門檻

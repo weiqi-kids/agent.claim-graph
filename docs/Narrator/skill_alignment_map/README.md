@@ -1,3 +1,11 @@
+---
+layout: default
+title: 年齡帶學習地圖說明
+nav_exclude: true
+lastReviewed: 2026-03-05
+reviewedBy: 學生學習地圖系統
+---
+
 # 年齡帶學習地圖（Skill Alignment Map）
 
 ## Mode 資訊

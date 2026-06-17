@@ -5,6 +5,8 @@ parent: 年齡帶學習地圖
 nav_order: 5
 description: "18 歲以上升學考試門檻資料，涵蓋 7 國大學入學相關考試（SAT、學測、A-Level、共通テスト、AP Calculus 等）。"
 mode: skill_alignment_map
+lastReviewed: 2026-03-06
+reviewedBy: 學生學習地圖系統
 ---
 
 # 18 歲以上學習地圖

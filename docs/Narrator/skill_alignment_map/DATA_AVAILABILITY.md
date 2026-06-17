@@ -1,3 +1,11 @@
+---
+layout: default
+title: 資料可用性說明
+nav_exclude: true
+lastReviewed: 2026-03-06
+reviewedBy: 學生學習地圖系統
+---
+
 # 年齡帶學習地圖 - 資料可用性
 
 ## 各年齡帶資料涵蓋範圍

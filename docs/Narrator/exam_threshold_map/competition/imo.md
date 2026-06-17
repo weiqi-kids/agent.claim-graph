@@ -4,6 +4,8 @@ title: IMO
 parent: 考試門檻
 nav_order: 3
 description: 國際數學奧林匹亞 (IMO) 的門檻數據與獎牌標準。
+lastReviewed: 2026-03-03
+reviewedBy: 學生學習地圖系統
 ---
 
 # IMO 門檻數據

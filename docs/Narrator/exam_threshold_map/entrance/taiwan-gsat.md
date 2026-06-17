@@ -4,6 +4,8 @@ title: 學測
 parent: 考試門檻
 nav_order: 1
 description: 台灣大學學科能力測驗（學測）的門檻數據與級分對照。
+lastReviewed: 2026-03-01
+reviewedBy: 學生學習地圖系統
 ---
 
 # 學測門檻數據

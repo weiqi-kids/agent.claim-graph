@@ -4,6 +4,8 @@ title: SAT
 parent: 考試門檻
 nav_order: 2
 description: 美國大學入學考試 SAT 的門檻數據與百分位對照。
+lastReviewed: 2026-03-05
+reviewedBy: 學生學習地圖系統
 ---
 
 # SAT 門檻數據

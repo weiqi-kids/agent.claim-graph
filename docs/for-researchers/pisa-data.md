@@ -4,6 +4,8 @@ title: PISA 統計數據
 parent: 研究者專區
 nav_order: 2
 description: OECD PISA 2022 數學素養統計數據，供教育研究參考。
+lastReviewed: 2026-03-06
+reviewedBy: 學生學習地圖系統
 ---
 
 # PISA 2022 統計數據
@@ -65,13 +67,13 @@ OECD 國際學生能力評量計劃 (PISA) 2022 數學素養數據。
 
 | 國家 | 2022 分數 | 2018 分數 | 變化 | 本系統頁面 |
 |------|-----------|-----------|------|------------|
-| 🇸🇬 新加坡 | 575 | 569 | +6 | [課綱](../Narrator/skill_alignment_map/) |
-| 🇹🇼 台灣 | 547 | 551 | -4 | [課綱](../Narrator/skill_alignment_map/) |
-| 🇯🇵 日本 | 536 | 527 | +9 | [課綱](../Narrator/skill_alignment_map/) |
-| 🇨🇦 加拿大 | 497 | 512 | -15 | [課綱](../Narrator/skill_alignment_map/) |
-| 🇬🇧 英國 | 489 | 502 | -13 | [課綱](../Narrator/skill_alignment_map/) |
-| 🇦🇺 澳洲 | 487 | 491 | -4 | [課綱](../Narrator/skill_alignment_map/) |
-| 🇺🇸 美國 | 465 | 478 | -13 | [課綱](../Narrator/skill_alignment_map/) |
+| 🇸🇬 新加坡 | 575 | 569 | +6 | [課綱](../Narrator/skill_alignment_map) |
+| 🇹🇼 台灣 | 547 | 551 | -4 | [課綱](../Narrator/skill_alignment_map) |
+| 🇯🇵 日本 | 536 | 527 | +9 | [課綱](../Narrator/skill_alignment_map) |
+| 🇨🇦 加拿大 | 497 | 512 | -15 | [課綱](../Narrator/skill_alignment_map) |
+| 🇬🇧 英國 | 489 | 502 | -13 | [課綱](../Narrator/skill_alignment_map) |
+| 🇦🇺 澳洲 | 487 | 491 | -4 | [課綱](../Narrator/skill_alignment_map) |
+| 🇺🇸 美國 | 465 | 478 | -13 | [課綱](../Narrator/skill_alignment_map) |
 
 ---
 

@@ -2,6 +2,8 @@
 layout: default
 title: 方法論說明
 nav_exclude: true
+lastReviewed: 2026-02-07
+reviewedBy: 學生學習地圖系統
 ---
 
 # 認知層次基準線分類方法

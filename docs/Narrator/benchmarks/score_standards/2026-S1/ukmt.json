@@ -62,9 +62,11 @@
   "related_competitions": {
     "junior_mathematical_challenge": {
       "target": "Year 8 and below",
-      "gold_threshold": 88,
-      "silver_threshold": 70,
-      "bronze_threshold": 53
+      "year": 2026,
+      "gold_threshold": 75,
+      "silver_threshold": 59,
+      "bronze_threshold": 47,
+      "notes": "2026 JMC（4/29 應試，約 5/7 公布）：Gold 75+, Silver 59+, Bronze 47+；JMO 資格 112+, Junior Kangaroo 80+。較 2025 年全面下降。"
     },
     "intermediate_mathematical_challenge": {
       "target": "Year 9-11",

@@ -4,6 +4,8 @@ title: UKMT
 parent: 考試門檻
 nav_order: 2
 description: 英國數學競賽 UKMT (JMC/IMC/SMC) 的門檻數據與獎牌標準。
+lastReviewed: 2026-06-17
+reviewedBy: 學生學習地圖系統
 ---
 
 # UKMT 門檻數據

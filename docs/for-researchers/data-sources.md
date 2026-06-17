@@ -4,6 +4,8 @@ title: 資料來源登記冊
 parent: 研究者專區
 nav_order: 1
 description: 本系統使用的所有資料來源索引，含官方 URL、驗證日期和資料格式。
+lastReviewed: 2026-03-03
+reviewedBy: 學生學習地圖系統
 ---
 
 # 資料來源登記冊

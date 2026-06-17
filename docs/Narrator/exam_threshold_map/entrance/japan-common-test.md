@@ -4,6 +4,8 @@ title: 共通テスト
 parent: 考試門檻
 nav_order: 7
 description: 日本大學入學共通測驗的科目平均分與門檻數據。
+lastReviewed: 2026-03-05
+reviewedBy: 學生學習地圖系統
 ---
 
 # 大學入學共通測驗門檻數據

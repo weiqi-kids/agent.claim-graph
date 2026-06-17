@@ -4,6 +4,8 @@ title: AMC/AIME
 parent: 考試門檻
 nav_order: 1
 description: 美國數學競賽 AMC 10/12 和 AIME 的門檻數據與晉級標準。
+lastReviewed: 2026-03-22
+reviewedBy: 學生學習地圖系統
 ---
 
 # AMC/AIME 門檻數據

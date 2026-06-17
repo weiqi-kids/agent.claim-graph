@@ -4,6 +4,8 @@ title: PSLE
 parent: 考試門檻
 nav_order: 8
 description: 新加坡小學離校考試 PSLE 的成就等級制度與升學門檻數據。
+lastReviewed: 2026-03-23
+reviewedBy: 學生學習地圖系統
 ---
 
 # PSLE 門檻數據

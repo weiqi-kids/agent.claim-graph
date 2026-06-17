@@ -4,6 +4,8 @@ title: 考試門檻
 nav_order: 5
 has_children: true
 description: 各國升學考試與數學競賽的百分位門檻數據彙整。
+lastReviewed: 2026-03-06
+reviewedBy: 學生學習地圖系統
 ---
 
 # 考試門檻數據

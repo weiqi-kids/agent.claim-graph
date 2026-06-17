@@ -4,6 +4,8 @@ title: NAPLAN
 parent: 考試門檻
 nav_order: 4
 description: 澳洲全國讀寫算評估計畫 NAPLAN 的數學成績標準與趨勢數據。
+lastReviewed: 2026-03-05
+reviewedBy: 學生學習地圖系統
 ---
 
 # NAPLAN 門檻數據
