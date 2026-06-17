@@ -145,9 +145,9 @@ flowchart LR
 | AMC 8 | — | — | 滿分 25 |
 | AMC 10 | — | AIME 103-115 分 | USAMO |
 | AMC 12 | — | AIME 88-100 分 | USAMO |
-| UKMT JMC | 銅獎 72+ | 金獎 100+ | JMO 晉級 |
-| UKMT IMC | 銅獎 62+ | 金獎 95+ | Olympiad 晉級 |
-| UKMT SMC | 銅獎 51+ | 金獎 80+ | BMO1 晉級 |
+| UKMT JMC | 銅獎 47+ | 金獎 75+ | JMO 112+ 晉級 |
+| UKMT IMC | 銅獎 35+ | 金獎 61+ | Olympiad 晉級 |
+| UKMT SMC | 銅獎 46+ | 金獎 73+ | BMO1 104+ 晉級 |
 
 → [UKMT 完整門檻數據](../Narrator/exam_threshold_map/competition/ukmt)
 

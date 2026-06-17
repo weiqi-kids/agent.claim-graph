@@ -6,6 +6,28 @@ nav_exclude: true
 
 # 資料源探索紀錄
 
+## 2026-06-17 探索紀錄
+
+### 已驗證可用
+
+| 資料源 | URL | 格式 | 用途 |
+|--------|-----|------|------|
+| 🇬🇧 UKMT JMC 2026 Awards | https://ukmt.org.uk/junior-challenges/junior-maths-challenge-awards | HTML | JMC 2026 門檻（Gold 75, Silver 59, Bronze 47, Kangaroo 80, JMO 112），官方確認 |
+| 🇬🇧 UKMT JMC 2026 Boundaries | https://mathsaurus.com/junior-maths-challenge-grade-boundaries/ | HTML | JMC 2026 門檻交叉驗證（約 5/7 公布，4/29 應試）|
+
+### 已確認尚無資料
+
+| 資料源 | 原因 |
+|--------|------|
+| USAMO/USAJMO 2026 具體 index 門檻 | MAA 截至 2026/06 仍只公布邀請，未公開具體分數 |
+| SAT Class of 2026 | 年度報告預計 2026 年秋季發布，仍在進行中 |
+| PISA 2025 | 結果預計 2026 年 9 月發布 |
+| IMO 2026 (67th) | 競賽尚未舉行（2026 年 7 月，上海）|
+| UKMT SMC 2026 | 將於 2026 年秋季舉行 |
+| NAPLAN 2026 | 結果尚未發布 |
+
+---
+
 ## 2026-03-22 探索紀錄
 
 ### 已驗證可用
