@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
-    paths: ['docs/**']
+    paths: ['docs/**', '_config.yml']
   workflow_dispatch:
 
 permissions:
@@ -26,15 +26,14 @@ jobs:
         with:
           ruby-version: '3.2'
           bundler-cache: true
-          working-directory: docs
 
       - name: Build Jekyll
-        run: cd docs && bundle exec jekyll build
+        run: bundle exec jekyll build --source docs --destination _site --config _config.yml
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: docs/_site
+          path: _site
 
   validate-links:
     needs: build
