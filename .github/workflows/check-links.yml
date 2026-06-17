@@ -17,7 +17,7 @@ jobs:
       github.event_name == 'schedule' ||
       github.event.workflow_run.conclusion == 'success'
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Check links with lychee
         uses: lycheeverse/lychee-action@v2
@@ -31,7 +31,7 @@ jobs:
 
       - name: Upload report
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: link-check-report
           path: lychee-report.md
